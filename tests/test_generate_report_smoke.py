@@ -47,14 +47,17 @@ class GenerateReportSmokeTest(unittest.TestCase):
             html_path = tmp_root / "public" / "index.html"
             latest_md_path = tmp_root / "public" / "latest.md"
             data_path = tmp_root / "public" / "data" / "latest.json"
+            history_path = tmp_root / "public" / "data" / "history.json"
+            db_path = tmp_root / "data" / "ghstar.sqlite"
 
-            for output_path in [markdown_path, html_path, latest_md_path, data_path]:
+            for output_path in [markdown_path, html_path, latest_md_path, data_path, history_path, db_path]:
                 self.assertTrue(output_path.exists(), f"missing output: {output_path}")
 
             markdown = markdown_path.read_text(encoding="utf-8")
             latest_markdown = latest_md_path.read_text(encoding="utf-8")
             html = html_path.read_text(encoding="utf-8")
             data = json.loads(data_path.read_text(encoding="utf-8"))
+            history = json.loads(history_path.read_text(encoding="utf-8"))
 
             self.assertEqual(latest_markdown, markdown)
             self.assertIn(f"# GitHub Top Star AI & Agent Report - {REPORT_DATE}", markdown)
@@ -77,6 +80,8 @@ class GenerateReportSmokeTest(unittest.TestCase):
             self.assertEqual(data[1]["full_name"], "acme-ai/enterprise-rag-copilot")
             self.assertEqual(data[1]["language"], "TypeScript")
             self.assertIn(data[1]["category"], {"Agentic Enterprise", "AI Infrastructure"})
+            self.assertEqual(history[0]["report_date"], REPORT_DATE)
+            self.assertEqual(history[0]["repo_count"], 2)
 
 
 if __name__ == "__main__":

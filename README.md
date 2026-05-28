@@ -17,6 +17,8 @@ Generated outputs:
 - `public/index.html`
 - `public/latest.md`
 - `public/data/latest.json`
+- `public/data/history.json`
+- `data/ghstar.sqlite`
 
 ## Deployment
 
@@ -50,6 +52,10 @@ Generate a live report from GitHub:
 ```bash
 GH_TOKEN="$GHSTAR_GITHUB_TOKEN" python3 scripts/generate_report.py --days 7 --limit 24
 ```
+
+The generator writes repository metadata, daily snapshots, report records, and Leap learning notes into `data/ghstar.sqlite` before rendering Markdown, HTML, and JSON outputs.
+
+Database details are documented in `docs/database.md`.
 
 ## Publishing Checklist
 

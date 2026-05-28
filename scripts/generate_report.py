@@ -8,6 +8,7 @@ import html
 import json
 import os
 import re
+import sqlite3
 import sys
 import urllib.error
 import urllib.parse
@@ -22,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "reports"
 PUBLIC = ROOT / "public"
 DATA_DIR = PUBLIC / "data"
+DEFAULT_DB = ROOT / "data" / "ghstar.sqlite"
 
 FOCUS_AREAS = {
     "AI Agent Framework": [
@@ -151,6 +153,25 @@ def words(repo: dict[str, Any]) -> str:
     return " ".join(bits).lower()
 
 
+def repo_owner(repo: dict[str, Any]) -> str:
+    owner = repo.get("owner")
+    if isinstance(owner, dict):
+        return owner.get("login") or ""
+    return str(owner or "")
+
+
+def repo_url(repo: dict[str, Any]) -> str:
+    return repo.get("html_url") or repo.get("url") or ""
+
+
+def repo_stars(repo: dict[str, Any]) -> int:
+    return int(repo.get("stargazers_count") or repo.get("stars") or 0)
+
+
+def repo_forks(repo: dict[str, Any]) -> int:
+    return int(repo.get("forks_count") or repo.get("forks") or 0)
+
+
 def classify(repo: dict[str, Any]) -> tuple[str, int]:
     text = words(repo)
     scores: dict[str, int] = {}
@@ -160,7 +181,7 @@ def classify(repo: dict[str, Any]) -> tuple[str, int]:
     category = max(scores, key=scores.get)
     base = scores[category]
     topic_bonus = min(len(repo.get("topics") or []), 6)
-    star_bonus = min(int(repo.get("stargazers_count", 0)) // 100, 10)
+    star_bonus = min(repo_stars(repo) // 100, 10)
     freshness_bonus = 3 if repo.get("pushed_at", "")[:10] >= (date.today() - timedelta(days=7)).isoformat() else 0
     return category, base * 10 + topic_bonus + star_bonus + freshness_bonus
 
@@ -237,7 +258,7 @@ def rubric_scores(repo: dict[str, Any], category: str, modules: list[str], relev
         commerce_score = min(15, commerce_score + 3)
     if category == "Agentic Enterprise":
         enterprise_score = min(15, enterprise_score + 3)
-    maturity = min(int(repo.get("stargazers_count", 0)) // 250, 8)
+    maturity = min(repo_stars(repo) // 250, 8)
     freshness = 4 if repo.get("pushed_at", "")[:10] >= (date.today() - timedelta(days=14)).isoformat() else 0
     strategic_score = min(100, relevance + commerce_score * 2 + enterprise_score * 2 + maturity + freshness)
     if strategic_score >= 80:
@@ -264,12 +285,12 @@ def normalize_repo(item: dict[str, Any]) -> Repo:
     return Repo(
         name=item.get("name") or "",
         full_name=item.get("full_name") or "",
-        owner=(item.get("owner") or {}).get("login") or "",
-        url=item.get("html_url") or "",
+        owner=repo_owner(item),
+        url=repo_url(item),
         description=item.get("description") or "No description provided.",
         language=item.get("language") or "Unknown",
-        stars=int(item.get("stargazers_count") or 0),
-        forks=int(item.get("forks_count") or 0),
+        stars=repo_stars(item),
+        forks=repo_forks(item),
         topics=list(item.get("topics") or []),
         created_at=item.get("created_at") or "",
         updated_at=item.get("updated_at") or "",
@@ -303,6 +324,254 @@ def collect(days: int, limit: int, token: str | None) -> list[Repo]:
     repos = [normalize_repo(item) for item in seen.values()]
     repos.sort(key=lambda repo: (repo.relevance, repo.stars), reverse=True)
     return repos[:limit]
+
+
+def init_db(db_path: Path) -> sqlite3.Connection:
+    db_path.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    conn.executescript(
+        """
+        PRAGMA journal_mode = DELETE;
+
+        CREATE TABLE IF NOT EXISTS repositories (
+          full_name TEXT PRIMARY KEY,
+          name TEXT NOT NULL,
+          owner TEXT NOT NULL,
+          url TEXT NOT NULL,
+          description TEXT NOT NULL,
+          language TEXT NOT NULL,
+          topics_json TEXT NOT NULL,
+          created_at TEXT NOT NULL,
+          updated_at TEXT NOT NULL,
+          pushed_at TEXT NOT NULL,
+          first_seen_date TEXT NOT NULL,
+          last_seen_date TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS repo_snapshots (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          full_name TEXT NOT NULL,
+          snapshot_date TEXT NOT NULL,
+          stars INTEGER NOT NULL,
+          forks INTEGER NOT NULL,
+          category TEXT NOT NULL,
+          relevance INTEGER NOT NULL,
+          commerce_score INTEGER NOT NULL,
+          enterprise_score INTEGER NOT NULL,
+          strategic_score INTEGER NOT NULL,
+          action_level TEXT NOT NULL,
+          modules_json TEXT NOT NULL,
+          scenarios_json TEXT NOT NULL,
+          leap_commerce TEXT NOT NULL,
+          leap_enterprise TEXT NOT NULL,
+          UNIQUE(full_name, snapshot_date),
+          FOREIGN KEY(full_name) REFERENCES repositories(full_name)
+        );
+
+        CREATE TABLE IF NOT EXISTS daily_reports (
+          report_date TEXT PRIMARY KEY,
+          repo_count INTEGER NOT NULL,
+          markdown_path TEXT NOT NULL,
+          html_path TEXT NOT NULL,
+          json_path TEXT NOT NULL,
+          generated_at TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS leap_notes (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          full_name TEXT NOT NULL,
+          note_date TEXT NOT NULL,
+          commerce_learning TEXT NOT NULL,
+          enterprise_learning TEXT NOT NULL,
+          follow_up_status TEXT NOT NULL DEFAULT 'new',
+          human_notes TEXT NOT NULL DEFAULT '',
+          UNIQUE(full_name, note_date),
+          FOREIGN KEY(full_name) REFERENCES repositories(full_name)
+        );
+
+        CREATE INDEX IF NOT EXISTS idx_snapshots_date_score
+          ON repo_snapshots(snapshot_date, strategic_score DESC, stars DESC);
+        CREATE INDEX IF NOT EXISTS idx_snapshots_repo_date
+          ON repo_snapshots(full_name, snapshot_date);
+        """
+    )
+    return conn
+
+
+def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -> None:
+    today = report_date.isoformat()
+    for repo in repos:
+        conn.execute(
+            """
+            INSERT INTO repositories (
+              full_name, name, owner, url, description, language, topics_json,
+              created_at, updated_at, pushed_at, first_seen_date, last_seen_date
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(full_name) DO UPDATE SET
+              name = excluded.name,
+              owner = excluded.owner,
+              url = excluded.url,
+              description = excluded.description,
+              language = excluded.language,
+              topics_json = excluded.topics_json,
+              updated_at = excluded.updated_at,
+              pushed_at = excluded.pushed_at,
+              last_seen_date = excluded.last_seen_date
+            """,
+            (
+                repo.full_name,
+                repo.name,
+                repo.owner,
+                repo.url,
+                repo.description,
+                repo.language,
+                json.dumps(repo.topics, ensure_ascii=False),
+                repo.created_at,
+                repo.updated_at,
+                repo.pushed_at,
+                today,
+                today,
+            ),
+        )
+        conn.execute(
+            """
+            INSERT INTO repo_snapshots (
+              full_name, snapshot_date, stars, forks, category, relevance,
+              commerce_score, enterprise_score, strategic_score, action_level,
+              modules_json, scenarios_json, leap_commerce, leap_enterprise
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(full_name, snapshot_date) DO UPDATE SET
+              stars = excluded.stars,
+              forks = excluded.forks,
+              category = excluded.category,
+              relevance = excluded.relevance,
+              commerce_score = excluded.commerce_score,
+              enterprise_score = excluded.enterprise_score,
+              strategic_score = excluded.strategic_score,
+              action_level = excluded.action_level,
+              modules_json = excluded.modules_json,
+              scenarios_json = excluded.scenarios_json,
+              leap_commerce = excluded.leap_commerce,
+              leap_enterprise = excluded.leap_enterprise
+            """,
+            (
+                repo.full_name,
+                today,
+                repo.stars,
+                repo.forks,
+                repo.category,
+                repo.relevance,
+                repo.commerce_score,
+                repo.enterprise_score,
+                repo.strategic_score,
+                repo.action_level,
+                json.dumps(repo.modules, ensure_ascii=False),
+                json.dumps(repo.scenarios, ensure_ascii=False),
+                repo.leap_commerce,
+                repo.leap_enterprise,
+            ),
+        )
+        conn.execute(
+            """
+            INSERT INTO leap_notes (
+              full_name, note_date, commerce_learning, enterprise_learning, follow_up_status
+            )
+            VALUES (?, ?, ?, ?, ?)
+            ON CONFLICT(full_name, note_date) DO UPDATE SET
+              commerce_learning = excluded.commerce_learning,
+              enterprise_learning = excluded.enterprise_learning
+            """,
+            (repo.full_name, today, repo.leap_commerce, repo.leap_enterprise, repo.action_level),
+        )
+    conn.commit()
+
+
+def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -> list[Repo]:
+    rows = conn.execute(
+        """
+        SELECT
+          r.name, r.full_name, r.owner, r.url, r.description, r.language,
+          r.topics_json, r.created_at, r.updated_at, r.pushed_at,
+          s.stars, s.forks, s.category, s.relevance, s.commerce_score,
+          s.enterprise_score, s.strategic_score, s.action_level,
+          s.modules_json, s.scenarios_json, s.leap_commerce, s.leap_enterprise
+        FROM repo_snapshots s
+        JOIN repositories r ON r.full_name = s.full_name
+        WHERE s.snapshot_date = ?
+        ORDER BY s.strategic_score DESC, s.relevance DESC, s.stars DESC
+        LIMIT ?
+        """,
+        (report_date.isoformat(), limit),
+    ).fetchall()
+    return [
+        Repo(
+            name=row["name"],
+            full_name=row["full_name"],
+            owner=row["owner"],
+            url=row["url"],
+            description=row["description"],
+            language=row["language"],
+            stars=row["stars"],
+            forks=row["forks"],
+            topics=json.loads(row["topics_json"]),
+            created_at=row["created_at"],
+            updated_at=row["updated_at"],
+            pushed_at=row["pushed_at"],
+            category=row["category"],
+            relevance=row["relevance"],
+            modules=json.loads(row["modules_json"]),
+            scenarios=json.loads(row["scenarios_json"]),
+            commerce_score=row["commerce_score"],
+            enterprise_score=row["enterprise_score"],
+            strategic_score=row["strategic_score"],
+            action_level=row["action_level"],
+            leap_commerce=row["leap_commerce"],
+            leap_enterprise=row["leap_enterprise"],
+        )
+        for row in rows
+    ]
+
+
+def save_daily_report_record(conn: sqlite3.Connection, report_date: date, repo_count: int) -> None:
+    conn.execute(
+        """
+        INSERT INTO daily_reports (
+          report_date, repo_count, markdown_path, html_path, json_path, generated_at
+        )
+        VALUES (?, ?, ?, ?, ?, ?)
+        ON CONFLICT(report_date) DO UPDATE SET
+          repo_count = excluded.repo_count,
+          markdown_path = excluded.markdown_path,
+          html_path = excluded.html_path,
+          json_path = excluded.json_path,
+          generated_at = excluded.generated_at
+        """,
+        (
+            report_date.isoformat(),
+            repo_count,
+            f"reports/{report_date.isoformat()}.md",
+            "public/index.html",
+            "public/data/latest.json",
+            datetime.now(timezone.utc).isoformat(),
+        ),
+    )
+    conn.commit()
+
+
+def history_summary(conn: sqlite3.Connection, limit: int = 30) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        SELECT report_date, repo_count, markdown_path, html_path, json_path, generated_at
+        FROM daily_reports
+        ORDER BY report_date DESC
+        LIMIT ?
+        """,
+        (limit,),
+    ).fetchall()
+    return [dict(row) for row in rows]
 
 
 def md_escape(text: str) -> str:
@@ -536,7 +805,7 @@ def render_repo_card(repo: Repo, index: int) -> str:
     """
 
 
-def write_outputs(repos: list[Repo], report_date: date) -> None:
+def write_outputs(repos: list[Repo], report_date: date, history: list[dict[str, Any]] | None = None) -> None:
     REPORTS.mkdir(parents=True, exist_ok=True)
     PUBLIC.mkdir(parents=True, exist_ok=True)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -549,6 +818,8 @@ def write_outputs(repos: list[Repo], report_date: date) -> None:
     (PUBLIC / "index.html").write_text(html_doc, encoding="utf-8")
     (PUBLIC / "latest.md").write_text(md, encoding="utf-8")
     (DATA_DIR / "latest.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if history is not None:
+        (DATA_DIR / "history.json").write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def main() -> int:
@@ -557,6 +828,8 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=24, help="Maximum repositories to include.")
     parser.add_argument("--date", default=date.today().isoformat(), help="Report date YYYY-MM-DD.")
     parser.add_argument("--fixture", help="Use local JSON fixture instead of GitHub API.")
+    parser.add_argument("--db", default=str(DEFAULT_DB), help="SQLite database path.")
+    parser.add_argument("--no-db", action="store_true", help="Generate files without writing SQLite history.")
     args = parser.parse_args()
 
     report_date = datetime.strptime(args.date, "%Y-%m-%d").date()
@@ -566,7 +839,14 @@ def main() -> int:
     else:
         token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
         repos = collect(args.days, args.limit, token)
-    write_outputs(repos, report_date)
+    if args.no_db:
+        write_outputs(repos, report_date)
+    else:
+        with init_db(Path(args.db)) as conn:
+            save_to_db(conn, repos, report_date)
+            repos = load_report_repos(conn, report_date, args.limit)
+            save_daily_report_record(conn, report_date, len(repos))
+            write_outputs(repos, report_date, history_summary(conn))
     print(json.dumps({"date": report_date.isoformat(), "repos": len(repos)}, indent=2))
     return 0
 

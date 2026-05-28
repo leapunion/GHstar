@@ -5,4 +5,5 @@ __pycache__/
 .env
 .env.*
 !.env.example
-
+*.sqlite-wal
+*.sqlite-shm

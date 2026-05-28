@@ -14,28 +14,28 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 | --- | --- | ---: | --- | ---: | --- | --- |
 | deer-flow | bytedance | 69877 | AI Agent Framework | 85 | strategic watch | https://github.com/bytedance/deer-flow |
 | ruflo | ruvnet | 56114 | AI Agent Framework | 85 | strategic watch | https://github.com/ruvnet/ruflo |
-| agents | wshobson | 36087 | AI Agent Framework | 79 | prototype pattern | https://github.com/wshobson/agents |
-| openai-agents-python | openai | 26724 | AI Agent Framework | 73 | prototype pattern | https://github.com/openai/openai-agents-python |
 | haystack | deepset-ai | 25404 | AI Agent Framework | 85 | strategic watch | https://github.com/deepset-ai/haystack |
-| edict | cft0808 | 15906 | AI Agent Framework | 79 | prototype pattern | https://github.com/cft0808/edict |
 | bisheng | dataelement | 11392 | Agentic Enterprise | 85 | strategic watch | https://github.com/dataelement/bisheng |
 | agent-framework | microsoft | 10832 | AI Agent Framework | 85 | strategic watch | https://github.com/microsoft/agent-framework |
+| agents | wshobson | 36087 | AI Agent Framework | 79 | prototype pattern | https://github.com/wshobson/agents |
+| edict | cft0808 | 15906 | AI Agent Framework | 79 | prototype pattern | https://github.com/cft0808/edict |
+| dify | langgenius | 143003 | AI Agent Framework | 75 | prototype pattern | https://github.com/langgenius/dify |
+| openai-agents-python | openai | 26724 | AI Agent Framework | 73 | prototype pattern | https://github.com/openai/openai-agents-python |
 | spring-ai-alibaba | alibaba | 9789 | AI Agent Framework | 73 | prototype pattern | https://github.com/alibaba/spring-ai-alibaba |
 | langflow | langflow-ai | 148854 | AI Agent Framework | 69 | prototype pattern | https://github.com/langflow-ai/langflow |
-| dify | langgenius | 143003 | AI Agent Framework | 75 | prototype pattern | https://github.com/langgenius/dify |
 | langchain | langchain-ai | 137891 | Agentic Enterprise | 69 | prototype pattern | https://github.com/langchain-ai/langchain |
 | MinerU | opendatalab | 65475 | AI Agent Framework | 69 | prototype pattern | https://github.com/opendatalab/MinerU |
 | awesome-claude-skills | ComposioHQ | 62291 | AI Agent Framework | 69 | prototype pattern | https://github.com/ComposioHQ/awesome-claude-skills |
-| llama_index | run-llama | 49735 | AI Agent Framework | 63 | clone and test | https://github.com/run-llama/llama_index |
-| cherry-studio | CherryHQ | 46497 | AI Agent Framework | 63 | clone and test | https://github.com/CherryHQ/cherry-studio |
 | CowAgent | zhayujie | 44931 | AI Agent Framework | 69 | prototype pattern | https://github.com/zhayujie/CowAgent |
 | nanobot | HKUDS | 43322 | AI Agent Framework | 69 | prototype pattern | https://github.com/HKUDS/nanobot |
-| BettaFish | 666ghj | 41090 | AI Agent Framework | 57 | clone and test | https://github.com/666ghj/BettaFish |
 | ToolJet | ToolJet | 37944 | AI Agent Framework | 69 | prototype pattern | https://github.com/ToolJet/ToolJet |
-| oh-my-claudecode | Yeachan-Heo | 35190 | AI Agent Framework | 63 | clone and test | https://github.com/Yeachan-Heo/oh-my-claudecode |
-| conductor | conductor-oss | 31851 | AI Agent Framework | 63 | clone and test | https://github.com/conductor-oss/conductor |
 | FastGPT | labring | 28178 | AI Agent Framework | 69 | prototype pattern | https://github.com/labring/FastGPT |
 | gpt-researcher | assafelovic | 27372 | AI Agent Framework | 69 | prototype pattern | https://github.com/assafelovic/gpt-researcher |
+| llama_index | run-llama | 49735 | AI Agent Framework | 63 | clone and test | https://github.com/run-llama/llama_index |
+| cherry-studio | CherryHQ | 46497 | AI Agent Framework | 63 | clone and test | https://github.com/CherryHQ/cherry-studio |
+| oh-my-claudecode | Yeachan-Heo | 35190 | AI Agent Framework | 63 | clone and test | https://github.com/Yeachan-Heo/oh-my-claudecode |
+| conductor | conductor-oss | 31851 | AI Agent Framework | 63 | clone and test | https://github.com/conductor-oss/conductor |
+| BettaFish | 666ghj | 41090 | AI Agent Framework | 57 | clone and test | https://github.com/666ghj/BettaFish |
 
 ## Detailed Notes
 
@@ -115,77 +115,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 3. wshobson/agents
-
-- URL: https://github.com/wshobson/agents
-- Author: wshobson
-- Language: Python
-- Stars: 36087
-- Forks: 3915
-- Function category: AI Agent Framework
-- Relevance score: 49
-- Commerce score: 3/15
-- Enterprise score: 6/15
-- Strategic score: 79/100
-- Recommended action: prototype pattern
-- Description: Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, and Gemini CLI
-- Topics: agent-skills, agentic-ai, agents, ai-agents, anthropic, automation, claude-code, claude-code-plugins, codex-cli, copilot, cursor, cursor-rules, developer-tools, gemini-cli, mcp, multi-agent, opencode, orchestration, prompt-engineering, workflows
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Automate enterprise workflows and internal knowledge operations.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 4. openai/openai-agents-python
-
-- URL: https://github.com/openai/openai-agents-python
-- Author: openai
-- Language: Python
-- Stars: 26724
-- Forks: 4117
-- Function category: AI Agent Framework
-- Relevance score: 49
-- Commerce score: 3/15
-- Enterprise score: 3/15
-- Strategic score: 73/100
-- Recommended action: prototype pattern
-- Description: A lightweight, powerful framework for multi-agent workflows
-- Topics: agents, ai, framework, harness, llm, openai, python
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Automate enterprise workflows and internal knowledge operations.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 5. deepset-ai/haystack
+### 3. deepset-ai/haystack
 
 - URL: https://github.com/deepset-ai/haystack
 - Author: deepset-ai
@@ -224,42 +154,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 6. cft0808/edict
-
-- URL: https://github.com/cft0808/edict
-- Author: cft0808
-- Language: Python
-- Stars: 15906
-- Forks: 1677
-- Function category: AI Agent Framework
-- Relevance score: 49
-- Commerce score: 3/15
-- Enterprise score: 6/15
-- Strategic score: 79/100
-- Recommended action: prototype pattern
-- Description: 🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails
-- Topics: ai-agents, ai-orchestration, autonomous-agents, claude, dashboard, kanban, llm, multi-agent, openai, openclaw, orchestration, python, workflow-automation
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Automate enterprise workflows and internal knowledge operations.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 7. dataelement/bisheng
+### 4. dataelement/bisheng
 
 - URL: https://github.com/dataelement/bisheng
 - Author: dataelement
@@ -297,7 +192,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 8. microsoft/agent-framework
+### 5. microsoft/agent-framework
 
 - URL: https://github.com/microsoft/agent-framework
 - Author: microsoft
@@ -332,7 +227,151 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 9. alibaba/spring-ai-alibaba
+### 6. wshobson/agents
+
+- URL: https://github.com/wshobson/agents
+- Author: wshobson
+- Language: Python
+- Stars: 36087
+- Forks: 3915
+- Function category: AI Agent Framework
+- Relevance score: 49
+- Commerce score: 3/15
+- Enterprise score: 6/15
+- Strategic score: 79/100
+- Recommended action: prototype pattern
+- Description: Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, and Gemini CLI
+- Topics: agent-skills, agentic-ai, agents, ai-agents, anthropic, automation, claude-code, claude-code-plugins, codex-cli, copilot, cursor, cursor-rules, developer-tools, gemini-cli, mcp, multi-agent, opencode, orchestration, prompt-engineering, workflows
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Automate enterprise workflows and internal knowledge operations.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 7. cft0808/edict
+
+- URL: https://github.com/cft0808/edict
+- Author: cft0808
+- Language: Python
+- Stars: 15906
+- Forks: 1677
+- Function category: AI Agent Framework
+- Relevance score: 49
+- Commerce score: 3/15
+- Enterprise score: 6/15
+- Strategic score: 79/100
+- Recommended action: prototype pattern
+- Description: 🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails
+- Topics: ai-agents, ai-orchestration, autonomous-agents, claude, dashboard, kanban, llm, multi-agent, openai, openclaw, orchestration, python, workflow-automation
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Automate enterprise workflows and internal knowledge operations.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 8. langgenius/dify
+
+- URL: https://github.com/langgenius/dify
+- Author: langgenius
+- Language: TypeScript
+- Stars: 143003
+- Forks: 22498
+- Function category: AI Agent Framework
+- Relevance score: 39
+- Commerce score: 6/15
+- Enterprise score: 6/15
+- Strategic score: 75/100
+- Recommended action: prototype pattern
+- Description: Production-ready platform for agentic workflow development.
+- Topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai, automation, gemini, genai, gpt, gpt-4, llm, low-code, mcp, nextjs, no-code, openai, orchestration, python, rag, workflow
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+- Knowledge retrieval
+- Vector search
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Improve AI shopping discovery, product comparison, and conversion assistance.
+- Automate enterprise workflows and internal knowledge operations.
+- Ground agent answers with private knowledge and searchable evidence.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 9. openai/openai-agents-python
+
+- URL: https://github.com/openai/openai-agents-python
+- Author: openai
+- Language: Python
+- Stars: 26724
+- Forks: 4117
+- Function category: AI Agent Framework
+- Relevance score: 49
+- Commerce score: 3/15
+- Enterprise score: 3/15
+- Strategic score: 73/100
+- Recommended action: prototype pattern
+- Description: A lightweight, powerful framework for multi-agent workflows
+- Topics: agents, ai, framework, harness, llm, openai, python
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Automate enterprise workflows and internal knowledge operations.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 10. alibaba/spring-ai-alibaba
 
 - URL: https://github.com/alibaba/spring-ai-alibaba
 - Author: alibaba
@@ -367,7 +406,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 10. langflow-ai/langflow
+### 11. langflow-ai/langflow
 
 - URL: https://github.com/langflow-ai/langflow
 - Author: langflow-ai
@@ -393,45 +432,6 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 
 - Build task-oriented AI agents with tool use and planning.
 - Automate enterprise workflows and internal knowledge operations.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 11. langgenius/dify
-
-- URL: https://github.com/langgenius/dify
-- Author: langgenius
-- Language: TypeScript
-- Stars: 143003
-- Forks: 22498
-- Function category: AI Agent Framework
-- Relevance score: 39
-- Commerce score: 6/15
-- Enterprise score: 6/15
-- Strategic score: 75/100
-- Recommended action: prototype pattern
-- Description: Production-ready platform for agentic workflow development.
-- Topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai, automation, gemini, genai, gpt, gpt-4, llm, low-code, mcp, nextjs, no-code, openai, orchestration, python, rag, workflow
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-- Knowledge retrieval
-- Vector search
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Improve AI shopping discovery, product comparison, and conversion assistance.
-- Automate enterprise workflows and internal knowledge operations.
-- Ground agent answers with private knowledge and searchable evidence.
 
 #### Leap Agent Commerce OS Learning
 
@@ -552,81 +552,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 15. run-llama/llama_index
-
-- URL: https://github.com/run-llama/llama_index
-- Author: run-llama
-- Language: Python
-- Stars: 49735
-- Forks: 7475
-- Function category: AI Agent Framework
-- Relevance score: 39
-- Commerce score: 3/15
-- Enterprise score: 3/15
-- Strategic score: 63/100
-- Recommended action: clone and test
-- Description: LlamaIndex is the leading document agent and OCR platform
-- Topics: agents, application, data, fine-tuning, framework, llamaindex, llm, multi-agents, rag, vector-database
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-- Knowledge retrieval
-- Vector search
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Ground agent answers with private knowledge and searchable evidence.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 16. CherryHQ/cherry-studio
-
-- URL: https://github.com/CherryHQ/cherry-studio
-- Author: CherryHQ
-- Language: TypeScript
-- Stars: 46497
-- Forks: 4415
-- Function category: AI Agent Framework
-- Relevance score: 39
-- Commerce score: 6/15
-- Enterprise score: 0/15
-- Strategic score: 63/100
-- Recommended action: clone and test
-- Description: AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs
-- Topics: agent-skills, ai-agent, awesome-skills, claude-code, codex, deepseek, hermes-agent, openclaw, skills, vibe-coding
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-- Product intelligence
-- Recommendation engine
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Improve AI shopping discovery, product comparison, and conversion assistance.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 17. zhayujie/CowAgent
+### 15. zhayujie/CowAgent
 
 - URL: https://github.com/zhayujie/CowAgent
 - Author: zhayujie
@@ -663,7 +589,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 18. HKUDS/nanobot
+### 16. HKUDS/nanobot
 
 - URL: https://github.com/HKUDS/nanobot
 - Author: HKUDS
@@ -698,41 +624,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 19. 666ghj/BettaFish
-
-- URL: https://github.com/666ghj/BettaFish
-- Author: 666ghj
-- Language: Python
-- Stars: 41090
-- Forks: 7576
-- Function category: AI Agent Framework
-- Relevance score: 39
-- Commerce score: 3/15
-- Enterprise score: 0/15
-- Strategic score: 57/100
-- Recommended action: clone and test
-- Description: 微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。
-- Topics: agent-framework, data-analysis, deep-research, deep-search, llms, multi-agent-system, nlp, public-opinion-analysis, python3, sentiment-analysis
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 20. ToolJet/ToolJet
+### 17. ToolJet/ToolJet
 
 - URL: https://github.com/ToolJet/ToolJet
 - Author: ToolJet
@@ -767,76 +659,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 21. Yeachan-Heo/oh-my-claudecode
-
-- URL: https://github.com/Yeachan-Heo/oh-my-claudecode
-- Author: Yeachan-Heo
-- Language: TypeScript
-- Stars: 35190
-- Forks: 3226
-- Function category: AI Agent Framework
-- Relevance score: 39
-- Commerce score: 3/15
-- Enterprise score: 3/15
-- Strategic score: 63/100
-- Recommended action: clone and test
-- Description: Teams-first Multi-agent orchestration for Claude Code
-- Topics: agentic-coding, ai-agents, automation, claude, claude-code, multi-agent-systems, oh-my-opencode, opencode, parallel-execution, vibe-coding
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 22. conductor-oss/conductor
-
-- URL: https://github.com/conductor-oss/conductor
-- Author: conductor-oss
-- Language: Java
-- Stars: 31851
-- Forks: 907
-- Function category: AI Agent Framework
-- Relevance score: 39
-- Commerce score: 3/15
-- Enterprise score: 3/15
-- Strategic score: 63/100
-- Recommended action: clone and test
-- Description: Conductor is an event driven agentic workflow engine providing durable and highly resilient execution engine for applications and AI Agents
-- Topics: distributed-systems, durable-execution, grpc, java, javascript, microservice-orchestration, orchestration-engine, orchestrator, reactjs, spring-boot, workflow-automation, workflow-engine, workflow-management, workflows
-
-#### Modules
-
-- Agent runtime
-- Workflow orchestration
-- Tool integration
-
-#### Application Scenarios
-
-- Build task-oriented AI agents with tool use and planning.
-- Automate enterprise workflows and internal knowledge operations.
-
-#### Leap Agent Commerce OS Learning
-
-Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
-
-#### Leap Agentic Enterprise OS Learning
-
-Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
-
-### 23. labring/FastGPT
+### 18. labring/FastGPT
 
 - URL: https://github.com/labring/FastGPT
 - Author: labring
@@ -874,7 +697,7 @@ Review for reusable agent runtime, retrieval, or evaluation patterns that can st
 
 Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
 
-### 24. assafelovic/gpt-researcher
+### 19. assafelovic/gpt-researcher
 
 - URL: https://github.com/assafelovic/gpt-researcher
 - Author: assafelovic
@@ -889,6 +712,183 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Recommended action: prototype pattern
 - Description: An autonomous agent that conducts deep research on any data using any LLM providers
 - Topics: agent, ai, automation, deepresearch, llms, mcp, mcp-server, python, research, search, webscraping
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 20. run-llama/llama_index
+
+- URL: https://github.com/run-llama/llama_index
+- Author: run-llama
+- Language: Python
+- Stars: 49735
+- Forks: 7475
+- Function category: AI Agent Framework
+- Relevance score: 39
+- Commerce score: 3/15
+- Enterprise score: 3/15
+- Strategic score: 63/100
+- Recommended action: clone and test
+- Description: LlamaIndex is the leading document agent and OCR platform
+- Topics: agents, application, data, fine-tuning, framework, llamaindex, llm, multi-agents, rag, vector-database
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+- Knowledge retrieval
+- Vector search
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Ground agent answers with private knowledge and searchable evidence.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 21. CherryHQ/cherry-studio
+
+- URL: https://github.com/CherryHQ/cherry-studio
+- Author: CherryHQ
+- Language: TypeScript
+- Stars: 46497
+- Forks: 4415
+- Function category: AI Agent Framework
+- Relevance score: 39
+- Commerce score: 6/15
+- Enterprise score: 0/15
+- Strategic score: 63/100
+- Recommended action: clone and test
+- Description: AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs
+- Topics: agent-skills, ai-agent, awesome-skills, claude-code, codex, deepseek, hermes-agent, openclaw, skills, vibe-coding
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+- Product intelligence
+- Recommendation engine
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Improve AI shopping discovery, product comparison, and conversion assistance.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 22. Yeachan-Heo/oh-my-claudecode
+
+- URL: https://github.com/Yeachan-Heo/oh-my-claudecode
+- Author: Yeachan-Heo
+- Language: TypeScript
+- Stars: 35190
+- Forks: 3226
+- Function category: AI Agent Framework
+- Relevance score: 39
+- Commerce score: 3/15
+- Enterprise score: 3/15
+- Strategic score: 63/100
+- Recommended action: clone and test
+- Description: Teams-first Multi-agent orchestration for Claude Code
+- Topics: agentic-coding, ai-agents, automation, claude, claude-code, multi-agent-systems, oh-my-opencode, opencode, parallel-execution, vibe-coding
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 23. conductor-oss/conductor
+
+- URL: https://github.com/conductor-oss/conductor
+- Author: conductor-oss
+- Language: Java
+- Stars: 31851
+- Forks: 907
+- Function category: AI Agent Framework
+- Relevance score: 39
+- Commerce score: 3/15
+- Enterprise score: 3/15
+- Strategic score: 63/100
+- Recommended action: clone and test
+- Description: Conductor is an event driven agentic workflow engine providing durable and highly resilient execution engine for applications and AI Agents
+- Topics: distributed-systems, durable-execution, grpc, java, javascript, microservice-orchestration, orchestration-engine, orchestrator, reactjs, spring-boot, workflow-automation, workflow-engine, workflow-management, workflows
+
+#### Modules
+
+- Agent runtime
+- Workflow orchestration
+- Tool integration
+
+#### Application Scenarios
+
+- Build task-oriented AI agents with tool use and planning.
+- Automate enterprise workflows and internal knowledge operations.
+
+#### Leap Agent Commerce OS Learning
+
+Review for reusable agent runtime, retrieval, or evaluation patterns that can strengthen commerce agents.
+
+#### Leap Agentic Enterprise OS Learning
+
+Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, enterprise copilots, knowledge automation, permissions, and operational governance.
+
+### 24. 666ghj/BettaFish
+
+- URL: https://github.com/666ghj/BettaFish
+- Author: 666ghj
+- Language: Python
+- Stars: 41090
+- Forks: 7576
+- Function category: AI Agent Framework
+- Relevance score: 39
+- Commerce score: 3/15
+- Enterprise score: 0/15
+- Strategic score: 57/100
+- Recommended action: clone and test
+- Description: 微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。
+- Topics: agent-framework, data-analysis, deep-research, deep-search, llms, multi-agent-system, nlp, public-opinion-analysis, python3, sentiment-analysis
 
 #### Modules
 
