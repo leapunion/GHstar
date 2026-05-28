@@ -1,0 +1,33 @@
+services:
+  ghstar:
+    build:
+      context: .
+      target: generator
+    image: ghstar-generator:local
+    working_dir: /app
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      GHSTAR_DB: /app/data/ghstar.sqlite
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+    command: ["python", "scripts/generate_report.py", "--db", "/app/data/ghstar.sqlite"]
+
+  ghstar-smoke:
+    build:
+      context: .
+      target: generator
+    image: ghstar-generator:local
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: ["python", "scripts/run_smoke_test.py"]
+
+  ghstar-web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/usr/share/nginx/html:ro

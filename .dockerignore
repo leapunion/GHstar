@@ -1,0 +1,9 @@
+.git
+.vercel
+__pycache__
+*.py[cod]
+.env
+.env.*
+!.env.example
+data/*.sqlite-wal
+data/*.sqlite-shm

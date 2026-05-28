@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "reports"
 PUBLIC = ROOT / "public"
 DATA_DIR = PUBLIC / "data"
-DEFAULT_DB = ROOT / "data" / "ghstar.sqlite"
+DEFAULT_DB = Path(os.environ.get("GHSTAR_DB", ROOT / "data" / "ghstar.sqlite"))
 
 FOCUS_AREAS = {
     "AI Agent Framework": [
@@ -830,9 +830,19 @@ def main() -> int:
     parser.add_argument("--fixture", help="Use local JSON fixture instead of GitHub API.")
     parser.add_argument("--db", default=str(DEFAULT_DB), help="SQLite database path.")
     parser.add_argument("--no-db", action="store_true", help="Generate files without writing SQLite history.")
+    parser.add_argument("--from-db", action="store_true", help="Render outputs from existing SQLite snapshots.")
     args = parser.parse_args()
 
     report_date = datetime.strptime(args.date, "%Y-%m-%d").date()
+    if args.from_db:
+        if args.no_db:
+            raise SystemExit("--from-db cannot be combined with --no-db")
+        with init_db(Path(args.db)) as conn:
+            repos = load_report_repos(conn, report_date, args.limit)
+            save_daily_report_record(conn, report_date, len(repos))
+            write_outputs(repos, report_date, history_summary(conn))
+        print(json.dumps({"date": report_date.isoformat(), "repos": len(repos)}, indent=2))
+        return 0
     if args.fixture:
         fixture_data = json.loads(Path(args.fixture).read_text(encoding="utf-8"))
         repos = [normalize_repo(item) for item in fixture_data][: args.limit]

@@ -57,6 +57,28 @@ The generator writes repository metadata, daily snapshots, report records, and L
 
 Database details are documented in `docs/database.md`.
 
+## Docker
+
+Run the deterministic smoke test in Docker:
+
+```bash
+docker compose run --rm ghstar-smoke
+```
+
+Generate a report in Docker:
+
+```bash
+docker compose run --rm ghstar
+```
+
+Serve the generated static site:
+
+```bash
+docker compose up ghstar-web
+```
+
+Docker runtime details are documented in `docs/docker.md`.
+
 ## Publishing Checklist
 
 1. Authenticate GitHub CLI:
