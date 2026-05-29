@@ -72,13 +72,13 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 | agent-starter-pack | GoogleCloudPlatform | 6452 | 13.36 | 95 | AI Infrastructure | 75 | prototype pattern | https://github.com/GoogleCloudPlatform/agent-starter-pack |
 | openai-agents-python | openai | 26741 | 60.23 | 96 | AI Agent Framework | 73 | prototype pattern | https://github.com/openai/openai-agents-python |
 | spring-ai-alibaba | alibaba | 9798 | 15.63 | 97 | AI Agent Framework | 73 | prototype pattern | https://github.com/alibaba/spring-ai-alibaba |
-| Observal | BlazeUp-AI | 1670 | 27.83 | 96 | AI Infrastructure | 73 | prototype pattern | https://github.com/BlazeUp-AI/Observal |
+| Observal | BlazeUp-AI | 1672 | 27.87 | 96 | AI Infrastructure | 73 | prototype pattern | https://github.com/BlazeUp-AI/Observal |
 | Amazon-Skills | nexscope-ai | 194 | 2.42 | 60 | AI Commerce | 70 | prototype pattern | https://github.com/nexscope-ai/Amazon-Skills |
 | langchain | langchain-ai | 137952 | 104.51 | 95 | Agentic Enterprise | 69 | prototype pattern | https://github.com/langchain-ai/langchain |
 | Flowise | FlowiseAI | 53186 | 46.05 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/FlowiseAI/Flowise |
 | CowAgent | zhayujie | 44943 | 32.31 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/zhayujie/CowAgent |
 | nanobot | HKUDS | 43353 | 370.54 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/HKUDS/nanobot |
-| antigravity-awesome-skills | sickn33 | 39075 | 289.44 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/sickn33/antigravity-awesome-skills |
+| antigravity-awesome-skills | sickn33 | 39076 | 289.45 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/sickn33/antigravity-awesome-skills |
 | ToolJet | ToolJet | 37946 | 20.12 | 93 | AI Agent Framework | 69 | prototype pattern | https://github.com/ToolJet/ToolJet |
 | langgraph | langchain-ai | 33304 | 32.52 | 94 | Agentic Enterprise | 69 | prototype pattern | https://github.com/langchain-ai/langgraph |
 | FastGPT | labring | 28192 | 23.67 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/labring/FastGPT |
@@ -87,22 +87,22 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 | MaxKB | 1Panel-dev | 21092 | 21.35 | 93 | Agentic Enterprise | 69 | prototype pattern | https://github.com/1Panel-dev/MaxKB |
 | open-multi-agent | open-multi-agent | 6280 | 106.44 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/open-multi-agent/open-multi-agent |
 | coze-loop | coze-dev | 5474 | 16.15 | 93 | AI Infrastructure | 69 | prototype pattern | https://github.com/coze-dev/coze-loop |
-| llama_index | run-llama | 49748 | 38.15 | 94 | AI Agent Framework | 63 | clone and test | https://github.com/run-llama/llama_index |
+| llama_index | run-llama | 49749 | 38.15 | 94 | AI Agent Framework | 63 | clone and test | https://github.com/run-llama/llama_index |
 | WeKnora | Tencent | 15740 | 50.61 | 92 | AI Infrastructure | 63 | clone and test | https://github.com/Tencent/WeKnora |
 | claude-code | anthropics | 127546 | 276.67 | 94 | AI Agent Framework | 63 | clone and test | https://github.com/anthropics/claude-code |
 | wanman | chekusu | 606 | 16.38 | 94 | AI Agent Framework | 61 | clone and test | https://github.com/chekusu/wanman |
 | ProductFlow | yuqie6 | 174 | 4.70 | 62 | AI Commerce | 61 | clone and test | https://github.com/yuqie6/ProductFlow |
 | skales | skalesapp | 1078 | 13.15 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/skalesapp/skales |
-| n8n | n8n-io | 190176 | 75.08 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/n8n-io/n8n |
+| n8n | n8n-io | 190177 | 75.08 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/n8n-io/n8n |
 | airflow | apache | 45588 | 11.22 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/apache/airflow |
 | recommenders | recommenders-team | 21719 | 7.73 | 80 | AI Commerce | 59 | clone and test | https://github.com/recommenders-team/recommenders |
-| Memori | MemoriLabs | 15013 | 48.59 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/MemoriLabs/Memori |
+| Memori | MemoriLabs | 15015 | 48.59 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/MemoriLabs/Memori |
 | yournextstore | yournextstore | 5425 | 8.19 | 82 | AI Commerce | 59 | clone and test | https://github.com/yournextstore/yournextstore |
 | Vibe-Trading | HKUDS | 8953 | 154.36 | 93 | AI Agent Framework | 57 | clone and test | https://github.com/HKUDS/Vibe-Trading |
 | QuantDinger | brokermr810 | 6891 | 45.34 | 93 | AI Agent Framework | 57 | clone and test | https://github.com/brokermr810/QuantDinger |
 | ClawTeam-OpenClaw | win4r | 1381 | 19.18 | 93 | AI Agent Framework | 54 | clone and test | https://github.com/win4r/ClawTeam-OpenClaw |
 | AdStrike | capture0x | 204 | 10.74 | 93 | AI Agent Framework | 53 | clone and test | https://github.com/capture0x/AdStrike |
-| LibreChat | danny-avila | 37640 | 31.31 | 93 | AI Agent Framework | 53 | clone and test | https://github.com/danny-avila/LibreChat |
+| LibreChat | danny-avila | 37641 | 31.32 | 93 | AI Agent Framework | 53 | clone and test | https://github.com/danny-avila/LibreChat |
 | ai | vercel | 24538 | 22.27 | 93 | AI Agent Framework | 53 | clone and test | https://github.com/vercel/ai |
 | eliza | elizaOS | 18470 | 26.81 | 93 | AI Agent Framework | 53 | clone and test | https://github.com/elizaOS/eliza |
 | OpenMAIC | THU-MAIC | 18080 | 228.86 | 93 | AI Agent Framework | 51 | clone and test | https://github.com/THU-MAIC/OpenMAIC |
@@ -779,12 +779,12 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - URL: https://github.com/BlazeUp-AI/Observal
 - Author: BlazeUp-AI
 - Language: Python
-- Stars: 1670
+- Stars: 1672
 - Forks: 278
 - Age days: 60
 - Days since push: 0
-- Stars/day: 27.83
-- Fork ratio: 0.1665
+- Stars/day: 27.87
+- Fork ratio: 0.1663
 - Momentum score: 96/100
 - Maturity level: scaling
 - Function category: AI Infrastructure
@@ -794,7 +794,7 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Strategic score: 73/100
 - Recommended action: prototype pattern
 - Description: Observal is a self hosted Docker Hub for human-in-the-loop agents with built in observability and AI insights
-- Repository review: Scaling project with 27.8 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
+- Repository review: Scaling project with 27.9 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agents, claude-code, cli-tool, cursor, evaluation, gemini-cli, kiro, large-language-models, llm, llm-evaluation, llm-observability, llmops, monitoring, observability, open-source, playground, self-hosted
 
 #### Modules
@@ -1042,11 +1042,11 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - URL: https://github.com/sickn33/antigravity-awesome-skills
 - Author: sickn33
 - Language: Python
-- Stars: 39075
+- Stars: 39076
 - Forks: 6355
 - Age days: 135
 - Days since push: 0
-- Stars/day: 289.44
+- Stars/day: 289.45
 - Fork ratio: 0.1626
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
@@ -1057,7 +1057,7 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Strategic score: 69/100
 - Recommended action: prototype pattern
 - Description: Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.
-- Repository review: Ecosystem Leader project with 289.4 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
+- Repository review: Ecosystem Leader project with 289.5 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent-skills, agentic-skills, ai-agent-skills, ai-agents, ai-coding, ai-workflows, antigravity, antigravity-skills, claude-code, claude-code-skills, codex-cli, codex-skills, cursor, cursor-skills, developer-tools, gemini-cli, gemini-skills, kiro, mcp, skill-library
 
 #### Modules
@@ -1172,11 +1172,11 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Author: labring
 - Language: TypeScript
 - Stars: 28192
-- Forks: 7115
+- Forks: 7114
 - Age days: 1191
 - Days since push: 0
 - Stars/day: 23.67
-- Fork ratio: 0.2524
+- Fork ratio: 0.2523
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
@@ -1431,7 +1431,7 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - URL: https://github.com/run-llama/llama_index
 - Author: run-llama
 - Language: Python
-- Stars: 49748
+- Stars: 49749
 - Forks: 7477
 - Age days: 1304
 - Days since push: 1
@@ -1688,7 +1688,7 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - URL: https://github.com/n8n-io/n8n
 - Author: n8n-io
 - Language: TypeScript
-- Stars: 190176
+- Stars: 190177
 - Forks: 58122
 - Age days: 2533
 - Days since push: 0
@@ -1811,12 +1811,12 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - URL: https://github.com/MemoriLabs/Memori
 - Author: MemoriLabs
 - Language: Python
-- Stars: 15013
-- Forks: 2434
+- Stars: 15015
+- Forks: 2435
 - Age days: 309
 - Days since push: 0
 - Stars/day: 48.59
-- Fork ratio: 0.1621
+- Fork ratio: 0.1622
 - Momentum score: 93/100
 - Maturity level: established
 - Function category: AI Agent Framework
@@ -2062,11 +2062,11 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - URL: https://github.com/danny-avila/LibreChat
 - Author: danny-avila
 - Language: TypeScript
-- Stars: 37640
+- Stars: 37641
 - Forks: 7748
 - Age days: 1202
 - Days since push: 0
-- Stars/day: 31.31
+- Stars/day: 31.32
 - Fork ratio: 0.2058
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
