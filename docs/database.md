@@ -21,6 +21,8 @@ One row per repository per report date.
 - `full_name`, `snapshot_date`.
 - `stars`, `forks`.
 - `category`, `relevance`, `commerce_score`, `enterprise_score`, `strategic_score`, `action_level`.
+- `age_days`, `days_since_push`, `stars_per_day`, `fork_ratio`, `momentum_score`, `maturity_level`.
+- `repository_review`: generated review/commentary for why the repository matters and how urgently to inspect it.
 - `modules_json`, `scenarios_json`.
 - `leap_commerce`, `leap_enterprise`.
 
@@ -47,6 +49,7 @@ One row per repository per report date for follow-up tracking.
 ```text
 GitHub API or fixture
   -> normalize repository metadata
+  -> compute 90-day trend and repository review dimensions
   -> upsert repositories
   -> upsert repo_snapshots
   -> upsert leap_notes

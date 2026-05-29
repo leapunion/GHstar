@@ -1,13 +1,13 @@
 # GHstar
 
-Daily GitHub Top Star reports for AI agents, Agentic Enterprise, AI commerce, and AI infrastructure.
+Daily 90-day GitHub Top Star Radar reports for AI agents, Agentic Enterprise, AI commerce, and AI infrastructure.
 
 ## Automation
 
 The daily workflow is defined in `.github/workflows/daily-report.yml`.
 
 - Runs every day at 13:15 UTC and can also be started manually with `workflow_dispatch`.
-- Executes `python scripts/generate_report.py`.
+- Executes `python scripts/generate_report.py --days 90 --limit 50`.
 - Commits generated report files under `reports/` and `public/`.
 - Deploys `public/` to Vercel when Vercel secrets are configured.
 
@@ -50,10 +50,10 @@ python3 scripts/generate_report.py --fixture fixtures/github_repositories.json -
 Generate a live report from GitHub:
 
 ```bash
-GH_TOKEN="$GHSTAR_GITHUB_TOKEN" python3 scripts/generate_report.py --days 7 --limit 24
+GH_TOKEN="$GHSTAR_GITHUB_TOKEN" python3 scripts/generate_report.py --days 90 --limit 50
 ```
 
-The generator writes repository metadata, daily snapshots, report records, and Leap learning notes into `data/ghstar.sqlite` before rendering Markdown, HTML, and JSON outputs.
+The generator writes repository metadata, daily snapshots, trend analytics, repository reviews, report records, and Leap learning notes into `data/ghstar.sqlite` before rendering Markdown, HTML, and JSON outputs.
 
 Database details are documented in `docs/database.md`.
 

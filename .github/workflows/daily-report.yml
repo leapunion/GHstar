@@ -34,7 +34,7 @@ jobs:
         run: python scripts/run_smoke_test.py
 
       - name: Generate daily report
-        run: python scripts/generate_report.py
+        run: python scripts/generate_report.py --days 90 --limit 50
 
       - name: Commit generated report files
         id: commit

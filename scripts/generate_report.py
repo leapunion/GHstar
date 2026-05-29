@@ -101,6 +101,13 @@ class Repo:
     enterprise_score: int
     strategic_score: int
     action_level: str
+    age_days: int
+    days_since_push: int
+    stars_per_day: float
+    fork_ratio: float
+    momentum_score: int
+    maturity_level: str
+    repository_review: str
     leap_commerce: str
     leap_enterprise: str
 
@@ -172,7 +179,20 @@ def repo_forks(repo: dict[str, Any]) -> int:
     return int(repo.get("forks_count") or repo.get("forks") or 0)
 
 
-def classify(repo: dict[str, Any]) -> tuple[str, int]:
+def parse_github_date(value: str, fallback: date) -> date:
+    if not value:
+        return fallback
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).date()
+    except ValueError:
+        try:
+            return datetime.strptime(value[:10], "%Y-%m-%d").date()
+        except ValueError:
+            return fallback
+
+
+def classify(repo: dict[str, Any], report_date: date | None = None) -> tuple[str, int]:
+    as_of = report_date or date.today()
     text = words(repo)
     scores: dict[str, int] = {}
     for category, keywords in FOCUS_AREAS.items():
@@ -182,7 +202,7 @@ def classify(repo: dict[str, Any]) -> tuple[str, int]:
     base = scores[category]
     topic_bonus = min(len(repo.get("topics") or []), 6)
     star_bonus = min(repo_stars(repo) // 100, 10)
-    freshness_bonus = 3 if repo.get("pushed_at", "")[:10] >= (date.today() - timedelta(days=7)).isoformat() else 0
+    freshness_bonus = 3 if repo.get("pushed_at", "")[:10] >= (as_of - timedelta(days=7)).isoformat() else 0
     return category, base * 10 + topic_bonus + star_bonus + freshness_bonus
 
 
@@ -235,7 +255,14 @@ def leap_notes(repo: dict[str, Any], category: str, modules: list[str]) -> tuple
     return commerce, enterprise
 
 
-def rubric_scores(repo: dict[str, Any], category: str, modules: list[str], relevance: int) -> tuple[int, int, int, str]:
+def rubric_scores(
+    repo: dict[str, Any],
+    category: str,
+    modules: list[str],
+    relevance: int,
+    report_date: date | None = None,
+) -> tuple[int, int, int, str]:
+    as_of = report_date or date.today()
     text = words(repo)
     module_text = " ".join(modules).lower()
     commerce_hits = [
@@ -259,7 +286,7 @@ def rubric_scores(repo: dict[str, Any], category: str, modules: list[str], relev
     if category == "Agentic Enterprise":
         enterprise_score = min(15, enterprise_score + 3)
     maturity = min(repo_stars(repo) // 250, 8)
-    freshness = 4 if repo.get("pushed_at", "")[:10] >= (date.today() - timedelta(days=14)).isoformat() else 0
+    freshness = 4 if repo.get("pushed_at", "")[:10] >= (as_of - timedelta(days=14)).isoformat() else 0
     strategic_score = min(100, relevance + commerce_score * 2 + enterprise_score * 2 + maturity + freshness)
     if strategic_score >= 80:
         action = "strategic watch"
@@ -276,18 +303,66 @@ def rubric_scores(repo: dict[str, Any], category: str, modules: list[str], relev
     return commerce_score, enterprise_score, strategic_score, action
 
 
-def normalize_repo(item: dict[str, Any]) -> Repo:
-    category, relevance = classify(item)
+def trend_metrics(
+    item: dict[str, Any],
+    report_date: date,
+    relevance: int,
+    strategic_score: int,
+) -> tuple[int, int, float, float, int, str, str]:
+    created_date = parse_github_date(item.get("created_at") or "", report_date)
+    pushed_date = parse_github_date(item.get("pushed_at") or "", created_date)
+    age_days = max(1, (report_date - created_date).days)
+    days_since_push = max(0, (report_date - pushed_date).days)
+    stars = repo_stars(item)
+    forks = repo_forks(item)
+    stars_per_day = stars / age_days
+    fork_ratio = forks / stars if stars else 0.0
+    freshness_score = max(0, 30 - min(days_since_push, 30))
+    velocity_score = min(40, int(stars_per_day * 4))
+    adoption_score = min(15, int(fork_ratio * 100))
+    fit_score = min(15, int((relevance + strategic_score) / 10))
+    momentum_score = min(100, velocity_score + freshness_score + adoption_score + fit_score)
+
+    if stars >= 20000 or forks >= 3000:
+        maturity_level = "ecosystem leader"
+    elif stars >= 5000 or forks >= 800:
+        maturity_level = "established"
+    elif stars >= 1000 or stars_per_day >= 20:
+        maturity_level = "scaling"
+    else:
+        maturity_level = "emerging"
+
+    if days_since_push <= 7:
+        activity = "actively maintained"
+    elif days_since_push <= 30:
+        activity = "recently active"
+    else:
+        activity = "needs maintenance review"
+    repository_review = (
+        f"{maturity_level.title()} project with {stars_per_day:.1f} stars/day, "
+        f"{activity}, and {momentum_score}/100 momentum. "
+        f"Review first for reusable modules if action is '{item.get('_action_level', 'monitor')}'."
+    )
+    return age_days, days_since_push, stars_per_day, fork_ratio, momentum_score, maturity_level, repository_review
+
+
+def normalize_repo(item: dict[str, Any], report_date: date | None = None) -> Repo:
+    as_of = report_date or date.today()
+    category, relevance = classify(item, as_of)
     modules = infer_modules(item, category)
     scenarios = infer_scenarios(item, category)
     commerce, enterprise = leap_notes(item, category, modules)
-    commerce_score, enterprise_score, strategic_score, action_level = rubric_scores(item, category, modules, relevance)
+    commerce_score, enterprise_score, strategic_score, action_level = rubric_scores(item, category, modules, relevance, as_of)
+    item["_action_level"] = action_level
+    age_days, days_since_push, stars_per_day, fork_ratio, momentum_score, maturity_level, repository_review = trend_metrics(
+        item, as_of, relevance, strategic_score
+    )
     return Repo(
         name=item.get("name") or "",
         full_name=item.get("full_name") or "",
         owner=repo_owner(item),
         url=repo_url(item),
-        description=item.get("description") or "No description provided.",
+        description=(item.get("description") or "No description provided.").strip(),
         language=item.get("language") or "Unknown",
         stars=repo_stars(item),
         forks=repo_forks(item),
@@ -303,13 +378,21 @@ def normalize_repo(item: dict[str, Any]) -> Repo:
         enterprise_score=enterprise_score,
         strategic_score=strategic_score,
         action_level=action_level,
+        age_days=age_days,
+        days_since_push=days_since_push,
+        stars_per_day=round(stars_per_day, 2),
+        fork_ratio=round(fork_ratio, 4),
+        momentum_score=momentum_score,
+        maturity_level=maturity_level,
+        repository_review=repository_review,
         leap_commerce=commerce,
         leap_enterprise=enterprise,
     )
 
 
-def collect(days: int, limit: int, token: str | None) -> list[Repo]:
-    since = date.today() - timedelta(days=days)
+def collect(days: int, limit: int, token: str | None, report_date: date | None = None) -> list[Repo]:
+    as_of = report_date or date.today()
+    since = as_of - timedelta(days=days)
     seen: dict[str, dict[str, Any]] = {}
     for query in SEARCH_QUERIES:
         for mode in ("created", "active"):
@@ -321,9 +404,31 @@ def collect(days: int, limit: int, token: str | None) -> list[Repo]:
                 if current is None or item.get("stargazers_count", 0) > current.get("stargazers_count", 0):
                     item["_radar_mode"] = mode
                     seen[full_name] = item
-    repos = [normalize_repo(item) for item in seen.values()]
-    repos.sort(key=lambda repo: (repo.relevance, repo.stars), reverse=True)
-    return repos[:limit]
+    repos = [normalize_repo(item, as_of) for item in seen.values()]
+    repos.sort(key=lambda repo: (repo.momentum_score, repo.relevance, repo.stars), reverse=True)
+    return balanced_selection(repos, limit)
+
+
+def balanced_selection(repos: list[Repo], limit: int) -> list[Repo]:
+    if limit <= 0:
+        return []
+    category_floor = max(1, min(5, limit // max(1, len(FOCUS_AREAS))))
+    selected: list[Repo] = []
+    selected_names: set[str] = set()
+    for category in FOCUS_AREAS:
+        category_repos = [repo for repo in repos if repo.category == category]
+        for repo in category_repos[:category_floor]:
+            if repo.full_name not in selected_names:
+                selected.append(repo)
+                selected_names.add(repo.full_name)
+    for repo in repos:
+        if len(selected) >= limit:
+            break
+        if repo.full_name not in selected_names:
+            selected.append(repo)
+            selected_names.add(repo.full_name)
+    selected.sort(key=lambda repo: (repo.strategic_score, repo.momentum_score, repo.relevance, repo.stars), reverse=True)
+    return selected[:limit]
 
 
 def init_db(db_path: Path) -> sqlite3.Connection:
@@ -361,6 +466,13 @@ def init_db(db_path: Path) -> sqlite3.Connection:
           enterprise_score INTEGER NOT NULL,
           strategic_score INTEGER NOT NULL,
           action_level TEXT NOT NULL,
+          age_days INTEGER NOT NULL DEFAULT 0,
+          days_since_push INTEGER NOT NULL DEFAULT 0,
+          stars_per_day REAL NOT NULL DEFAULT 0,
+          fork_ratio REAL NOT NULL DEFAULT 0,
+          momentum_score INTEGER NOT NULL DEFAULT 0,
+          maturity_level TEXT NOT NULL DEFAULT '',
+          repository_review TEXT NOT NULL DEFAULT '',
           modules_json TEXT NOT NULL,
           scenarios_json TEXT NOT NULL,
           leap_commerce TEXT NOT NULL,
@@ -396,11 +508,31 @@ def init_db(db_path: Path) -> sqlite3.Connection:
           ON repo_snapshots(full_name, snapshot_date);
         """
     )
+    ensure_snapshot_columns(conn)
     return conn
+
+
+def ensure_snapshot_columns(conn: sqlite3.Connection) -> None:
+    columns = {row["name"] for row in conn.execute("PRAGMA table_info(repo_snapshots)").fetchall()}
+    migrations = {
+        "age_days": "ALTER TABLE repo_snapshots ADD COLUMN age_days INTEGER NOT NULL DEFAULT 0",
+        "days_since_push": "ALTER TABLE repo_snapshots ADD COLUMN days_since_push INTEGER NOT NULL DEFAULT 0",
+        "stars_per_day": "ALTER TABLE repo_snapshots ADD COLUMN stars_per_day REAL NOT NULL DEFAULT 0",
+        "fork_ratio": "ALTER TABLE repo_snapshots ADD COLUMN fork_ratio REAL NOT NULL DEFAULT 0",
+        "momentum_score": "ALTER TABLE repo_snapshots ADD COLUMN momentum_score INTEGER NOT NULL DEFAULT 0",
+        "maturity_level": "ALTER TABLE repo_snapshots ADD COLUMN maturity_level TEXT NOT NULL DEFAULT ''",
+        "repository_review": "ALTER TABLE repo_snapshots ADD COLUMN repository_review TEXT NOT NULL DEFAULT ''",
+    }
+    for column, statement in migrations.items():
+        if column not in columns:
+            conn.execute(statement)
+    conn.commit()
 
 
 def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -> None:
     today = report_date.isoformat()
+    conn.execute("DELETE FROM repo_snapshots WHERE snapshot_date = ?", (today,))
+    conn.execute("DELETE FROM leap_notes WHERE note_date = ?", (today,))
     for repo in repos:
         conn.execute(
             """
@@ -440,9 +572,11 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
             INSERT INTO repo_snapshots (
               full_name, snapshot_date, stars, forks, category, relevance,
               commerce_score, enterprise_score, strategic_score, action_level,
-              modules_json, scenarios_json, leap_commerce, leap_enterprise
+              age_days, days_since_push, stars_per_day, fork_ratio, momentum_score,
+              maturity_level, repository_review, modules_json, scenarios_json,
+              leap_commerce, leap_enterprise
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(full_name, snapshot_date) DO UPDATE SET
               stars = excluded.stars,
               forks = excluded.forks,
@@ -452,6 +586,13 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
               enterprise_score = excluded.enterprise_score,
               strategic_score = excluded.strategic_score,
               action_level = excluded.action_level,
+              age_days = excluded.age_days,
+              days_since_push = excluded.days_since_push,
+              stars_per_day = excluded.stars_per_day,
+              fork_ratio = excluded.fork_ratio,
+              momentum_score = excluded.momentum_score,
+              maturity_level = excluded.maturity_level,
+              repository_review = excluded.repository_review,
               modules_json = excluded.modules_json,
               scenarios_json = excluded.scenarios_json,
               leap_commerce = excluded.leap_commerce,
@@ -468,6 +609,13 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
                 repo.enterprise_score,
                 repo.strategic_score,
                 repo.action_level,
+                repo.age_days,
+                repo.days_since_push,
+                repo.stars_per_day,
+                repo.fork_ratio,
+                repo.momentum_score,
+                repo.maturity_level,
+                repo.repository_review,
                 json.dumps(repo.modules, ensure_ascii=False),
                 json.dumps(repo.scenarios, ensure_ascii=False),
                 repo.leap_commerce,
@@ -497,6 +645,8 @@ def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -
           r.topics_json, r.created_at, r.updated_at, r.pushed_at,
           s.stars, s.forks, s.category, s.relevance, s.commerce_score,
           s.enterprise_score, s.strategic_score, s.action_level,
+          s.age_days, s.days_since_push, s.stars_per_day, s.fork_ratio,
+          s.momentum_score, s.maturity_level, s.repository_review,
           s.modules_json, s.scenarios_json, s.leap_commerce, s.leap_enterprise
         FROM repo_snapshots s
         JOIN repositories r ON r.full_name = s.full_name
@@ -528,6 +678,13 @@ def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -
             enterprise_score=row["enterprise_score"],
             strategic_score=row["strategic_score"],
             action_level=row["action_level"],
+            age_days=row["age_days"],
+            days_since_push=row["days_since_push"],
+            stars_per_day=row["stars_per_day"],
+            fork_ratio=row["fork_ratio"],
+            momentum_score=row["momentum_score"],
+            maturity_level=row["maturity_level"],
+            repository_review=row["repository_review"],
             leap_commerce=row["leap_commerce"],
             leap_enterprise=row["leap_enterprise"],
         )
@@ -578,26 +735,84 @@ def md_escape(text: str) -> str:
     return text.replace("|", "\\|").replace("\n", " ")
 
 
-def render_markdown(repos: list[Repo], report_date: date) -> str:
+def distribution(repos: list[Repo], attr: str) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for repo in repos:
+        key = str(getattr(repo, attr) or "Unknown")
+        counts[key] = counts.get(key, 0) + 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
+
+
+def top_languages(repos: list[Repo], limit: int = 6) -> dict[str, int]:
+    return dict(list(distribution(repos, "language").items())[:limit])
+
+
+def action_counts(repos: list[Repo]) -> dict[str, int]:
+    return distribution(repos, "action_level")
+
+
+def active_counts(repos: list[Repo]) -> tuple[int, int]:
+    active_7 = sum(1 for repo in repos if repo.days_since_push <= 7)
+    active_30 = sum(1 for repo in repos if repo.days_since_push <= 30)
+    return active_7, active_30
+
+
+def render_count_list(counts: dict[str, int]) -> list[str]:
+    return [f"- {key}: {value}" for key, value in counts.items()] or ["- N/A"]
+
+
+def render_markdown(repos: list[Repo], report_date: date, lookback_days: int = 90) -> str:
+    active_7, active_30 = active_counts(repos)
+    top_momentum = sorted(repos, key=lambda repo: repo.momentum_score, reverse=True)[:5]
     lines = [
-        f"# GitHub Top Star AI & Agent Report - {report_date.isoformat()}",
+        f"# GitHub Top Star AI & Agent 90-Day Radar - {report_date.isoformat()}",
         "",
         "Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas relevant to Leap Agent Commerce OS / Leap Agentic Enterprise OS.",
         "",
         "## Executive Summary",
         "",
         f"- Repositories reviewed: {len(repos)}",
+        f"- Lookback window: {lookback_days} days",
         f"- Top category: {repos[0].category if repos else 'N/A'}",
-        "- Method: GitHub Search API, recently created and recently active repositories, sorted by stars and Leap relevance.",
+        f"- Active in last 7 days: {active_7}",
+        f"- Active in last 30 days: {active_30}",
+        "- Method: GitHub Search API, recently created and recently active repositories, sorted by momentum, stars, and Leap relevance.",
+        "",
+        "## 90-Day Trend Signals",
+        "",
+        "### Category Distribution",
+        "",
+        *render_count_list(category_counts(repos)),
+        "",
+        "### Language Distribution",
+        "",
+        *render_count_list(top_languages(repos)),
+        "",
+        "### Maturity Distribution",
+        "",
+        *render_count_list(distribution(repos, "maturity_level")),
+        "",
+        "### Action Distribution",
+        "",
+        *render_count_list(action_counts(repos)),
+        "",
+        "### Top Momentum Repositories",
+        "",
+        "| Repository | Momentum | Stars/day | Days Since Push | Review |",
+        "| --- | ---: | ---: | ---: | --- |",
+        *[
+            f"| {md_escape(repo.full_name)} | {repo.momentum_score} | {repo.stars_per_day:.2f} | {repo.days_since_push} | {md_escape(repo.repository_review)} |"
+            for repo in top_momentum
+        ],
         "",
         "## Repository Table",
         "",
-        "| Repository | Author | Stars | Category | Strategic | Action | URL |",
-        "| --- | --- | ---: | --- | ---: | --- | --- |",
+        "| Repository | Author | Stars | Stars/day | Momentum | Category | Strategic | Action | URL |",
+        "| --- | --- | ---: | ---: | ---: | --- | ---: | --- | --- |",
     ]
     for repo in repos:
         lines.append(
-            f"| {md_escape(repo.name)} | {md_escape(repo.owner)} | {repo.stars} | {repo.category} | {repo.strategic_score} | {repo.action_level} | {repo.url} |"
+            f"| {md_escape(repo.name)} | {md_escape(repo.owner)} | {repo.stars} | {repo.stars_per_day:.2f} | {repo.momentum_score} | {repo.category} | {repo.strategic_score} | {repo.action_level} | {repo.url} |"
         )
     lines.extend(["", "## Detailed Notes", ""])
     for index, repo in enumerate(repos, 1):
@@ -610,6 +825,12 @@ def render_markdown(repos: list[Repo], report_date: date) -> str:
                 f"- Language: {repo.language}",
                 f"- Stars: {repo.stars}",
                 f"- Forks: {repo.forks}",
+                f"- Age days: {repo.age_days}",
+                f"- Days since push: {repo.days_since_push}",
+                f"- Stars/day: {repo.stars_per_day:.2f}",
+                f"- Fork ratio: {repo.fork_ratio:.4f}",
+                f"- Momentum score: {repo.momentum_score}/100",
+                f"- Maturity level: {repo.maturity_level}",
                 f"- Function category: {repo.category}",
                 f"- Relevance score: {repo.relevance}",
                 f"- Commerce score: {repo.commerce_score}/15",
@@ -617,6 +838,7 @@ def render_markdown(repos: list[Repo], report_date: date) -> str:
                 f"- Strategic score: {repo.strategic_score}/100",
                 f"- Recommended action: {repo.action_level}",
                 f"- Description: {repo.description}",
+                f"- Repository review: {repo.repository_review}",
                 f"- Topics: {', '.join(repo.topics) if repo.topics else 'N/A'}",
                 "",
                 "#### Modules",
@@ -652,10 +874,16 @@ def slug(text: str) -> str:
     return text or "repo"
 
 
-def render_html(repos: list[Repo], report_date: date) -> str:
+def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -> str:
     counts = category_counts(repos)
+    maturity_counts = distribution(repos, "maturity_level")
+    language_counts = top_languages(repos)
     max_count = max(counts.values() or [1])
+    max_maturity = max(maturity_counts.values() or [1])
+    max_language = max(language_counts.values() or [1])
+    active_7, active_30 = active_counts(repos)
     top = repos[:8]
+    top_momentum = sorted(repos, key=lambda repo: repo.momentum_score, reverse=True)[:8]
     data_json = html.escape(json.dumps([repo.__dict__ for repo in repos], ensure_ascii=False))
     category_cards = "\n".join(
         f"""
@@ -667,8 +895,29 @@ def render_html(repos: list[Repo], report_date: date) -> str:
         """
         for category, count in counts.items()
     )
+    maturity_cards = "\n".join(
+        f"""
+        <article class="metric">
+          <span>{html.escape(level.title())}</span>
+          <strong>{count}</strong>
+          <div class="bar"><i style="width:{(count / max_maturity * 100) if max_maturity else 0:.1f}%"></i></div>
+        </article>
+        """
+        for level, count in maturity_counts.items()
+    )
+    language_cards = "\n".join(
+        f"""
+        <div class="score-row compact">
+          <span>{html.escape(language)}</span>
+          <b>{count}</b>
+          <i style="width:{count / max_language * 100:.1f}%"></i>
+        </div>
+        """
+        for language, count in language_counts.items()
+    )
     repo_cards = "\n".join(render_repo_card(repo, index) for index, repo in enumerate(top, 1))
     max_strategic = max([repo.strategic_score for repo in repos] or [1])
+    max_momentum = max([repo.momentum_score for repo in repos] or [1])
     score_rows = "\n".join(
         f"""
         <div class="score-row">
@@ -679,12 +928,22 @@ def render_html(repos: list[Repo], report_date: date) -> str:
         """
         for repo in top
     )
+    momentum_rows = "\n".join(
+        f"""
+        <div class="score-row">
+          <span>{html.escape(repo.full_name)} <em>{repo.stars_per_day:.1f} stars/day · {repo.days_since_push}d since push</em></span>
+          <b>{repo.momentum_score}</b>
+          <i style="width:{repo.momentum_score / max_momentum * 100:.1f}%"></i>
+        </div>
+        """
+        for repo in top_momentum
+    )
     return f"""<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GHstar AI & Agent Report - {report_date.isoformat()}</title>
+    <title>GHstar AI & Agent 90-Day Radar - {report_date.isoformat()}</title>
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body>
@@ -692,7 +951,7 @@ def render_html(repos: list[Repo], report_date: date) -> str:
       <div>
         <p class="eyebrow">LeapUnion Daily GitHub Intelligence</p>
         <h1>AI, Agent, Commerce, and Enterprise Top Star Radar</h1>
-        <p class="sub">Daily repository digest with platform learning for Leap Agent Commerce OS and Leap Agentic Enterprise OS.</p>
+        <p class="sub">{lookback_days}-day repository radar with trend signals, repository reviews, and platform learning for Leap Agent Commerce OS and Leap Agentic Enterprise OS.</p>
       </div>
       <time>{report_date.isoformat()}</time>
     </header>
@@ -704,7 +963,43 @@ def render_html(repos: list[Repo], report_date: date) -> str:
           <strong>{len(repos)}</strong>
           <div class="bar"><i style="width:100%"></i></div>
         </article>
+        <article class="metric">
+          <span>Lookback Days</span>
+          <strong>{lookback_days}</strong>
+          <div class="bar"><i style="width:100%"></i></div>
+        </article>
+        <article class="metric">
+          <span>Active in 7 Days</span>
+          <strong>{active_7}</strong>
+          <div class="bar"><i style="width:{(active_7 / len(repos) * 100) if repos else 0:.1f}%"></i></div>
+        </article>
+        <article class="metric">
+          <span>Active in 30 Days</span>
+          <strong>{active_30}</strong>
+          <div class="bar"><i style="width:{(active_30 / len(repos) * 100) if repos else 0:.1f}%"></i></div>
+        </article>
         {category_cards}
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>90-Day Trend Signals</h2>
+          <p>Momentum combines star velocity, recent pushes, fork ratio, and Leap strategic fit.</p>
+        </div>
+        <div class="trend-grid">
+          <div>
+            <h3>Momentum Leaders</h3>
+            <div class="score-chart">{momentum_rows}</div>
+          </div>
+          <div>
+            <h3>Language Mix</h3>
+            <div class="score-chart">{language_cards}</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        {maturity_cards}
       </section>
 
       <section class="panel">
@@ -784,6 +1079,10 @@ def render_repo_card(repo: Repo, index: int) -> str:
       <p>{html.escape(repo.description)}</p>
       <div class="stats">
         <span>{repo.stars} stars</span>
+        <span>{repo.stars_per_day:.1f} stars/day</span>
+        <span>{repo.momentum_score} momentum</span>
+        <span>{html.escape(repo.maturity_level)}</span>
+        <span>{repo.days_since_push}d since push</span>
         <span>{html.escape(repo.language)}</span>
         <span>{repo.forks} forks</span>
         <span>{repo.strategic_score} strategic</span>
@@ -796,6 +1095,8 @@ def render_repo_card(repo: Repo, index: int) -> str:
       <ul>{module_items}</ul>
       <h4>Application Scenarios</h4>
       <ul>{scenario_items}</ul>
+      <h4>Repository Review</h4>
+      <p>{html.escape(repo.repository_review)}</p>
       <h4>Leap Commerce OS</h4>
       <p>{html.escape(repo.leap_commerce)}</p>
       <h4>Leap Enterprise OS</h4>
@@ -805,13 +1106,18 @@ def render_repo_card(repo: Repo, index: int) -> str:
     """
 
 
-def write_outputs(repos: list[Repo], report_date: date, history: list[dict[str, Any]] | None = None) -> None:
+def write_outputs(
+    repos: list[Repo],
+    report_date: date,
+    history: list[dict[str, Any]] | None = None,
+    lookback_days: int = 90,
+) -> None:
     REPORTS.mkdir(parents=True, exist_ok=True)
     PUBLIC.mkdir(parents=True, exist_ok=True)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    md = render_markdown(repos, report_date)
-    html_doc = render_html(repos, report_date)
+    md = "\n".join(line.rstrip() for line in render_markdown(repos, report_date, lookback_days).splitlines()) + "\n"
+    html_doc = "\n".join(line.rstrip() for line in render_html(repos, report_date, lookback_days).splitlines()) + "\n"
     data = [repo.__dict__ for repo in repos]
 
     (REPORTS / f"{report_date.isoformat()}.md").write_text(md, encoding="utf-8")
@@ -824,7 +1130,7 @@ def write_outputs(repos: list[Repo], report_date: date, history: list[dict[str, 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate LeapUnion GHstar daily report.")
-    parser.add_argument("--days", type=int, default=7, help="Lookback window for newly created repositories.")
+    parser.add_argument("--days", type=int, default=90, help="Lookback window for newly created and recently active repositories.")
     parser.add_argument("--limit", type=int, default=24, help="Maximum repositories to include.")
     parser.add_argument("--date", default=date.today().isoformat(), help="Report date YYYY-MM-DD.")
     parser.add_argument("--fixture", help="Use local JSON fixture instead of GitHub API.")
@@ -840,23 +1146,23 @@ def main() -> int:
         with init_db(Path(args.db)) as conn:
             repos = load_report_repos(conn, report_date, args.limit)
             save_daily_report_record(conn, report_date, len(repos))
-            write_outputs(repos, report_date, history_summary(conn))
+            write_outputs(repos, report_date, history_summary(conn), args.days)
         print(json.dumps({"date": report_date.isoformat(), "repos": len(repos)}, indent=2))
         return 0
     if args.fixture:
         fixture_data = json.loads(Path(args.fixture).read_text(encoding="utf-8"))
-        repos = [normalize_repo(item) for item in fixture_data][: args.limit]
+        repos = [normalize_repo(item, report_date) for item in fixture_data][: args.limit]
     else:
         token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
-        repos = collect(args.days, args.limit, token)
+        repos = collect(args.days, args.limit, token, report_date)
     if args.no_db:
-        write_outputs(repos, report_date)
+        write_outputs(repos, report_date, lookback_days=args.days)
     else:
         with init_db(Path(args.db)) as conn:
             save_to_db(conn, repos, report_date)
             repos = load_report_repos(conn, report_date, args.limit)
             save_daily_report_record(conn, report_date, len(repos))
-            write_outputs(repos, report_date, history_summary(conn))
+            write_outputs(repos, report_date, history_summary(conn), args.days)
     print(json.dumps({"date": report_date.isoformat(), "repos": len(repos)}, indent=2))
     return 0
 
