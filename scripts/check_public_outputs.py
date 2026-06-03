@@ -31,7 +31,7 @@ def require_file(path: Path) -> str:
 
 
 def check_local_outputs() -> None:
-    html = require_file(PUBLIC / "index.html")
+    html = require_file(PUBLIC / "report.html")
     markdown = require_file(PUBLIC / "latest.md")
     latest = json.loads(require_file(DATA / "latest.json"))
     history = json.loads(require_file(DATA / "history.json"))
@@ -39,9 +39,9 @@ def check_local_outputs() -> None:
     trends = json.loads(require_file(DATA / "trends.json"))
 
     if "<title>GHstar AI & Agent 90-Day Radar" not in html:
-        raise ValueError("index.html title is missing")
+        raise ValueError("report.html title is missing")
     if "Follow-Up Backlog" not in html or "90-Day Trend Signals" not in html:
-        raise ValueError("index.html is missing expected dashboard sections")
+        raise ValueError("report.html is missing expected dashboard sections")
     if "Follow-Up Backlog" not in markdown:
         raise ValueError("latest.md is missing backlog section")
     if not isinstance(latest, list) or not latest:
@@ -55,6 +55,56 @@ def check_local_outputs() -> None:
         raise ValueError("backlog.json must be a list")
     if "action_distribution" not in trends or "watchlist_flags" not in trends:
         raise ValueError("trends.json is missing trend summaries")
+
+
+def check_site_outputs() -> None:
+    """Validate SPA data outputs under public/data/site/."""
+    site = PUBLIC / "data" / "site"
+
+    # Validate index.json
+    index_text = require_file(site / "index.json")
+    index = json.loads(index_text)
+
+    if not isinstance(index.get("schema"), int):
+        raise ValueError("index.json missing or invalid schema (must be int)")
+
+    dates = index.get("dates")
+    if not isinstance(dates, list) or not dates:
+        raise ValueError("index.json dates must be a non-empty list")
+
+    facets = index.get("facets")
+    if not isinstance(facets, dict):
+        raise ValueError("index.json facets must be a dict")
+
+    required_facet_keys = {"category", "subcategory", "language", "action_level"}
+    if not required_facet_keys.issubset(facets.keys()):
+        raise ValueError(
+            f"index.json facets missing required keys: {required_facet_keys - set(facets.keys())}"
+        )
+
+    # Validate corpus.json
+    corpus_text = require_file(site / "corpus.json")
+    corpus = json.loads(corpus_text)
+
+    if not isinstance(corpus, list) or not corpus:
+        raise ValueError("corpus.json must be a non-empty array")
+
+    for i, entry in enumerate(corpus):
+        for key in ["full_name", "category", "stars", "history"]:
+            if key not in entry:
+                raise ValueError(f"corpus.json entry {i} missing key: {key}")
+        if not isinstance(entry.get("history"), list):
+            raise ValueError(f"corpus.json entry {i} history must be a list")
+
+    # Validate snapshots for each date
+    snapshots_dir = site / "snapshots"
+    for date in dates:
+        snapshot_file = snapshots_dir / f"{date}.json"
+        snapshot_text = require_file(snapshot_file)
+        snapshot = json.loads(snapshot_text)
+
+        if not isinstance(snapshot, list) or not snapshot:
+            raise ValueError(f"snapshots/{date}.json must be a non-empty array")
 
 
 def check_remote_outputs(base_url: str) -> None:
@@ -73,6 +123,7 @@ def check_remote_outputs(base_url: str) -> None:
 def main() -> int:
     try:
         check_local_outputs()
+        check_site_outputs()
         public_url = os.environ.get("GHSTAR_PUBLIC_URL", "").strip()
         if public_url:
             check_remote_outputs(public_url)

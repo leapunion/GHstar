@@ -804,7 +804,7 @@ def save_daily_report_record(conn: sqlite3.Connection, report_date: date, repo_c
             report_date.isoformat(),
             repo_count,
             f"reports/{report_date.isoformat()}.md",
-            "public/index.html",
+            "public/report.html",
             "public/data/latest.json",
             datetime.now(timezone.utc).isoformat(),
         ),
@@ -1418,7 +1418,7 @@ def write_outputs(
     trends = trend_payload(repos, report_date, history_payload)
 
     (REPORTS / f"{report_date.isoformat()}.md").write_text(md, encoding="utf-8")
-    (PUBLIC / "index.html").write_text(html_doc, encoding="utf-8")
+    (PUBLIC / "report.html").write_text(html_doc, encoding="utf-8")
     (PUBLIC / "latest.md").write_text(md, encoding="utf-8")
     (DATA_DIR / "latest.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (DATA_DIR / "backlog.json").write_text(json.dumps(backlog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -48,7 +48,7 @@ class GenerateReportSmokeTest(unittest.TestCase):
             self.assertEqual(json.loads(result.stdout), {"date": REPORT_DATE, "repos": 2})
 
             markdown_path = tmp_root / "reports" / f"{REPORT_DATE}.md"
-            html_path = tmp_root / "public" / "index.html"
+            html_path = tmp_root / "public" / "report.html"
             latest_md_path = tmp_root / "public" / "latest.md"
             data_path = tmp_root / "public" / "data" / "latest.json"
             history_path = tmp_root / "public" / "data" / "history.json"
