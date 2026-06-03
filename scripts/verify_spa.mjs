@@ -62,12 +62,13 @@ async function launchChrome() {
   const profile = await mkdtemp(join(tmpdir(), 'ghstar-chrome-'));
   const bin = findChrome();
   const proc = spawn(bin, ['--headless=new', '--disable-gpu', '--no-first-run',
-    '--no-default-browser-check', '--no-sandbox', '--remote-debugging-port=0',
+    '--no-default-browser-check', '--no-sandbox', '--disable-dev-shm-usage',
+    '--disable-software-rasterizer', '--remote-debugging-port=0',
     `--user-data-dir=${profile}`, '--window-size=1400,2200', 'about:blank'],
     { stdio: 'ignore' });
   // Chrome writes the chosen port to <profile>/DevToolsActivePort (line 1).
   const portFile = join(profile, 'DevToolsActivePort');
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 120; i++) {
     if (existsSync(portFile)) {
       const port = (await rf(portFile, 'utf8')).split('\n')[0].trim();
       if (port) return { proc, port: Number(port), bin };
