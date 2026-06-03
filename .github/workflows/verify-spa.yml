@@ -1,0 +1,44 @@
+name: Verify SPA
+
+on:
+  pull_request:
+    paths:
+      - "public/**"
+      - "scripts/export_site_data.py"
+      - "scripts/verify_spa.mjs"
+      - ".github/workflows/verify-spa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-spa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build site data API from committed history
+        run: python scripts/export_site_data.py
+
+      - name: Drive the SPA in headless Chrome and assert filter behavior
+        run: node scripts/verify_spa.mjs --serve public --shot spa-verify.png
+
+      - name: Upload verification screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spa-verify-screenshot
+          path: spa-verify.png
+          if-no-files-found: ignore

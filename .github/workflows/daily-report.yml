@@ -59,9 +59,9 @@ jobs:
           fi
 
       - name: Deploy to Vercel
-        if: env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != ''
+        if: github.ref == 'refs/heads/main' && env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != ''
         run: npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
 
       - name: Verify deployed public outputs
-        if: env.GHSTAR_PUBLIC_URL != ''
+        if: github.ref == 'refs/heads/main' && env.GHSTAR_PUBLIC_URL != ''
         run: python scripts/check_public_outputs.py
