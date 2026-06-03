@@ -15,6 +15,79 @@ services:
       - ./data:/app/data
     command: ["python", "scripts/generate_report.py", "--db", "/app/data/ghstar.sqlite"]
 
+  ghstar-agent:
+    build:
+      context: .
+      target: generator
+    image: ghstar-agent:local
+    container_name: GHstar_Agent
+    working_dir: /app
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      GHSTAR_DB: /app/data/ghstar.sqlite
+      GHSTAR_PG_DSN: postgresql://GHstar:GHstar@ghstar-pg:5432/GHstar_PG
+      GHSTAR_TIMESCALE_DSN: postgresql://GHstar:GHstar@ghstar-timescaledb:5432/GHstar_TimescaleDB
+      GHSTAR_AGENT_INTERVAL_SECONDS: 86400
+    depends_on:
+      ghstar-pg:
+        condition: service_healthy
+      ghstar-timescaledb:
+        condition: service_healthy
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+    restart: unless-stopped
+    command:
+      - /bin/sh
+      - -c
+      - |
+        while true; do
+          python scripts/ghstar_agent.py --days 30 --limit 50 --targets sqlite,postgres,timescale
+          sleep "$${GHSTAR_AGENT_INTERVAL_SECONDS:-86400}"
+        done
+
+  ghstar-pg:
+    build:
+      context: .
+      dockerfile: docker/postgres/Dockerfile
+    image: ghstar-pg:local
+    container_name: GHstar_PG
+    environment:
+      POSTGRES_USER: GHstar
+      POSTGRES_PASSWORD: GHstar
+      POSTGRES_DB: GHstar_PG
+    ports:
+      - "54321:5432"
+    volumes:
+      - ghstar_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U GHstar -d GHstar_PG"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  ghstar-timescaledb:
+    build:
+      context: .
+      dockerfile: docker/timescaledb/Dockerfile
+    image: ghstar-timescaledb:local
+    container_name: GHstar_TimescaleDB
+    environment:
+      POSTGRES_USER: GHstar
+      POSTGRES_PASSWORD: GHstar
+      POSTGRES_DB: GHstar_TimescaleDB
+    ports:
+      - "54322:5432"
+    volumes:
+      - ghstar_timescaledb_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U GHstar -d GHstar_TimescaleDB"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
   ghstar-smoke:
     build:
       context: .
@@ -31,3 +104,9 @@ services:
       - "8080:80"
     volumes:
       - ./public:/usr/share/nginx/html:ro
+
+volumes:
+  ghstar_pg_data:
+    name: GHstar_PG_Data
+  ghstar_timescaledb_data:
+    name: GHstar_TimescaleDB_Data

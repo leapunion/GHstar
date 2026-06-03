@@ -11,11 +11,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "generate_report.py"
+AGENT_SCRIPT = ROOT / "scripts" / "ghstar_agent.py"
 FIXTURE = ROOT / "fixtures" / "github_repositories.json"
 REPORT_DATE = "2026-05-28"
 
 
 class GenerateReportSmokeTest(unittest.TestCase):
+    def test_agent_script_compiles(self) -> None:
+        subprocess.run([sys.executable, "-m", "py_compile", str(AGENT_SCRIPT)], cwd=ROOT, check=True)
+
     def test_fixture_run_writes_expected_outputs(self) -> None:
         with tempfile.TemporaryDirectory(prefix="ghstar-smoke-") as tmp:
             tmp_root = Path(tmp)

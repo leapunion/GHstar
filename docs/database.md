@@ -1,6 +1,12 @@
-# GHstar SQLite Data Model
+# GHstar Data Model
 
 GHstar stores daily repository intelligence in `data/ghstar.sqlite` before rendering Markdown, HTML, and JSON outputs.
+
+The Agent ETL runtime can also write the same normalized intelligence into Dockerized PostgreSQL and TimescaleDB:
+
+- PostgreSQL database: `GHstar_PG`.
+- TimescaleDB database: `GHstar_TimescaleDB`.
+- Agent container: `GHstar_Agent`.
 
 ## Tables
 
@@ -58,6 +64,68 @@ GitHub API or fixture
   -> render public/index.html
   -> render public/data/latest.json and history.json
 ```
+
+## Agent ETL Flow
+
+```text
+GHstar_Agent
+  -> scan GitHub created/active repositories over the last 30 days
+  -> select Top 50 by momentum, relevance, stars, and Leap fit
+  -> normalize and score with the GHstar report rubric
+  -> write SQLite report outputs
+  -> write PostgreSQL raw, curated, and mart schemas
+  -> write TimescaleDB raw, curated, mart, and time-series hypertable
+```
+
+## PostgreSQL / TimescaleDB Schemas
+
+### `raw.github_repositories`
+
+Run-scoped JSON payloads for audit and replay.
+
+- `run_id`.
+- `full_name`.
+- `payload`.
+- `ingested_at`.
+
+### `curated.repositories`
+
+Repository dimension table.
+
+- `full_name`, `name`, `owner_name`, `url`.
+- `description`, `language`, `category`, `subcategory`.
+- `topics`, `created_at`, `updated_at`, `pushed_at`.
+- `last_ingested_at`.
+
+### `curated.repo_snapshots`
+
+Daily repository metric and scoring snapshots.
+
+- `full_name`, `snapshot_date`.
+- `stars`, `forks`, `stars_per_day`, `fork_ratio`.
+- `relevance`, `commerce_score`, `enterprise_score`, `strategic_score`.
+- `action_level`, `momentum_score`, `maturity_level`.
+- `modules`, `scenarios`, `risk_flags`, `follow_up_next_action`.
+- `leap_commerce`, `leap_enterprise`.
+
+### `mart.follow_up_backlog`
+
+Prioritized action queue for review and prototype planning.
+
+- `snapshot_date`, `full_name`.
+- `action_level`, `priority`.
+- `strategic_score`, `momentum_score`.
+- `risk_flags`, `next_action`, `suggested_owner`.
+
+### `curated.repo_metrics_timeseries`
+
+TimescaleDB-only hypertable for repository metric changes over time.
+
+- `event_time`.
+- `full_name`, `snapshot_date`.
+- `stars`, `forks`, `stars_per_day`.
+- `momentum_score`, `strategic_score`.
+- `category`, `subcategory`.
 
 ## Why SQLite First
 

@@ -1,8 +1,8 @@
 {
-  "report_date": "2026-06-02",
+  "report_date": "2026-06-03",
   "repo_count": 50,
-  "active_7_days": 46,
-  "active_30_days": 47,
+  "active_7_days": 49,
+  "active_30_days": 50,
   "category_distribution": {
     "AI Agent Framework": 35,
     "Agentic Enterprise": 5,
@@ -10,118 +10,125 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 24,
-    "Knowledge / RAG": 11,
-    "Agent Runtime": 4,
+    "Enterprise Workflow": 25,
+    "Knowledge / RAG": 8,
+    "Evaluation / Observability": 5,
     "Commerce Agent": 4,
-    "Evaluation / Observability": 4,
-    "AI Agent Framework": 2,
+    "Agent Runtime": 3,
+    "Infrastructure": 3,
+    "AI Agent Framework": 1,
     "Product Intelligence": 1
   },
   "language_distribution": {
     "Python": 24,
-    "TypeScript": 13,
+    "TypeScript": 14,
+    "JavaScript": 3,
+    "Go": 2,
     "Java": 2,
-    "JavaScript": 2,
     "MDX": 2,
-    "Shell": 2,
-    "Unknown": 2,
-    "Go": 1,
-    "Jupyter Notebook": 1,
-    "PHP": 1
+    "PHP": 1,
+    "Shell": 1,
+    "Unknown": 1
   },
   "maturity_distribution": {
     "ecosystem leader": 26,
-    "established": 15,
-    "emerging": 6,
+    "established": 18,
+    "emerging": 3,
     "scaling": 3
   },
   "action_distribution": {
-    "prototype pattern": 25,
-    "clone and test": 13,
+    "prototype pattern": 27,
+    "clone and test": 12,
     "strategic watch": 9,
-    "read docs": 3
+    "monitor": 2
   },
   "watchlist_flags": {
-    "license unknown": 50,
-    "docs need review": 46,
-    "enterprise control gap": 45,
-    "quality gate unclear": 36,
-    "maintenance freshness risk": 3
+    "enterprise control gap": 46,
+    "docs need review": 45,
+    "quality gate unclear": 38,
+    "license unknown": 1
   },
   "top_momentum": [
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.32,
+      "stars_per_day": 11.31,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.42,
+      "stars_per_day": 27.37,
       "days_since_push": 0,
       "action_level": "strategic watch"
-    },
-    {
-      "full_name": "alibaba/spring-ai-alibaba",
-      "momentum_score": 97,
-      "stars_per_day": 15.61,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
     },
     {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.1,
+      "stars_per_day": 12.09,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "bytedance/deer-flow",
+      "full_name": "builderz-labs/mission-control",
       "momentum_score": 96,
-      "stars_per_day": 179.78,
-      "days_since_push": 0,
-      "action_level": "strategic watch"
+      "stars_per_day": 46.79,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.15,
+      "stars_per_day": 125.11,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "google/adk-python",
+      "full_name": "alibaba/spring-ai-alibaba",
       "momentum_score": 96,
-      "stars_per_day": 46.75,
-      "days_since_push": 0,
+      "stars_per_day": 15.6,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "bytedance/deer-flow",
+      "momentum_score": 95,
+      "stars_per_day": 179.41,
+      "days_since_push": 1,
+      "action_level": "strategic watch"
+    },
+    {
+      "full_name": "google/adk-python",
+      "momentum_score": 95,
+      "stars_per_day": 46.66,
+      "days_since_push": 1,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "langchain4j/langchain4j",
-      "momentum_score": 96,
-      "stars_per_day": 11.3,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "BlazeUp-AI/Observal",
-      "momentum_score": 96,
-      "stars_per_day": 29.22,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "jnMetaCode/agency-agents-zh",
-      "momentum_score": 96,
-      "stars_per_day": 155.03,
+      "momentum_score": 95,
+      "stars_per_day": 11.29,
       "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "MervinPraison/PraisonAI",
+      "momentum_score": 95,
+      "stars_per_day": 9.97,
+      "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-06-03",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-06-03.md",
+      "html_path": "public/index.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-06-03T06:21:28.010288+00:00"
+    },
     {
       "report_date": "2026-06-02",
       "repo_count": 50,

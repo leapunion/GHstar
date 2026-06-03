@@ -57,6 +57,29 @@ The generator writes repository metadata, daily snapshots, trend analytics, repo
 
 Database details are documented in `docs/database.md`.
 
+## Agent ETL
+
+Run the GHstar Agent to scan GitHub repositories created or active in the last 30 days, rank the Top 50 related to the project, and write SQLite, PostgreSQL, and TimescaleDB storage layers:
+
+```bash
+docker compose up -d ghstar-pg ghstar-timescaledb ghstar-agent
+```
+
+`GHstar_Agent` starts immediately, scans once, then repeats every 24 hours by default.
+
+The Docker runtime uses project-scoped names:
+
+- Agent container: `GHstar_Agent`
+- PostgreSQL container and database: `GHstar_PG`
+- TimescaleDB container and database: `GHstar_TimescaleDB`
+- Agent image: `ghstar-agent:local`
+- PostgreSQL image: `ghstar-pg:local`
+- TimescaleDB image: `ghstar-timescaledb:local`
+- PostgreSQL host port: `54321`
+- TimescaleDB host port: `54322`
+
+Docker image references are lower-case (`ghstar-agent:local`) because Docker image names cannot contain uppercase letters.
+
 ## Docker
 
 Run the deterministic smoke test in Docker:

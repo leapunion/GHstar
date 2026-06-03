@@ -1452,7 +1452,7 @@ def main() -> int:
         fixture_data = json.loads(Path(args.fixture).read_text(encoding="utf-8"))
         repos = [normalize_repo(item, report_date) for item in fixture_data][: args.limit]
     else:
-        token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+        token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or os.environ.get("GHSTAR_GITHUB_TOKEN")
         repos = collect(args.days, args.limit, token, report_date)
     if args.no_db:
         write_outputs(repos, report_date, lookback_days=args.days)
