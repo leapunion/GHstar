@@ -408,3 +408,205 @@ pre {
     justify-self: center;
   }
 }
+
+/* ==========================================================================
+   SPA additions (public/app.js) — appended; do not edit above this line
+   ========================================================================== */
+
+/* Filter bar */
+.spa-filter-bar {
+  padding: 20px 0 4px;
+  margin-bottom: 4px;
+}
+
+.spa-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.spa-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.spa-filter-group select,
+.spa-filter-group input {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #0d120f;
+  color: var(--text);
+  font-size: 13px;
+  min-width: 160px;
+}
+
+.spa-filter-group input[type="search"] {
+  min-width: 200px;
+}
+
+.spa-filter-group select[multiple] {
+  min-height: 36px;
+}
+
+.spa-reset-btn {
+  align-self: flex-end;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.spa-reset-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+/* Trends panel */
+.spa-trends {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.spa-trends summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 0;
+  user-select: none;
+  list-style: none;
+}
+
+.spa-trends summary::-webkit-details-marker { display: none; }
+
+.spa-trends summary::before {
+  content: '▶';
+  color: var(--accent);
+  font-size: 11px;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+
+.spa-trends[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.spa-trends-sub {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.spa-trends-body {
+  margin-top: 16px;
+}
+
+.spa-trends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.spa-trends-col h3 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Results header */
+.spa-results-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0 10px;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+  margin-top: 4px;
+}
+
+/* Card list */
+.spa-card-list {
+  margin-top: 4px;
+}
+
+/* Show more */
+.spa-show-more-row {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 8px;
+}
+
+.spa-show-more-btn {
+  padding: 10px 28px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.spa-show-more-btn:hover {
+  border-color: var(--accent);
+  background: var(--panel-2);
+}
+
+/* Loading / error */
+.spa-loading {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.spa-error {
+  padding: 20px;
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+  background: rgba(230, 109, 90, 0.08);
+  color: var(--danger);
+  margin-top: 16px;
+}
+
+/* Sparkline */
+.spa-spark-wrap {
+  margin-top: 10px;
+  opacity: 0.85;
+}
+
+.spa-spark {
+  display: block;
+  overflow: visible;
+}
+
+/* Responsive: stack filter bar on narrow viewports */
+@media (max-width: 640px) {
+  .spa-filter-row {
+    flex-direction: column;
+  }
+
+  .spa-filter-group select,
+  .spa-filter-group input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .spa-trends-grid {
+    grid-template-columns: 1fr;
+  }
+}

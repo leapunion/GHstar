@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "build": "2026-06-03T06:21:00Z",
+  "dates": ["2026-05-28", "2026-06-03"],
+  "repo_count": 5,
+  "facets": {
+    "category": {
+      "AI Agent Framework": 3,
+      "Agentic Enterprise": 1,
+      "AI Infrastructure": 1
+    },
+    "subcategory": {
+      "Enterprise Workflow": 3,
+      "Knowledge / RAG": 1,
+      "Infrastructure": 1
+    },
+    "language": {
+      "Python": 3,
+      "TypeScript": 1,
+      "MDX": 1
+    },
+    "action_level": {
+      "strategic watch": 4,
+      "monitor": 1
+    }
+  }
+}
