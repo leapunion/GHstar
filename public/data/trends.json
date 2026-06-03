@@ -1,8 +1,8 @@
 {
   "report_date": "2026-06-03",
   "repo_count": 50,
-  "active_7_days": 47,
-  "active_30_days": 47,
+  "active_7_days": 49,
+  "active_30_days": 49,
   "category_distribution": {
     "AI Agent Framework": 35,
     "Agentic Enterprise": 5,
@@ -11,10 +11,10 @@
   },
   "subcategory_distribution": {
     "Enterprise Workflow": 25,
-    "Knowledge / RAG": 10,
+    "Knowledge / RAG": 8,
+    "Evaluation / Observability": 5,
     "Agent Runtime": 4,
     "Commerce Agent": 4,
-    "Evaluation / Observability": 3,
     "AI Agent Framework": 2,
     "Infrastructure": 1,
     "Product Intelligence": 1
@@ -40,14 +40,15 @@
     "prototype pattern": 24,
     "clone and test": 13,
     "strategic watch": 10,
-    "read docs": 3
+    "read docs": 2,
+    "monitor": 1
   },
   "watchlist_flags": {
     "enterprise control gap": 46,
     "docs need review": 45,
     "quality gate unclear": 37,
-    "license unknown": 4,
-    "maintenance freshness risk": 3
+    "license unknown": 3,
+    "maintenance freshness risk": 1
   },
   "top_momentum": [
     {
@@ -128,7 +129,7 @@
       "markdown_path": "reports/2026-06-03.md",
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
-      "generated_at": "2026-06-03T16:48:56.322241+00:00"
+      "generated_at": "2026-06-03T16:54:22.318475+00:00"
     },
     {
       "report_date": "2026-06-02",

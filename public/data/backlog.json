@@ -782,36 +782,18 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "h9-tec/llm-systems-engineering-roadmap",
-    "url": "https://github.com/h9-tec/llm-systems-engineering-roadmap",
+    "full_name": "ahammadmejbah/Awesome-Datasets-Hub",
+    "url": "https://github.com/ahammadmejbah/Awesome-Datasets-Hub",
     "category": "AI Infrastructure",
-    "subcategory": "Knowledge / RAG",
+    "subcategory": "Evaluation / Observability",
     "action_level": "read docs",
     "priority": 2,
-    "strategic_score": 39,
-    "momentum_score": 36,
+    "strategic_score": 46,
+    "momentum_score": 78,
     "risk_flags": [
       "license unknown",
       "docs need review",
-      "maintenance freshness risk",
       "enterprise control gap"
-    ],
-    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "fdhhhdjd/Class-Production-AI-App",
-    "url": "https://github.com/fdhhhdjd/Class-Production-AI-App",
-    "category": "AI Infrastructure",
-    "subcategory": "Knowledge / RAG",
-    "action_level": "read docs",
-    "priority": 2,
-    "strategic_score": 38,
-    "momentum_score": 21,
-    "risk_flags": [
-      "license unknown",
-      "docs need review",
-      "maintenance freshness risk"
     ],
     "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
@@ -832,6 +814,21 @@
       "enterprise control gap"
     ],
     "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "Aimer-zero/redforge-ai",
+    "url": "https://github.com/Aimer-zero/redforge-ai",
+    "category": "AI Infrastructure",
+    "subcategory": "Evaluation / Observability",
+    "action_level": "monitor",
+    "priority": 1,
+    "strategic_score": 29,
+    "momentum_score": 89,
+    "risk_flags": [
+      "docs need review"
+    ],
+    "next_action": "Keep on watchlist until adoption, docs, or implementation fit improves.",
     "suggested_owner": "product+engineering review"
   }
 ]
