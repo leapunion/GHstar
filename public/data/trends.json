@@ -1,8 +1,8 @@
 {
   "report_date": "2026-06-03",
   "repo_count": 50,
-  "active_7_days": 49,
-  "active_30_days": 49,
+  "active_7_days": 47,
+  "active_30_days": 47,
   "category_distribution": {
     "AI Agent Framework": 35,
     "Agentic Enterprise": 5,
@@ -11,19 +11,19 @@
   },
   "subcategory_distribution": {
     "Enterprise Workflow": 25,
-    "Knowledge / RAG": 8,
-    "Evaluation / Observability": 5,
-    "Agent Runtime": 4,
+    "Knowledge / RAG": 12,
     "Commerce Agent": 4,
+    "Agent Runtime": 3,
+    "Evaluation / Observability": 3,
     "AI Agent Framework": 2,
-    "Infrastructure": 1,
     "Product Intelligence": 1
   },
   "language_distribution": {
     "Python": 21,
-    "TypeScript": 16,
+    "TypeScript": 14,
     "Java": 2,
     "JavaScript": 2,
+    "Jupyter Notebook": 2,
     "MDX": 2,
     "PHP": 2,
     "Shell": 2,
@@ -37,18 +37,17 @@
     "scaling": 4
   },
   "action_distribution": {
-    "prototype pattern": 24,
-    "clone and test": 13,
+    "prototype pattern": 25,
+    "clone and test": 12,
     "strategic watch": 10,
-    "read docs": 2,
-    "monitor": 1
+    "read docs": 3
   },
   "watchlist_flags": {
     "enterprise control gap": 46,
     "docs need review": 45,
-    "quality gate unclear": 37,
-    "license unknown": 3,
-    "maintenance freshness risk": 1
+    "quality gate unclear": 36,
+    "license unknown": 4,
+    "maintenance freshness risk": 3
   },
   "top_momentum": [
     {
@@ -68,7 +67,7 @@
     {
       "full_name": "jnMetaCode/agency-agents-zh",
       "momentum_score": 97,
-      "stars_per_day": 154.54,
+      "stars_per_day": 154.62,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -89,14 +88,14 @@
     {
       "full_name": "builderz-labs/mission-control",
       "momentum_score": 96,
-      "stars_per_day": 46.88,
+      "stars_per_day": 46.89,
       "days_since_push": 1,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.19,
+      "stars_per_day": 125.2,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -117,7 +116,7 @@
     {
       "full_name": "BlazeUp-AI/Observal",
       "momentum_score": 96,
-      "stars_per_day": 29.97,
+      "stars_per_day": 30.08,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
@@ -129,7 +128,7 @@
       "markdown_path": "reports/2026-06-03.md",
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
-      "generated_at": "2026-06-03T16:54:22.318475+00:00"
+      "generated_at": "2026-06-03T18:05:13.435495+00:00"
     },
     {
       "report_date": "2026-06-02",
