@@ -7,8 +7,12 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 - Repositories reviewed: 50
 - Lookback window: 90 days
 - Top category: AI Agent Framework
+- Notable repository of the day: ModelEngine-Group/nexent
+- Leap Commerce OS signal: beikeshop/beikeshop
+- Agentic Enterprise OS signal: ModelEngine-Group/nexent
 - Active in last 7 days: 46
 - Active in last 30 days: 47
+- Watchlist flags: license unknown (50), docs need review (46), enterprise control gap (45), quality gate unclear (36)
 - Method: GitHub Search API, recently created and recently active repositories, sorted by momentum, stars, and Leap relevance.
 
 ## 90-Day Trend Signals
@@ -43,6 +47,24 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 - strategic watch: 9
 - read docs: 3
 
+### Subcategory Distribution
+
+- Enterprise Workflow: 24
+- Knowledge / RAG: 11
+- Agent Runtime: 4
+- Commerce Agent: 4
+- Evaluation / Observability: 4
+- AI Agent Framework: 2
+- Product Intelligence: 1
+
+### Watchlist Flags
+
+- license unknown: 50
+- docs need review: 46
+- enterprise control gap: 45
+- quality gate unclear: 36
+- maintenance freshness risk: 3
+
 ### Top Momentum Repositories
 
 | Repository | Momentum | Stars/day | Days Since Push | Review |
@@ -53,60 +75,75 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 | ModelEngine-Group/nexent | 96 | 12.10 | 0 | Scaling project with 12.1 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'. |
 | bytedance/deer-flow | 96 | 179.78 | 0 | Ecosystem Leader project with 179.8 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'. |
 
+## Follow-Up Backlog
+
+| Repository | Action | Priority | Subcategory | Risks | Next Step |
+| --- | --- | ---: | --- | --- | --- |
+| ModelEngine-Group/nexent | strategic watch | 5 | Enterprise Workflow | license unknown, docs need review, enterprise control gap, quality gate unclear | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| dataelement/bisheng | strategic watch | 5 | Enterprise Workflow | license unknown, docs need review, enterprise control gap | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| microsoft/agent-framework | strategic watch | 5 | Enterprise Workflow | license unknown, docs need review, enterprise control gap, quality gate unclear | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| bytedance/deer-flow | strategic watch | 5 | Enterprise Workflow | license unknown, docs need review, enterprise control gap, quality gate unclear | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| ruvnet/ruflo | strategic watch | 5 | Enterprise Workflow | license unknown, docs need review, enterprise control gap, quality gate unclear | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| deepset-ai/haystack | strategic watch | 5 | Enterprise Workflow | license unknown, docs need review, enterprise control gap | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| beikeshop/beikeshop | strategic watch | 5 | Commerce Agent | license unknown, docs need review, enterprise control gap, quality gate unclear | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| arc53/DocsGPT | strategic watch | 5 | Knowledge / RAG | license unknown, enterprise control gap | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| mlflow/mlflow | strategic watch | 5 | Evaluation / Observability | license unknown, docs need review | Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly. |
+| builderz-labs/mission-control | prototype pattern | 4 | Enterprise Workflow | license unknown, docs need review, enterprise control gap, quality gate unclear | Extract the reusable architecture pattern and create a small Leap OS prototype brief. |
+
 ## Repository Table
 
-| Repository | Author | Stars | Stars/day | Momentum | Category | Strategic | Action | URL |
-| --- | --- | ---: | ---: | ---: | --- | ---: | --- | --- |
-| nexent | ModelEngine-Group | 4839 | 12.10 | 96 | AI Agent Framework | 91 | strategic watch | https://github.com/ModelEngine-Group/nexent |
-| deer-flow | bytedance | 70293 | 179.78 | 96 | AI Agent Framework | 85 | strategic watch | https://github.com/bytedance/deer-flow |
-| ruflo | ruvnet | 57479 | 157.48 | 94 | AI Agent Framework | 85 | strategic watch | https://github.com/ruvnet/ruflo |
-| haystack | deepset-ai | 25438 | 10.63 | 94 | AI Agent Framework | 85 | strategic watch | https://github.com/deepset-ai/haystack |
-| bisheng | dataelement | 11425 | 11.32 | 98 | Agentic Enterprise | 85 | strategic watch | https://github.com/dataelement/bisheng |
-| agent-framework | microsoft | 10968 | 27.42 | 98 | AI Agent Framework | 85 | strategic watch | https://github.com/microsoft/agent-framework |
-| beikeshop | beikeshop | 1905 | 1.27 | 63 | AI Commerce | 84 | strategic watch | https://github.com/beikeshop/beikeshop |
-| mlflow | mlflow | 26256 | 8.99 | 92 | AI Infrastructure | 81 | strategic watch | https://github.com/mlflow/mlflow |
-| DocsGPT | arc53 | 17918 | 14.74 | 93 | Agentic Enterprise | 81 | strategic watch | https://github.com/arc53/DocsGPT |
-| mission-control | builderz-labs | 5136 | 47.12 | 95 | AI Agent Framework | 79 | prototype pattern | https://github.com/builderz-labs/mission-control |
-| dify | langgenius | 143551 | 125.15 | 96 | AI Agent Framework | 75 | prototype pattern | https://github.com/langgenius/dify |
-| awesome-n8n-templates | enescingoz | 22656 | 58.09 | 95 | AI Agent Framework | 75 | prototype pattern | https://github.com/enescingoz/awesome-n8n-templates |
-| adk-python | google | 19962 | 46.75 | 96 | AI Agent Framework | 75 | prototype pattern | https://github.com/google/adk-python |
-| langchain4j | langchain4j | 12181 | 11.30 | 96 | AI Agent Framework | 75 | prototype pattern | https://github.com/langchain4j/langchain4j |
-| PraisonAI | MervinPraison | 8030 | 9.98 | 95 | AI Agent Framework | 75 | prototype pattern | https://github.com/MervinPraison/PraisonAI |
-| Observal | BlazeUp-AI | 1870 | 29.22 | 96 | AI Infrastructure | 74 | prototype pattern | https://github.com/BlazeUp-AI/Observal |
-| openai-agents-python | openai | 26855 | 59.94 | 95 | AI Agent Framework | 73 | prototype pattern | https://github.com/openai/openai-agents-python |
-| agency-agents-zh | jnMetaCode | 13643 | 155.03 | 96 | AI Agent Framework | 73 | prototype pattern | https://github.com/jnMetaCode/agency-agents-zh |
-| spring-ai-alibaba | alibaba | 9851 | 15.61 | 97 | AI Agent Framework | 73 | prototype pattern | https://github.com/alibaba/spring-ai-alibaba |
-| PaperOrchestra | Ar9av | 558 | 10.33 | 93 | AI Agent Framework | 70 | prototype pattern | https://github.com/Ar9av/PaperOrchestra |
-| langchain | langchain-ai | 138335 | 104.48 | 95 | Agentic Enterprise | 69 | prototype pattern | https://github.com/langchain-ai/langchain |
-| Flowise | FlowiseAI | 53275 | 45.97 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/FlowiseAI/Flowise |
-| CowAgent | zhayujie | 45033 | 32.28 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/zhayujie/CowAgent |
-| nanobot | HKUDS | 43536 | 359.80 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/HKUDS/nanobot |
-| antigravity-awesome-skills | sickn33 | 39484 | 284.06 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/sickn33/antigravity-awesome-skills |
-| ToolJet | ToolJet | 37964 | 20.09 | 93 | AI Agent Framework | 69 | prototype pattern | https://github.com/ToolJet/ToolJet |
-| langgraph | langchain-ai | 33664 | 32.75 | 95 | Agentic Enterprise | 69 | prototype pattern | https://github.com/langchain-ai/langgraph |
-| FastGPT | labring | 28236 | 23.63 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/labring/FastGPT |
-| activepieces | activepieces | 22512 | 17.63 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/activepieces/activepieces |
-| MaxKB | 1Panel-dev | 21124 | 21.29 | 93 | Agentic Enterprise | 69 | prototype pattern | https://github.com/1Panel-dev/MaxKB |
-| waoowaoo | waooAI | 12521 | 95.58 | 94 | AI Agent Framework | 69 | prototype pattern | https://github.com/waooAI/waoowaoo |
-| open-multi-agent | open-multi-agent | 6307 | 100.11 | 95 | AI Agent Framework | 69 | prototype pattern | https://github.com/open-multi-agent/open-multi-agent |
-| Amazon-Skills | nexscope-ai | 211 | 2.51 | 56 | AI Commerce | 68 | prototype pattern | https://github.com/nexscope-ai/Amazon-Skills |
-| inkos | Narcooo | 6848 | 83.51 | 94 | AI Agent Framework | 65 | prototype pattern | https://github.com/Narcooo/inkos |
-| GenAI_Agents | NirDiamant | 22327 | 35.38 | 93 | AI Agent Framework | 63 | clone and test | https://github.com/NirDiamant/GenAI_Agents |
-| WeKnora | Tencent | 15917 | 50.53 | 92 | AI Infrastructure | 63 | clone and test | https://github.com/Tencent/WeKnora |
-| claude-code | anthropics | 129579 | 278.66 | 94 | AI Agent Framework | 63 | clone and test | https://github.com/anthropics/claude-code |
-| wanman | chekusu | 617 | 15.05 | 95 | AI Agent Framework | 61 | clone and test | https://github.com/chekusu/wanman |
-| ECC | affaan-m | 203410 | 1506.74 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/affaan-m/ECC |
-| n8n | n8n-io | 190769 | 75.19 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/n8n-io/n8n |
-| airflow | apache | 45671 | 11.23 | 93 | AI Agent Framework | 59 | clone and test | https://github.com/apache/airflow |
-| recommenders | recommenders-team | 21729 | 7.72 | 83 | AI Commerce | 59 | clone and test | https://github.com/recommenders-team/recommenders |
-| yournextstore | yournextstore | 5427 | 8.15 | 82 | AI Commerce | 59 | clone and test | https://github.com/yournextstore/yournextstore |
-| Vibe-Trading | HKUDS | 9526 | 153.65 | 94 | AI Agent Framework | 57 | clone and test | https://github.com/HKUDS/Vibe-Trading |
-| QuantDinger | brokermr810 | 7141 | 45.78 | 94 | AI Agent Framework | 57 | clone and test | https://github.com/brokermr810/QuantDinger |
-| TradingAgents | TauricResearch | 82254 | 157.88 | 93 | AI Agent Framework | 56 | clone and test | https://github.com/TauricResearch/TradingAgents |
-| OpenMAIC | THU-MAIC | 18237 | 219.72 | 93 | AI Agent Framework | 51 | clone and test | https://github.com/THU-MAIC/OpenMAIC |
-| llm-systems-engineering-roadmap | h9-tec | 156 | 4.11 | 36 | AI Infrastructure | 39 | read docs | https://github.com/h9-tec/llm-systems-engineering-roadmap |
-| Class-Production-AI-App | fdhhhdjd | 13 | 0.31 | 21 | AI Infrastructure | 38 | read docs | https://github.com/fdhhhdjd/Class-Production-AI-App |
-| higgsfield-seedance2-jineng | beshuaxian | 555 | 10.28 | 60 | AI Commerce | 35 | read docs | https://github.com/beshuaxian/higgsfield-seedance2-jineng |
+| Repository | Author | Stars | Stars/day | Momentum | Category | Subcategory | Strategic | Action | URL |
+| --- | --- | ---: | ---: | ---: | --- | --- | ---: | --- | --- |
+| nexent | ModelEngine-Group | 4839 | 12.10 | 96 | AI Agent Framework | Enterprise Workflow | 91 | strategic watch | https://github.com/ModelEngine-Group/nexent |
+| deer-flow | bytedance | 70293 | 179.78 | 96 | AI Agent Framework | Enterprise Workflow | 85 | strategic watch | https://github.com/bytedance/deer-flow |
+| ruflo | ruvnet | 57479 | 157.48 | 94 | AI Agent Framework | Enterprise Workflow | 85 | strategic watch | https://github.com/ruvnet/ruflo |
+| haystack | deepset-ai | 25438 | 10.63 | 94 | AI Agent Framework | Enterprise Workflow | 85 | strategic watch | https://github.com/deepset-ai/haystack |
+| bisheng | dataelement | 11425 | 11.32 | 98 | Agentic Enterprise | Enterprise Workflow | 85 | strategic watch | https://github.com/dataelement/bisheng |
+| agent-framework | microsoft | 10968 | 27.42 | 98 | AI Agent Framework | Enterprise Workflow | 85 | strategic watch | https://github.com/microsoft/agent-framework |
+| beikeshop | beikeshop | 1905 | 1.27 | 63 | AI Commerce | Commerce Agent | 84 | strategic watch | https://github.com/beikeshop/beikeshop |
+| mlflow | mlflow | 26256 | 8.99 | 92 | AI Infrastructure | Evaluation / Observability | 81 | strategic watch | https://github.com/mlflow/mlflow |
+| DocsGPT | arc53 | 17918 | 14.74 | 93 | Agentic Enterprise | Knowledge / RAG | 81 | strategic watch | https://github.com/arc53/DocsGPT |
+| mission-control | builderz-labs | 5136 | 47.12 | 95 | AI Agent Framework | Enterprise Workflow | 79 | prototype pattern | https://github.com/builderz-labs/mission-control |
+| dify | langgenius | 143551 | 125.15 | 96 | AI Agent Framework | Enterprise Workflow | 75 | prototype pattern | https://github.com/langgenius/dify |
+| awesome-n8n-templates | enescingoz | 22656 | 58.09 | 95 | AI Agent Framework | Enterprise Workflow | 75 | prototype pattern | https://github.com/enescingoz/awesome-n8n-templates |
+| adk-python | google | 19962 | 46.75 | 96 | AI Agent Framework | Evaluation / Observability | 75 | prototype pattern | https://github.com/google/adk-python |
+| langchain4j | langchain4j | 12181 | 11.30 | 96 | AI Agent Framework | Knowledge / RAG | 75 | prototype pattern | https://github.com/langchain4j/langchain4j |
+| PraisonAI | MervinPraison | 8030 | 9.98 | 95 | AI Agent Framework | Knowledge / RAG | 75 | prototype pattern | https://github.com/MervinPraison/PraisonAI |
+| Observal | BlazeUp-AI | 1870 | 29.22 | 96 | AI Infrastructure | Evaluation / Observability | 74 | prototype pattern | https://github.com/BlazeUp-AI/Observal |
+| openai-agents-python | openai | 26855 | 59.94 | 95 | AI Agent Framework | Enterprise Workflow | 73 | prototype pattern | https://github.com/openai/openai-agents-python |
+| agency-agents-zh | jnMetaCode | 13643 | 155.03 | 96 | AI Agent Framework | Enterprise Workflow | 73 | prototype pattern | https://github.com/jnMetaCode/agency-agents-zh |
+| spring-ai-alibaba | alibaba | 9851 | 15.61 | 97 | AI Agent Framework | Enterprise Workflow | 73 | prototype pattern | https://github.com/alibaba/spring-ai-alibaba |
+| PaperOrchestra | Ar9av | 558 | 10.33 | 93 | AI Agent Framework | Evaluation / Observability | 70 | prototype pattern | https://github.com/Ar9av/PaperOrchestra |
+| langchain | langchain-ai | 138335 | 104.48 | 95 | Agentic Enterprise | Knowledge / RAG | 69 | prototype pattern | https://github.com/langchain-ai/langchain |
+| Flowise | FlowiseAI | 53275 | 45.97 | 95 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/FlowiseAI/Flowise |
+| CowAgent | zhayujie | 45033 | 32.28 | 95 | AI Agent Framework | Knowledge / RAG | 69 | prototype pattern | https://github.com/zhayujie/CowAgent |
+| nanobot | HKUDS | 43536 | 359.80 | 95 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/HKUDS/nanobot |
+| antigravity-awesome-skills | sickn33 | 39484 | 284.06 | 95 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/sickn33/antigravity-awesome-skills |
+| ToolJet | ToolJet | 37964 | 20.09 | 93 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/ToolJet/ToolJet |
+| langgraph | langchain-ai | 33664 | 32.75 | 95 | Agentic Enterprise | Knowledge / RAG | 69 | prototype pattern | https://github.com/langchain-ai/langgraph |
+| FastGPT | labring | 28236 | 23.63 | 95 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/labring/FastGPT |
+| activepieces | activepieces | 22512 | 17.63 | 95 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/activepieces/activepieces |
+| MaxKB | 1Panel-dev | 21124 | 21.29 | 93 | Agentic Enterprise | Knowledge / RAG | 69 | prototype pattern | https://github.com/1Panel-dev/MaxKB |
+| waoowaoo | waooAI | 12521 | 95.58 | 94 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/waooAI/waoowaoo |
+| open-multi-agent | open-multi-agent | 6307 | 100.11 | 95 | AI Agent Framework | Enterprise Workflow | 69 | prototype pattern | https://github.com/open-multi-agent/open-multi-agent |
+| Amazon-Skills | nexscope-ai | 211 | 2.51 | 56 | AI Commerce | Commerce Agent | 68 | prototype pattern | https://github.com/nexscope-ai/Amazon-Skills |
+| inkos | Narcooo | 6848 | 83.51 | 94 | AI Agent Framework | AI Agent Framework | 65 | prototype pattern | https://github.com/Narcooo/inkos |
+| GenAI_Agents | NirDiamant | 22327 | 35.38 | 93 | AI Agent Framework | Knowledge / RAG | 63 | clone and test | https://github.com/NirDiamant/GenAI_Agents |
+| WeKnora | Tencent | 15917 | 50.53 | 92 | AI Infrastructure | Knowledge / RAG | 63 | clone and test | https://github.com/Tencent/WeKnora |
+| claude-code | anthropics | 129579 | 278.66 | 94 | AI Agent Framework | Enterprise Workflow | 63 | clone and test | https://github.com/anthropics/claude-code |
+| wanman | chekusu | 617 | 15.05 | 95 | AI Agent Framework | Enterprise Workflow | 61 | clone and test | https://github.com/chekusu/wanman |
+| ECC | affaan-m | 203410 | 1506.74 | 93 | AI Agent Framework | AI Agent Framework | 59 | clone and test | https://github.com/affaan-m/ECC |
+| n8n | n8n-io | 190769 | 75.19 | 93 | AI Agent Framework | Enterprise Workflow | 59 | clone and test | https://github.com/n8n-io/n8n |
+| airflow | apache | 45671 | 11.23 | 93 | AI Agent Framework | Enterprise Workflow | 59 | clone and test | https://github.com/apache/airflow |
+| recommenders | recommenders-team | 21729 | 7.72 | 83 | AI Commerce | Product Intelligence | 59 | clone and test | https://github.com/recommenders-team/recommenders |
+| yournextstore | yournextstore | 5427 | 8.15 | 82 | AI Commerce | Commerce Agent | 59 | clone and test | https://github.com/yournextstore/yournextstore |
+| Vibe-Trading | HKUDS | 9526 | 153.65 | 94 | AI Agent Framework | Agent Runtime | 57 | clone and test | https://github.com/HKUDS/Vibe-Trading |
+| QuantDinger | brokermr810 | 7141 | 45.78 | 94 | AI Agent Framework | Agent Runtime | 57 | clone and test | https://github.com/brokermr810/QuantDinger |
+| TradingAgents | TauricResearch | 82254 | 157.88 | 93 | AI Agent Framework | Agent Runtime | 56 | clone and test | https://github.com/TauricResearch/TradingAgents |
+| OpenMAIC | THU-MAIC | 18237 | 219.72 | 93 | AI Agent Framework | Agent Runtime | 51 | clone and test | https://github.com/THU-MAIC/OpenMAIC |
+| llm-systems-engineering-roadmap | h9-tec | 156 | 4.11 | 36 | AI Infrastructure | Knowledge / RAG | 39 | read docs | https://github.com/h9-tec/llm-systems-engineering-roadmap |
+| Class-Production-AI-App | fdhhhdjd | 13 | 0.31 | 21 | AI Infrastructure | Knowledge / RAG | 38 | read docs | https://github.com/fdhhhdjd/Class-Production-AI-App |
+| higgsfield-seedance2-jineng | beshuaxian | 555 | 10.28 | 60 | AI Commerce | Commerce Agent | 35 | read docs | https://github.com/beshuaxian/higgsfield-seedance2-jineng |
 
 ## Detailed Notes
 
@@ -124,11 +161,14 @@ Focus: AI agents, Agentic Enterprise, AI commerce, AI infrastructure, and ideas 
 - Momentum score: 96/100
 - Maturity level: scaling
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 6/15
 - Enterprise score: 9/15
 - Strategic score: 91/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.
 - Repository review: Scaling project with 12.1 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agent, agentic-ai, agentic-framework, agentic-rag, agentic-workflow, ai, harness, harness-engineering, llm, mcp, multi-agent, rag
@@ -170,11 +210,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 96/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 9/15
 - Strategic score: 85/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.
 - Repository review: Ecosystem Leader project with 179.8 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agent, agentic, agentic-framework, agentic-workflow, ai, ai-agents, deep-research, harness, langchain, langgraph, langmanus, llm, multi-agent, nodejs, podcast, python, superagent, typescript
@@ -215,11 +258,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 9/15
 - Strategic score: 85/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: 🌊 The leading agent meta-harness for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration
 - Repository review: Ecosystem Leader project with 157.5 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agentic-ai, agentic-framework, agentic-rag, agentic-workflow, agents, ai-agents, ai-assistant, ai-coding, ai-skills, autonomous-agents, claude-code, codex, mcp-server, multi-agent, multi-agent-systems, npm, skills, swarm, swarm-intelligence, typescript
@@ -260,11 +306,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 85/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.
 - Repository review: Ecosystem Leader project with 10.6 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agent, agents, ai, gemini, generative-ai, gpt-4, information-retrieval, large-language-models, llm, machine-learning, nlp, orchestration, python, pytorch, question-answering, rag, retrieval-augmented-generation, semantic-search, summarization, transformers
@@ -306,11 +355,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 98/100
 - Maturity level: established
 - Function category: Agentic Enterprise
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 9/15
 - Strategic score: 85/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: BISHENG is an open LLM devops platform for next generation Enterprise AI applications. Powerful and comprehensive features include: GenAI workflow, RAG, Agent, Unified model management, Evaluation, SFT, Dataset Management, Enterprise-level System Management, Observability and more.
 - Repository review: Established project with 11.3 stars/day, actively maintained, and 98/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agent, ai, chatbot, enterprise, finetune, genai, gpt, langchian, llama, llm, llmdevops, llmops, ocr, openai, orchestration, python, rag, react, sft, workflow
@@ -351,11 +403,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 98/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 85/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.
 - Repository review: Established project with 27.4 stars/day, actively maintained, and 98/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agent-framework, agentic-ai, agents, ai, dotnet, multi-agent, orchestration, python, sdk, workflows
@@ -393,11 +448,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 63/100
 - Maturity level: scaling
 - Function category: AI Commerce
+- Subcategory: Commerce Agent
 - Relevance score: 49
 - Commerce score: 12/15
 - Enterprise score: 0/15
 - Strategic score: 84/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Free and Open-Source, Easy-to-Use Laravel eCommerce Platform, Base on the Laravel . It supports multiple languages and currencies, Integrates AI agents. The platform features customizable visual design and a rich plugins on marketplace.
 - Repository review: Scaling project with 1.3 stars/day, actively maintained, and 63/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: beikeshop, chatgpt, ecommerce, ecommerce-framework, ecommerce-platform, laravel, laravel-ecommerce, laravelcommerce, laravelecommerce, laravelshop, multi-vendor-ecommerce, multivendor-ecommerce, open-source, php, php-ecommerce, shopping-cart
@@ -437,11 +495,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 92/100
 - Maturity level: ecosystem leader
 - Function category: AI Infrastructure
+- Subcategory: Evaluation / Observability
 - Relevance score: 39
 - Commerce score: 9/15
 - Enterprise score: 6/15
 - Strategic score: 81/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, docs need review
 - Description: The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.
 - Repository review: Ecosystem Leader project with 9.0 stars/day, actively maintained, and 92/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agentops, agents, ai, ai-governance, apache-spark, evaluation, langchain, llm-evaluation, llmops, machine-learning, ml, mlflow, mlops, model-management, observability, open-source, openai, prompt-engineering
@@ -481,11 +542,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: established
 - Function category: Agentic Enterprise
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 9/15
 - Strategic score: 81/100
 - Recommended action: strategic watch
+- Next action: Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.
+- Risk flags: license unknown, enterprise control gap
 - Description: Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents.
 - Repository review: Established project with 14.7 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.
 - Topics: agent-builder, agents, ai, chatgpt, docsgpt, hacktoberfest, hacktoberfest2025, information-retrieval, language-model, llm, machine-learning, natural-language-processing, python, pytorch, rag, react, search, semantic-search, transformers
@@ -526,11 +590,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 79/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Self-hosted AI agent orchestration platform: dispatch tasks, run multi-agent workflows, monitor spend, and govern operations from one mission control dashboard.
 - Repository review: Established project with 47.1 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent-orchestration, ai-agents, ai-automation, ai-dashboard, claude, dashboard, developer-tools, llm, mcp, nextjs, open-source, openclaw, self-hosted, sqlite, task-management, typescript
@@ -568,11 +635,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 96/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 75/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Production-ready platform for agentic workflow development.
 - Repository review: Ecosystem Leader project with 125.2 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai, automation, gemini, genai, gpt, gpt-4, llm, low-code, mcp, nextjs, no-code, openai, orchestration, python, rag, workflow
@@ -614,11 +684,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 9/15
 - Strategic score: 75/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, enterprise control gap, quality gate unclear
 - Description: 280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.
 - Repository review: Ecosystem Leader project with 58.1 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai-agents, ai-automation, automation, automation-templates, awesome, awesome-list, integration, low-code, n8n, n8n-automation, n8n-template, no-code-ai, no-code-automation, self-hosted, telegram-bot, workflow-automation
@@ -659,11 +732,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 96/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Evaluation / Observability
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 75/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.
 - Repository review: Ecosystem Leader project with 46.7 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent, agentic, agentic-ai, agents, agents-sdk, ai, ai-agents, aiagentframework, genai, genai-chatbot, llm, llms, multi-agent, multi-agent-systems, multi-agents, multi-agents-collaboration
@@ -702,11 +778,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 96/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 75/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Java frameworks like Quarkus and Spring Boot.
 - Repository review: Established project with 11.3 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: anthropic, chatgpt, chroma, embeddings, gemini, gpt, huggingface, java, langchain, llama, llm, llms, milvus, ollama, onnx, openai, openai-api, pgvector, pinecone, vector-database
@@ -747,11 +826,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 75/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous self-improving agents that research, plan, code, and execute tasks. Deployed in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs.
 - Repository review: Established project with 10.0 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agents, ai, ai-agent-framework, ai-agent-sdk, ai-agents, ai-agents-framework, ai-agents-sdk, ai-framwork, aiagent, aiagentframework, aiagents, aiagentsframework, claw, framework, multi-agent, multi-agent-system, multi-agent-systems, multi-agents, multi-ai-agents, openclaw
@@ -791,11 +873,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 96/100
 - Maturity level: scaling
 - Function category: AI Infrastructure
+- Subcategory: Evaluation / Observability
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 74/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: Observal is a unified platform for agent distribution, observability and insights.
 - Repository review: Scaling project with 29.2 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agents, antigravity, claude-code, cli-tool, cursor, cursor-ai, evaluation, insights, kiro, large-language-models, litellm, llm, llm-evaluation, llm-observability, llmops, monitoring, observability, open-source, playground, self-hosted
@@ -834,11 +919,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 3/15
 - Strategic score: 73/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: A lightweight, powerful framework for multi-agent workflows
 - Repository review: Ecosystem Leader project with 59.9 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agents, ai, framework, harness, llm, openai, python
@@ -876,11 +964,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 96/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 3/15
 - Strategic score: 73/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: 🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）
 - Repository review: Established project with 155.0 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agency-orchestrator, agent-definitions, ai-agents, ai-roles, chinese, claude, claude-code, copilot-agent, cursor-rules, deepseek, hermes-agent, llm, multi-agent, no-code, prompt-engineering, qwen, system-prompt, workbuddy, workflow
@@ -918,11 +1009,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 97/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 49
 - Commerce score: 3/15
 - Enterprise score: 3/15
 - Strategic score: 73/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Agentic AI Framework for Java Developers
 - Repository review: Established project with 15.6 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agentic, artificial-intelligence, context-engineering, graph, java, multi-agent, reactagent, spring-ai, workflow
@@ -960,11 +1054,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: emerging
 - Function category: AI Agent Framework
+- Subcategory: Evaluation / Observability
 - Relevance score: 34
 - Commerce score: 9/15
 - Enterprise score: 6/15
 - Strategic score: 70/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: An automated AI research-paper writer based off Google's PaperOrchestra paper's implementation through a skills -  benchmark + autoraters using any coding agent (Claude Code, Cursor, Antigravity, Cline, Aider). No API keys, no LLM SDKs.
 - Repository review: Emerging project with 10.3 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agentic-ai, ai-research, anthropic, antigravity, arxiv, automated-paper-writing, claude-code, claude-skills, coding-agents, cursor, latex, literature-review, llm-agents, multi-agent, paper-orchestra, paperorchestra, research-paper, semantic-scholar, skill-pack
@@ -1003,11 +1100,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: Agentic Enterprise
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: The agent engineering platform.
 - Repository review: Ecosystem Leader project with 104.5 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agents, ai, ai-agents, anthropic, chatgpt, deepagents, enterprise, framework, gemini, generative-ai, langchain, langgraph, llm, multiagent, open-source, openai, pydantic, python, rag, typescript
@@ -1048,11 +1148,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Build AI Agents, Visually
 - Repository review: Ecosystem Leader project with 46.0 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agentic-ai, agentic-workflow, agents, artificial-intelligence, chatbot, chatgpt, javascript, langchain, large-language-models, low-code, multiagent-systems, no-code, openai, rag, react, typescript, workflow-automation
@@ -1093,11 +1196,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, autonomously grows with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install.
 - Repository review: Ecosystem Leader project with 32.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai, ai-agent, ai-agents, chatgpt-on-wechat, claude, claude-code, codex, cowagent, deepseek, harness, llm, mcp, multi-agent, openai, openclaw, skills
@@ -1137,11 +1243,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Lightweight, open-source AI agent for your tools, chats, and workflows.
 - Repository review: Ecosystem Leader project with 359.8 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai, ai-agent, ai-agents, anthropic, chatgpt, claude, claude-code, codex, codex-cli, llm, nanobot, openai, openclaw
@@ -1179,11 +1288,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Installable GitHub library of 1,494+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes specialized plugins, installer CLI, bundles, workflows, and official/community skill collections.
 - Repository review: Ecosystem Leader project with 284.1 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent-skills, agentic-skills, ai-agent-skills, ai-agents, ai-coding, ai-workflows, antigravity, antigravity-skills, claude-code, claude-code-skills, codex-cli, codex-skills, cursor, cursor-skills, developer-tools, gemini-cli, gemini-skills, kiro, mcp, skill-library
@@ -1221,11 +1333,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, enterprise control gap, quality gate unclear
 - Description: ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀
 - Repository review: Ecosystem Leader project with 20.1 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai-app-builder, docker, hacktoberfest, internal-applications, internal-project, internal-tool, internal-tools, javascript, kubernetes, low-code, low-code-development-platform, low-code-framework, no-code, nodejs, reactjs, self-hosted, typescript, web-development-tools, workflow-automation
@@ -1263,11 +1378,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: Agentic Enterprise
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Build resilient agents.
 - Repository review: Ecosystem Leader project with 32.7 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agents, ai, ai-agents, chatgpt, deepagents, enterprise, framework, gemini, generative-ai, langchain, langgraph, llm, multiagent, open-source, openai, pydantic, python, rag
@@ -1308,11 +1426,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.
 - Repository review: Ecosystem Leader project with 23.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent, claude, deepseek, llm, mcp, nextjs, openai, qwen, rag, workflow
@@ -1353,11 +1474,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents
 - Repository review: Ecosystem Leader project with 17.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai-agent, ai-agent-tools, ai-agents, ai-agents-framework, mcp, mcp-server, mcp-tools, mcps, n8n-alternative, no-code-automation, workflow, workflow-automation, workflows
@@ -1395,11 +1519,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: Agentic Enterprise
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: 🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。
 - Repository review: Ecosystem Leader project with 21.3 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent, agentic-ai, chatbot, deepseek-r1, knowledgebase, langchain, llama3, llm, maxkb, mcp-server, ollama, pgvector, qwen3, rag
@@ -1440,11 +1567,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 6/15
 - Enterprise score: 3/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: 首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.
 - Repository review: Established project with 95.6 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai-agent, ai-agents, automation, film-production, generative-ai, short-drama, storyboard, video-generation
@@ -1485,11 +1615,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 69/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: From a goal to a task DAG, automatically. TypeScript-native multi-agent orchestration.
 - Repository review: Established project with 100.1 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent-framework, ai-agents, anthropic, claude, deepseek, gemini, grok, llm, local-llm, mcp, model-agnostic, multi-agent, nodejs, ollama, openai, orchestration, structured-output, task-scheduling, tool-use, typescript
@@ -1526,11 +1659,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 56/100
 - Maturity level: emerging
 - Function category: AI Commerce
+- Subcategory: Commerce Agent
 - Relevance score: 28
 - Commerce score: 9/15
 - Enterprise score: 9/15
 - Strategic score: 68/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, quality gate unclear
 - Description: Free AI agent skills for Amazon sellers—  keyword research, competitor analysis, listing audit & more. Works with OpenClaw, Claude Code, Cursor, Windsurf, Codex and any agent that supports the Skills format.
 - Repository review: Emerging project with 2.5 stars/day, recently active, and 56/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: ai-agents, amazon, amazon-seller-automation, amazon-seller-tools, claude-code, claude-skills, ecommerce, openclaw, openclaw-skills, skills
@@ -1570,11 +1706,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: AI Agent Framework
 - Relevance score: 29
 - Commerce score: 6/15
 - Enterprise score: 6/15
 - Strategic score: 65/100
 - Recommended action: prototype pattern
+- Next action: Extract the reusable architecture pattern and create a small Leap OS prototype brief.
+- Risk flags: license unknown, docs need review, quality gate unclear
 - Description: Autonomous novel writing AI Agent — agents write, audit, and revise novels with human review gates
 - Repository review: Established project with 83.5 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.
 - Topics: agent, ai, ai-agent, ai-novel, ai-writing, chinese-novel, cli, cli-tool, creative-writing-ai, novel-ai, novel-generation, openclaw
@@ -1611,11 +1750,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 3/15
 - Strategic score: 63/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: 50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.
 - Repository review: Ecosystem Leader project with 35.4 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: agentic-ai, agents, ai, ai-agents, autonomous-agents, genai, generative-ai, langchain, langgraph, llm, llms, machine-learning, mcp, multi-agent, multi-agent-systems, openai, python, rag, tutorials
@@ -1655,11 +1797,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 92/100
 - Maturity level: established
 - Function category: AI Infrastructure
+- Subcategory: Knowledge / RAG
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 3/15
 - Strategic score: 63/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, enterprise control gap
 - Description: Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.
 - Repository review: Established project with 50.5 stars/day, actively maintained, and 92/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: agent, agentic, ai, chatbot, embeddings, evaluation, generative-ai, golang, knowledge-base, llm, multi-tenant, multimodel, ollama, openai, question-answering, rag, reranking, semantic-search, vector-search, wiki
@@ -1699,11 +1844,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 33
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 63/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
 - Repository review: Ecosystem Leader project with 278.7 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: N/A
@@ -1741,11 +1889,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 95/100
 - Maturity level: emerging
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 43
 - Commerce score: 3/15
 - Enterprise score: 3/15
 - Strategic score: 61/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: wanman is an open-source agent matrix runtime inspired by Japanese one-man trains. It lets human users step back into an observer role while local agent runtimes coordinate autonomous multi-agent workflows, task execution, and artifacts.
 - Repository review: Emerging project with 15.0 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: agent, claude-code, codex, llm
@@ -1783,11 +1934,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: AI Agent Framework
 - Relevance score: 29
 - Commerce score: 6/15
 - Enterprise score: 3/15
 - Strategic score: 59/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, quality gate unclear
 - Description: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
 - Repository review: Ecosystem Leader project with 1506.7 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity
@@ -1827,11 +1981,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 29
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 59/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
 - Repository review: Ecosystem Leader project with 75.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: ai, apis, automation, cli, data-flow, development, integration-framework, integrations, ipaas, low-code, low-code-platform, mcp, mcp-client, mcp-server, n8n, no-code, self-hosted, typescript, workflow, workflow-automation
@@ -1868,11 +2025,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Enterprise Workflow
 - Relevance score: 29
 - Commerce score: 3/15
 - Enterprise score: 6/15
 - Strategic score: 59/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Apache Airflow - A platform to programmatically author, schedule, and monitor workflows
 - Repository review: Ecosystem Leader project with 11.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: airflow, apache, apache-airflow, automation, dag, data-engineering, data-integration, data-orchestrator, data-pipelines, data-science, elt, etl, machine-learning, mlops, orchestration, python, scheduler, workflow, workflow-engine, workflow-orchestration
@@ -1909,11 +2069,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 83/100
 - Maturity level: ecosystem leader
 - Function category: AI Commerce
+- Subcategory: Product Intelligence
 - Relevance score: 29
 - Commerce score: 9/15
 - Enterprise score: 0/15
 - Strategic score: 59/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Best Practices on Recommendation Systems
 - Repository review: Ecosystem Leader project with 7.7 stars/day, actively maintained, and 83/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: ai, artificial-intelligence, data-science, deep-learning, jupyter-notebook, kubernetes, machine-learning, operationalization, python, ranking, rating, recommendation, recommendation-algorithm, recommendation-engine, recommendation-system, recommender, tutorial
@@ -1950,11 +2113,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 82/100
 - Maturity level: established
 - Function category: AI Commerce
+- Subcategory: Commerce Agent
 - Relevance score: 29
 - Commerce score: 6/15
 - Enterprise score: 3/15
 - Strategic score: 59/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: AI-Native Open-Source Next.js commerce. Powered by Stripe. Ultra fast with typesafe Commerce SDK. Built for AI development (Claude, Codex,   Cursor).
 - Repository review: Established project with 8.1 stars/day, actively maintained, and 82/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: ai-friendly, ai-native, bun, commerce, nextjs, reactjs, stripe, tailwindcss, typescript
@@ -1991,11 +2157,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Agent Runtime
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 0/15
 - Strategic score: 57/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: "Vibe-Trading: Your Personal Trading Agent"
 - Repository review: Established project with 153.6 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: ai-agent, algorithmic-trading, backtesting, fintech, llm, mcp, multi-agent, python, quantitative-finance, trading
@@ -2032,11 +2201,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 94/100
 - Maturity level: established
 - Function category: AI Agent Framework
+- Subcategory: Agent Runtime
 - Relevance score: 39
 - Commerce score: 3/15
 - Enterprise score: 0/15
 - Strategic score: 57/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap
 - Description: AI quantitative trading platform for crypto, stocks, and forex with backtesting, live trading, market data, and multi-agent research.vibe-trading ,trading-agents,ai-trader,ai-trading
 - Repository review: Established project with 45.8 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: agent, ai, alpaca, backtesting, binance, coinbase, crypto, exchange, finance, fintech, forex, mcp-server, mt5, python, quant, quantitative-finance, saas, stocks, strategy, trade
@@ -2073,11 +2245,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Agent Runtime
 - Relevance score: 38
 - Commerce score: 3/15
 - Enterprise score: 0/15
 - Strategic score: 56/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: TradingAgents: Multi-Agents LLM Financial Trading Framework
 - Repository review: Ecosystem Leader project with 157.9 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: agent, finance, llm, multiagent, trading
@@ -2114,11 +2289,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 93/100
 - Maturity level: ecosystem leader
 - Function category: AI Agent Framework
+- Subcategory: Agent Runtime
 - Relevance score: 33
 - Commerce score: 3/15
 - Enterprise score: 0/15
 - Strategic score: 51/100
 - Recommended action: clone and test
+- Next action: Run locally, document setup friction, core modules, integration surface, and operational risks.
+- Risk flags: license unknown, docs need review, enterprise control gap, quality gate unclear
 - Description: Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click
 - Repository review: Ecosystem Leader project with 219.7 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.
 - Topics: N/A
@@ -2155,11 +2333,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 36/100
 - Maturity level: emerging
 - Function category: AI Infrastructure
+- Subcategory: Knowledge / RAG
 - Relevance score: 21
 - Commerce score: 6/15
 - Enterprise score: 3/15
 - Strategic score: 39/100
 - Recommended action: read docs
+- Next action: Review docs for API shape, deployment model, license, and reusable design ideas.
+- Risk flags: license unknown, docs need review, maintenance freshness risk, enterprise control gap
 - Description: A practical roadmap for mastering LLM internals, training, inference, RAG, agents, evaluation, and production architecture.
 - Repository review: Emerging project with 4.1 stars/day, needs maintenance review, and 36/100 momentum. Review first for reusable modules if action is 'read docs'.
 - Topics: N/A
@@ -2200,11 +2381,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 21/100
 - Maturity level: emerging
 - Function category: AI Infrastructure
+- Subcategory: Knowledge / RAG
 - Relevance score: 20
 - Commerce score: 6/15
 - Enterprise score: 3/15
 - Strategic score: 38/100
 - Recommended action: read docs
+- Next action: Review docs for API shape, deployment model, license, and reusable design ideas.
+- Risk flags: license unknown, docs need review, maintenance freshness risk
 - Description: 🏗️ Production-ready AI app structure — RAG pipeline, hybrid search, self-correcting agents, 3-layer security, evaluation, observability & CI/CD. A reference architecture for Vibe Coders & ML Engineers building real-world AI applications.
 - Repository review: Emerging project with 0.3 stars/day, needs maintenance review, and 21/100 momentum. Review first for reusable modules if action is 'read docs'.
 - Topics: N/A
@@ -2245,11 +2429,14 @@ Useful for Leap Agentic Enterprise OS as a pattern for workflow orchestration, e
 - Momentum score: 60/100
 - Maturity level: emerging
 - Function category: AI Commerce
+- Subcategory: Commerce Agent
 - Relevance score: 15
 - Commerce score: 9/15
 - Enterprise score: 0/15
 - Strategic score: 35/100
 - Recommended action: read docs
+- Next action: Review docs for API shape, deployment model, license, and reusable design ideas.
+- Risk flags: license unknown, docs need review, maintenance freshness risk, enterprise control gap
 - Description: Seedance 2.0 × Higgsfield 技能集 | 15 Claude prompt skills for AI video generation — cinematic, 3D CGI, anime, e-commerce ads, music videos & more. Each skill: 2-second hook framework, camera encyclopedia, 5+ production prompts. 含2秒钩子框架、摄像机百科、行业最佳实践提示词工程
 - Repository review: Emerging project with 10.3 stars/day, needs maintenance review, and 60/100 momentum. Review first for reusable modules if action is 'read docs'.
 - Topics: N/A

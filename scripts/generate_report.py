@@ -94,9 +94,12 @@ class Repo:
     updated_at: str
     pushed_at: str
     category: str
+    subcategory: str
     relevance: int
     modules: list[str]
     scenarios: list[str]
+    risk_flags: list[str]
+    follow_up_next_action: str
     commerce_score: int
     enterprise_score: int
     strategic_score: int
@@ -206,6 +209,24 @@ def classify(repo: dict[str, Any], report_date: date | None = None) -> tuple[str
     return category, base * 10 + topic_bonus + star_bonus + freshness_bonus
 
 
+def infer_subcategory(repo: dict[str, Any], category: str) -> str:
+    text = words(repo)
+    patterns = [
+        ("Commerce Agent", ["commerce", "ecommerce", "shopping", "checkout", "merchant", "retail"]),
+        ("Product Intelligence", ["product search", "recommendation", "catalog", "inventory", "pricing"]),
+        ("Enterprise Workflow", ["workflow", "orchestration", "handoff", "automation"]),
+        ("Knowledge / RAG", ["rag", "knowledge", "retrieval", "document", "vector", "embedding"]),
+        ("Evaluation / Observability", ["evaluation", "eval", "benchmark", "observability", "telemetry"]),
+        ("Agent Runtime", ["agent runtime", "multi-agent", "tool calling", "autonomous agent", "agentic"]),
+        ("AI Application Platform", ["copilot", "llm app", "assistant", "platform"]),
+        ("Infrastructure", ["inference", "deployment", "sdk", "api", "database"]),
+    ]
+    for label, keywords in patterns:
+        if any(keyword in text for keyword in keywords):
+            return label
+    return category
+
+
 def infer_modules(repo: dict[str, Any], category: str) -> list[str]:
     text = words(repo)
     modules = []
@@ -236,6 +257,38 @@ def infer_scenarios(repo: dict[str, Any], category: str) -> list[str]:
     if not scenarios:
         scenarios.append(f"Track as a {category.lower()} reference for platform capability planning.")
     return scenarios[:4]
+
+
+def infer_risk_flags(repo: dict[str, Any], modules: list[str], days_since_push: int) -> list[str]:
+    text = words(repo)
+    module_text = " ".join(modules).lower()
+    flags = []
+    license_info = repo.get("license")
+    if not license_info:
+        flags.append("license unknown")
+    if not any(k in text for k in ["doc", "example", "starter", "template", "quickstart"]):
+        flags.append("docs need review")
+    if days_since_push > 30:
+        flags.append("maintenance freshness risk")
+    if not any(k in text for k in ["permission", "audit", "policy", "governance", "approval", "security"]):
+        flags.append("enterprise control gap")
+    if "evaluation" not in module_text and not any(k in text for k in ["eval", "benchmark", "test", "observability"]):
+        flags.append("quality gate unclear")
+    return flags[:4]
+
+
+def follow_up_next_action(repo: "Repo") -> str:
+    if repo.action_level == "strategic watch":
+        return "Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly."
+    if repo.action_level == "prototype pattern":
+        return "Extract the reusable architecture pattern and create a small Leap OS prototype brief."
+    if repo.action_level == "clone and test":
+        return "Run locally, document setup friction, core modules, integration surface, and operational risks."
+    if repo.action_level == "read docs":
+        return "Review docs for API shape, deployment model, license, and reusable design ideas."
+    if repo.action_level == "monitor":
+        return "Keep on watchlist until adoption, docs, or implementation fit improves."
+    return "No follow-up unless it reappears with stronger activity or strategic relevance."
 
 
 def leap_notes(repo: dict[str, Any], category: str, modules: list[str]) -> tuple[str, str]:
@@ -349,6 +402,7 @@ def trend_metrics(
 def normalize_repo(item: dict[str, Any], report_date: date | None = None) -> Repo:
     as_of = report_date or date.today()
     category, relevance = classify(item, as_of)
+    subcategory = infer_subcategory(item, category)
     modules = infer_modules(item, category)
     scenarios = infer_scenarios(item, category)
     commerce, enterprise = leap_notes(item, category, modules)
@@ -357,7 +411,8 @@ def normalize_repo(item: dict[str, Any], report_date: date | None = None) -> Rep
     age_days, days_since_push, stars_per_day, fork_ratio, momentum_score, maturity_level, repository_review = trend_metrics(
         item, as_of, relevance, strategic_score
     )
-    return Repo(
+    risk_flags = infer_risk_flags(item, modules, days_since_push)
+    repo = Repo(
         name=item.get("name") or "",
         full_name=item.get("full_name") or "",
         owner=repo_owner(item),
@@ -371,9 +426,12 @@ def normalize_repo(item: dict[str, Any], report_date: date | None = None) -> Rep
         updated_at=item.get("updated_at") or "",
         pushed_at=item.get("pushed_at") or "",
         category=category,
+        subcategory=subcategory,
         relevance=relevance,
         modules=modules,
         scenarios=scenarios,
+        risk_flags=risk_flags,
+        follow_up_next_action="",
         commerce_score=commerce_score,
         enterprise_score=enterprise_score,
         strategic_score=strategic_score,
@@ -388,6 +446,8 @@ def normalize_repo(item: dict[str, Any], report_date: date | None = None) -> Rep
         leap_commerce=commerce,
         leap_enterprise=enterprise,
     )
+    repo.follow_up_next_action = follow_up_next_action(repo)
+    return repo
 
 
 def collect(days: int, limit: int, token: str | None, report_date: date | None = None) -> list[Repo]:
@@ -461,6 +521,7 @@ def init_db(db_path: Path) -> sqlite3.Connection:
           stars INTEGER NOT NULL,
           forks INTEGER NOT NULL,
           category TEXT NOT NULL,
+          subcategory TEXT NOT NULL DEFAULT '',
           relevance INTEGER NOT NULL,
           commerce_score INTEGER NOT NULL,
           enterprise_score INTEGER NOT NULL,
@@ -475,6 +536,8 @@ def init_db(db_path: Path) -> sqlite3.Connection:
           repository_review TEXT NOT NULL DEFAULT '',
           modules_json TEXT NOT NULL,
           scenarios_json TEXT NOT NULL,
+          risk_flags_json TEXT NOT NULL DEFAULT '[]',
+          follow_up_next_action TEXT NOT NULL DEFAULT '',
           leap_commerce TEXT NOT NULL,
           leap_enterprise TEXT NOT NULL,
           UNIQUE(full_name, snapshot_date),
@@ -515,6 +578,7 @@ def init_db(db_path: Path) -> sqlite3.Connection:
 def ensure_snapshot_columns(conn: sqlite3.Connection) -> None:
     columns = {row["name"] for row in conn.execute("PRAGMA table_info(repo_snapshots)").fetchall()}
     migrations = {
+        "subcategory": "ALTER TABLE repo_snapshots ADD COLUMN subcategory TEXT NOT NULL DEFAULT ''",
         "age_days": "ALTER TABLE repo_snapshots ADD COLUMN age_days INTEGER NOT NULL DEFAULT 0",
         "days_since_push": "ALTER TABLE repo_snapshots ADD COLUMN days_since_push INTEGER NOT NULL DEFAULT 0",
         "stars_per_day": "ALTER TABLE repo_snapshots ADD COLUMN stars_per_day REAL NOT NULL DEFAULT 0",
@@ -522,6 +586,8 @@ def ensure_snapshot_columns(conn: sqlite3.Connection) -> None:
         "momentum_score": "ALTER TABLE repo_snapshots ADD COLUMN momentum_score INTEGER NOT NULL DEFAULT 0",
         "maturity_level": "ALTER TABLE repo_snapshots ADD COLUMN maturity_level TEXT NOT NULL DEFAULT ''",
         "repository_review": "ALTER TABLE repo_snapshots ADD COLUMN repository_review TEXT NOT NULL DEFAULT ''",
+        "risk_flags_json": "ALTER TABLE repo_snapshots ADD COLUMN risk_flags_json TEXT NOT NULL DEFAULT '[]'",
+        "follow_up_next_action": "ALTER TABLE repo_snapshots ADD COLUMN follow_up_next_action TEXT NOT NULL DEFAULT ''",
     }
     for column, statement in migrations.items():
         if column not in columns:
@@ -570,17 +636,19 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
         conn.execute(
             """
             INSERT INTO repo_snapshots (
-              full_name, snapshot_date, stars, forks, category, relevance,
+              full_name, snapshot_date, stars, forks, category, subcategory, relevance,
               commerce_score, enterprise_score, strategic_score, action_level,
               age_days, days_since_push, stars_per_day, fork_ratio, momentum_score,
               maturity_level, repository_review, modules_json, scenarios_json,
+              risk_flags_json, follow_up_next_action,
               leap_commerce, leap_enterprise
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(full_name, snapshot_date) DO UPDATE SET
               stars = excluded.stars,
               forks = excluded.forks,
               category = excluded.category,
+              subcategory = excluded.subcategory,
               relevance = excluded.relevance,
               commerce_score = excluded.commerce_score,
               enterprise_score = excluded.enterprise_score,
@@ -595,6 +663,8 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
               repository_review = excluded.repository_review,
               modules_json = excluded.modules_json,
               scenarios_json = excluded.scenarios_json,
+              risk_flags_json = excluded.risk_flags_json,
+              follow_up_next_action = excluded.follow_up_next_action,
               leap_commerce = excluded.leap_commerce,
               leap_enterprise = excluded.leap_enterprise
             """,
@@ -604,6 +674,7 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
                 repo.stars,
                 repo.forks,
                 repo.category,
+                repo.subcategory,
                 repo.relevance,
                 repo.commerce_score,
                 repo.enterprise_score,
@@ -618,6 +689,8 @@ def save_to_db(conn: sqlite3.Connection, repos: list[Repo], report_date: date) -
                 repo.repository_review,
                 json.dumps(repo.modules, ensure_ascii=False),
                 json.dumps(repo.scenarios, ensure_ascii=False),
+                json.dumps(repo.risk_flags, ensure_ascii=False),
+                repo.follow_up_next_action,
                 repo.leap_commerce,
                 repo.leap_enterprise,
             ),
@@ -643,11 +716,12 @@ def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -
         SELECT
           r.name, r.full_name, r.owner, r.url, r.description, r.language,
           r.topics_json, r.created_at, r.updated_at, r.pushed_at,
-          s.stars, s.forks, s.category, s.relevance, s.commerce_score,
+          s.stars, s.forks, s.category, s.subcategory, s.relevance, s.commerce_score,
           s.enterprise_score, s.strategic_score, s.action_level,
           s.age_days, s.days_since_push, s.stars_per_day, s.fork_ratio,
           s.momentum_score, s.maturity_level, s.repository_review,
-          s.modules_json, s.scenarios_json, s.leap_commerce, s.leap_enterprise
+          s.modules_json, s.scenarios_json, s.risk_flags_json, s.follow_up_next_action,
+          s.leap_commerce, s.leap_enterprise
         FROM repo_snapshots s
         JOIN repositories r ON r.full_name = s.full_name
         WHERE s.snapshot_date = ?
@@ -656,8 +730,23 @@ def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -
         """,
         (report_date.isoformat(), limit),
     ).fetchall()
-    return [
-        Repo(
+    repos = []
+    for row in rows:
+        topics = json.loads(row["topics_json"])
+        row_item = {
+            "name": row["name"],
+            "full_name": row["full_name"],
+            "description": row["description"],
+            "topics": topics,
+            "language": row["language"],
+            "pushed_at": row["pushed_at"],
+        }
+        modules = json.loads(row["modules_json"])
+        risk_flags = json.loads(row["risk_flags_json"] or "[]") or infer_risk_flags(
+            row_item, modules, row["days_since_push"]
+        )
+        subcategory = row["subcategory"] or infer_subcategory(row_item, row["category"])
+        repo = Repo(
             name=row["name"],
             full_name=row["full_name"],
             owner=row["owner"],
@@ -666,14 +755,17 @@ def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -
             language=row["language"],
             stars=row["stars"],
             forks=row["forks"],
-            topics=json.loads(row["topics_json"]),
+            topics=topics,
             created_at=row["created_at"],
             updated_at=row["updated_at"],
             pushed_at=row["pushed_at"],
             category=row["category"],
+            subcategory=subcategory,
             relevance=row["relevance"],
-            modules=json.loads(row["modules_json"]),
+            modules=modules,
             scenarios=json.loads(row["scenarios_json"]),
+            risk_flags=risk_flags,
+            follow_up_next_action=row["follow_up_next_action"],
             commerce_score=row["commerce_score"],
             enterprise_score=row["enterprise_score"],
             strategic_score=row["strategic_score"],
@@ -688,8 +780,10 @@ def load_report_repos(conn: sqlite3.Connection, report_date: date, limit: int) -
             leap_commerce=row["leap_commerce"],
             leap_enterprise=row["leap_enterprise"],
         )
-        for row in rows
-    ]
+        if not repo.follow_up_next_action:
+            repo.follow_up_next_action = follow_up_next_action(repo)
+        repos.append(repo)
+    return repos
 
 
 def save_daily_report_record(conn: sqlite3.Connection, report_date: date, repo_count: int) -> None:
@@ -757,6 +851,79 @@ def active_counts(repos: list[Repo]) -> tuple[int, int]:
     return active_7, active_30
 
 
+def top_by(repos: list[Repo], key: str) -> Repo | None:
+    if not repos:
+        return None
+    return max(repos, key=lambda repo: getattr(repo, key))
+
+
+def watchlist_flags(repos: list[Repo]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for repo in repos:
+        for flag in repo.risk_flags:
+            counts[flag] = counts.get(flag, 0) + 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
+
+
+def backlog_items(repos: list[Repo]) -> list[dict[str, Any]]:
+    priority_order = {
+        "strategic watch": 5,
+        "prototype pattern": 4,
+        "clone and test": 3,
+        "read docs": 2,
+        "monitor": 1,
+        "ignore": 0,
+    }
+    items = []
+    for repo in repos:
+        if repo.action_level == "ignore":
+            continue
+        items.append(
+            {
+                "full_name": repo.full_name,
+                "url": repo.url,
+                "category": repo.category,
+                "subcategory": repo.subcategory,
+                "action_level": repo.action_level,
+                "priority": priority_order.get(repo.action_level, 0),
+                "strategic_score": repo.strategic_score,
+                "momentum_score": repo.momentum_score,
+                "risk_flags": repo.risk_flags,
+                "next_action": repo.follow_up_next_action,
+                "suggested_owner": "product+engineering review",
+            }
+        )
+    items.sort(key=lambda item: (item["priority"], item["strategic_score"], item["momentum_score"]), reverse=True)
+    return items
+
+
+def trend_payload(repos: list[Repo], report_date: date, history: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+    active_7, active_30 = active_counts(repos)
+    return {
+        "report_date": report_date.isoformat(),
+        "repo_count": len(repos),
+        "active_7_days": active_7,
+        "active_30_days": active_30,
+        "category_distribution": category_counts(repos),
+        "subcategory_distribution": distribution(repos, "subcategory"),
+        "language_distribution": top_languages(repos, limit=10),
+        "maturity_distribution": distribution(repos, "maturity_level"),
+        "action_distribution": action_counts(repos),
+        "watchlist_flags": watchlist_flags(repos),
+        "top_momentum": [
+            {
+                "full_name": repo.full_name,
+                "momentum_score": repo.momentum_score,
+                "stars_per_day": repo.stars_per_day,
+                "days_since_push": repo.days_since_push,
+                "action_level": repo.action_level,
+            }
+            for repo in sorted(repos, key=lambda repo: repo.momentum_score, reverse=True)[:10]
+        ],
+        "history": history or [],
+    }
+
+
 def render_count_list(counts: dict[str, int]) -> list[str]:
     return [f"- {key}: {value}" for key, value in counts.items()] or ["- N/A"]
 
@@ -764,6 +931,11 @@ def render_count_list(counts: dict[str, int]) -> list[str]:
 def render_markdown(repos: list[Repo], report_date: date, lookback_days: int = 90) -> str:
     active_7, active_30 = active_counts(repos)
     top_momentum = sorted(repos, key=lambda repo: repo.momentum_score, reverse=True)[:5]
+    notable = top_by(repos, "strategic_score")
+    commerce_pick = top_by([repo for repo in repos if repo.commerce_score > 0], "commerce_score")
+    enterprise_pick = top_by([repo for repo in repos if repo.enterprise_score > 0], "enterprise_score")
+    flag_counts = watchlist_flags(repos)
+    backlog = backlog_items(repos)[:10]
     lines = [
         f"# GitHub Top Star AI & Agent 90-Day Radar - {report_date.isoformat()}",
         "",
@@ -774,8 +946,12 @@ def render_markdown(repos: list[Repo], report_date: date, lookback_days: int = 9
         f"- Repositories reviewed: {len(repos)}",
         f"- Lookback window: {lookback_days} days",
         f"- Top category: {repos[0].category if repos else 'N/A'}",
+        f"- Notable repository of the day: {notable.full_name if notable else 'N/A'}",
+        f"- Leap Commerce OS signal: {commerce_pick.full_name if commerce_pick else 'N/A'}",
+        f"- Agentic Enterprise OS signal: {enterprise_pick.full_name if enterprise_pick else 'N/A'}",
         f"- Active in last 7 days: {active_7}",
         f"- Active in last 30 days: {active_30}",
+        f"- Watchlist flags: {', '.join(f'{key} ({value})' for key, value in list(flag_counts.items())[:4]) if flag_counts else 'N/A'}",
         "- Method: GitHub Search API, recently created and recently active repositories, sorted by momentum, stars, and Leap relevance.",
         "",
         "## 90-Day Trend Signals",
@@ -796,6 +972,14 @@ def render_markdown(repos: list[Repo], report_date: date, lookback_days: int = 9
         "",
         *render_count_list(action_counts(repos)),
         "",
+        "### Subcategory Distribution",
+        "",
+        *render_count_list(distribution(repos, "subcategory")),
+        "",
+        "### Watchlist Flags",
+        "",
+        *render_count_list(flag_counts),
+        "",
         "### Top Momentum Repositories",
         "",
         "| Repository | Momentum | Stars/day | Days Since Push | Review |",
@@ -805,14 +989,23 @@ def render_markdown(repos: list[Repo], report_date: date, lookback_days: int = 9
             for repo in top_momentum
         ],
         "",
+        "## Follow-Up Backlog",
+        "",
+        "| Repository | Action | Priority | Subcategory | Risks | Next Step |",
+        "| --- | --- | ---: | --- | --- | --- |",
+        *[
+            f"| {md_escape(item['full_name'])} | {item['action_level']} | {item['priority']} | {md_escape(item['subcategory'])} | {md_escape(', '.join(item['risk_flags']) or 'N/A')} | {md_escape(item['next_action'])} |"
+            for item in backlog
+        ],
+        "",
         "## Repository Table",
         "",
-        "| Repository | Author | Stars | Stars/day | Momentum | Category | Strategic | Action | URL |",
-        "| --- | --- | ---: | ---: | ---: | --- | ---: | --- | --- |",
+        "| Repository | Author | Stars | Stars/day | Momentum | Category | Subcategory | Strategic | Action | URL |",
+        "| --- | --- | ---: | ---: | ---: | --- | --- | ---: | --- | --- |",
     ]
     for repo in repos:
         lines.append(
-            f"| {md_escape(repo.name)} | {md_escape(repo.owner)} | {repo.stars} | {repo.stars_per_day:.2f} | {repo.momentum_score} | {repo.category} | {repo.strategic_score} | {repo.action_level} | {repo.url} |"
+            f"| {md_escape(repo.name)} | {md_escape(repo.owner)} | {repo.stars} | {repo.stars_per_day:.2f} | {repo.momentum_score} | {repo.category} | {repo.subcategory} | {repo.strategic_score} | {repo.action_level} | {repo.url} |"
         )
     lines.extend(["", "## Detailed Notes", ""])
     for index, repo in enumerate(repos, 1):
@@ -832,11 +1025,14 @@ def render_markdown(repos: list[Repo], report_date: date, lookback_days: int = 9
                 f"- Momentum score: {repo.momentum_score}/100",
                 f"- Maturity level: {repo.maturity_level}",
                 f"- Function category: {repo.category}",
+                f"- Subcategory: {repo.subcategory}",
                 f"- Relevance score: {repo.relevance}",
                 f"- Commerce score: {repo.commerce_score}/15",
                 f"- Enterprise score: {repo.enterprise_score}/15",
                 f"- Strategic score: {repo.strategic_score}/100",
                 f"- Recommended action: {repo.action_level}",
+                f"- Next action: {repo.follow_up_next_action}",
+                f"- Risk flags: {', '.join(repo.risk_flags) if repo.risk_flags else 'N/A'}",
                 f"- Description: {repo.description}",
                 f"- Repository review: {repo.repository_review}",
                 f"- Topics: {', '.join(repo.topics) if repo.topics else 'N/A'}",
@@ -876,11 +1072,15 @@ def slug(text: str) -> str:
 
 def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -> str:
     counts = category_counts(repos)
+    subcategory_counts = distribution(repos, "subcategory")
     maturity_counts = distribution(repos, "maturity_level")
     language_counts = top_languages(repos)
+    flag_counts = watchlist_flags(repos)
     max_count = max(counts.values() or [1])
+    max_subcategory = max(subcategory_counts.values() or [1])
     max_maturity = max(maturity_counts.values() or [1])
     max_language = max(language_counts.values() or [1])
+    max_flags = max(flag_counts.values() or [1])
     active_7, active_30 = active_counts(repos)
     top = repos[:8]
     top_momentum = sorted(repos, key=lambda repo: repo.momentum_score, reverse=True)[:8]
@@ -894,6 +1094,26 @@ def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -
         </article>
         """
         for category, count in counts.items()
+    )
+    subcategory_cards = "\n".join(
+        f"""
+        <div class="score-row compact">
+          <span>{html.escape(subcategory)}</span>
+          <b>{count}</b>
+          <i style="width:{count / max_subcategory * 100:.1f}%"></i>
+        </div>
+        """
+        for subcategory, count in subcategory_counts.items()
+    )
+    flag_cards = "\n".join(
+        f"""
+        <div class="score-row compact risk">
+          <span>{html.escape(flag)}</span>
+          <b>{count}</b>
+          <i style="width:{count / max_flags * 100:.1f}%"></i>
+        </div>
+        """
+        for flag, count in flag_counts.items()
     )
     maturity_cards = "\n".join(
         f"""
@@ -916,8 +1136,15 @@ def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -
         for language, count in language_counts.items()
     )
     repo_cards = "\n".join(render_repo_card(repo, index) for index, repo in enumerate(top, 1))
-    max_strategic = max([repo.strategic_score for repo in repos] or [1])
-    max_momentum = max([repo.momentum_score for repo in repos] or [1])
+    backlog_rows = "\n".join(render_backlog_row(item) for item in backlog_items(repos)[:16])
+    category_options = "\n".join(
+        f'<option value="{html.escape(category)}">{html.escape(category)}</option>' for category in counts
+    )
+    action_options = "\n".join(
+        f'<option value="{html.escape(action)}">{html.escape(action)}</option>' for action in action_counts(repos)
+    )
+    max_strategic = max(1, max([repo.strategic_score for repo in repos] or [1]))
+    max_momentum = max(1, max([repo.momentum_score for repo in repos] or [1]))
     score_rows = "\n".join(
         f"""
         <div class="score-row">
@@ -995,6 +1222,14 @@ def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -
             <h3>Language Mix</h3>
             <div class="score-chart">{language_cards}</div>
           </div>
+          <div>
+            <h3>Subcategory Mix</h3>
+            <div class="score-chart">{subcategory_cards}</div>
+          </div>
+          <div>
+            <h3>Watchlist Flags</h3>
+            <div class="score-chart">{flag_cards}</div>
+          </div>
         </div>
       </section>
 
@@ -1044,8 +1279,33 @@ def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -
 
       <section class="panel">
         <div class="section-head">
+          <h2>Follow-Up Backlog</h2>
+          <p>Actionable queue generated from strategic score, momentum, and risk signals.</p>
+        </div>
+        <div class="backlog-table">
+          <div class="backlog-head"><span>Repository</span><span>Action</span><span>Priority</span><span>Next Step</span></div>
+          {backlog_rows}
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
           <h2>Top Repositories</h2>
           <p>Highest priority repositories for review and learning.</p>
+        </div>
+        <div class="filters">
+          <label>Category
+            <select id="category-filter">
+              <option value="">All</option>
+              {category_options}
+            </select>
+          </label>
+          <label>Action
+            <select id="action-filter">
+              <option value="">All</option>
+              {action_options}
+            </select>
+          </label>
         </div>
         <div class="repo-grid">
           {repo_cards}
@@ -1060,6 +1320,22 @@ def render_html(repos: list[Repo], report_date: date, lookback_days: int = 90) -
         <pre id="raw-data">{data_json}</pre>
       </section>
     </main>
+    <script>
+      const categoryFilter = document.querySelector("#category-filter");
+      const actionFilter = document.querySelector("#action-filter");
+      const cards = Array.from(document.querySelectorAll(".repo-card"));
+      function applyFilters() {{
+        const category = categoryFilter.value;
+        const action = actionFilter.value;
+        cards.forEach((card) => {{
+          const matchesCategory = !category || card.dataset.category === category;
+          const matchesAction = !action || card.dataset.action === action;
+          card.hidden = !(matchesCategory && matchesAction);
+        }});
+      }}
+      categoryFilter.addEventListener("change", applyFilters);
+      actionFilter.addEventListener("change", applyFilters);
+    </script>
   </body>
 </html>
 """
@@ -1069,11 +1345,13 @@ def render_repo_card(repo: Repo, index: int) -> str:
     module_items = "".join(f"<li>{html.escape(module)}</li>" for module in repo.modules)
     scenario_items = "".join(f"<li>{html.escape(item)}</li>" for item in repo.scenarios)
     topic_items = "".join(f"<span>{html.escape(topic)}</span>" for topic in repo.topics[:6])
+    risk_items = "".join(f"<span>{html.escape(flag)}</span>" for flag in repo.risk_flags)
     return f"""
-    <article class="repo-card" id="{slug(repo.full_name)}">
+    <article class="repo-card" id="{slug(repo.full_name)}" data-category="{html.escape(repo.category)}" data-action="{html.escape(repo.action_level)}">
       <div class="repo-top">
         <span class="rank">#{index}</span>
         <span class="category">{html.escape(repo.category)}</span>
+        <span class="category">{html.escape(repo.subcategory)}</span>
       </div>
       <h3><a href="{html.escape(repo.url)}">{html.escape(repo.full_name)}</a></h3>
       <p>{html.escape(repo.description)}</p>
@@ -1097,12 +1375,28 @@ def render_repo_card(repo: Repo, index: int) -> str:
       <ul>{scenario_items}</ul>
       <h4>Repository Review</h4>
       <p>{html.escape(repo.repository_review)}</p>
+      <h4>Next Action</h4>
+      <p>{html.escape(repo.follow_up_next_action)}</p>
+      <h4>Risk Flags</h4>
+      <div class="topics risks">{risk_items or '<span>N/A</span>'}</div>
       <h4>Leap Commerce OS</h4>
       <p>{html.escape(repo.leap_commerce)}</p>
       <h4>Leap Enterprise OS</h4>
       <p>{html.escape(repo.leap_enterprise)}</p>
       <div class="topics">{topic_items}</div>
     </article>
+    """
+
+
+def render_backlog_row(item: dict[str, Any]) -> str:
+    risks = ", ".join(item["risk_flags"]) or "N/A"
+    return f"""
+    <div class="backlog-row">
+      <span><a href="{html.escape(item['url'])}">{html.escape(item['full_name'])}</a><em>{html.escape(item['subcategory'])} · {html.escape(risks)}</em></span>
+      <b>{html.escape(item['action_level'])}</b>
+      <strong>{item['priority']}</strong>
+      <span>{html.escape(item['next_action'])}</span>
+    </div>
     """
 
 
@@ -1119,11 +1413,16 @@ def write_outputs(
     md = "\n".join(line.rstrip() for line in render_markdown(repos, report_date, lookback_days).splitlines()) + "\n"
     html_doc = "\n".join(line.rstrip() for line in render_html(repos, report_date, lookback_days).splitlines()) + "\n"
     data = [repo.__dict__ for repo in repos]
+    history_payload = history or []
+    backlog = backlog_items(repos)
+    trends = trend_payload(repos, report_date, history_payload)
 
     (REPORTS / f"{report_date.isoformat()}.md").write_text(md, encoding="utf-8")
     (PUBLIC / "index.html").write_text(html_doc, encoding="utf-8")
     (PUBLIC / "latest.md").write_text(md, encoding="utf-8")
     (DATA_DIR / "latest.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (DATA_DIR / "backlog.json").write_text(json.dumps(backlog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (DATA_DIR / "trends.json").write_text(json.dumps(trends, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if history is not None:
         (DATA_DIR / "history.json").write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

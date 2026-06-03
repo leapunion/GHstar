@@ -48,9 +48,11 @@ class GenerateReportSmokeTest(unittest.TestCase):
             latest_md_path = tmp_root / "public" / "latest.md"
             data_path = tmp_root / "public" / "data" / "latest.json"
             history_path = tmp_root / "public" / "data" / "history.json"
+            backlog_path = tmp_root / "public" / "data" / "backlog.json"
+            trends_path = tmp_root / "public" / "data" / "trends.json"
             db_path = tmp_root / "data" / "ghstar.sqlite"
 
-            for output_path in [markdown_path, html_path, latest_md_path, data_path, history_path, db_path]:
+            for output_path in [markdown_path, html_path, latest_md_path, data_path, history_path, backlog_path, trends_path, db_path]:
                 self.assertTrue(output_path.exists(), f"missing output: {output_path}")
 
             markdown = markdown_path.read_text(encoding="utf-8")
@@ -58,10 +60,14 @@ class GenerateReportSmokeTest(unittest.TestCase):
             html = html_path.read_text(encoding="utf-8")
             data = json.loads(data_path.read_text(encoding="utf-8"))
             history = json.loads(history_path.read_text(encoding="utf-8"))
+            backlog = json.loads(backlog_path.read_text(encoding="utf-8"))
+            trends = json.loads(trends_path.read_text(encoding="utf-8"))
 
             self.assertEqual(latest_markdown, markdown)
             self.assertIn(f"# GitHub Top Star AI & Agent 90-Day Radar - {REPORT_DATE}", markdown)
             self.assertIn("90-Day Trend Signals", markdown)
+            self.assertIn("Follow-Up Backlog", markdown)
+            self.assertIn("Watchlist Flags", markdown)
             self.assertIn("Repository review", markdown)
             self.assertIn("leapunion-labs/agent-commerce-kit", markdown)
             self.assertIn("acme-ai/enterprise-rag-copilot", markdown)
@@ -71,6 +77,8 @@ class GenerateReportSmokeTest(unittest.TestCase):
             self.assertIn(f"<title>GHstar AI & Agent 90-Day Radar - {REPORT_DATE}</title>", html)
             self.assertIn("AI, Agent, Commerce, and Enterprise Top Star Radar", html)
             self.assertIn("90-Day Trend Signals", html)
+            self.assertIn("Follow-Up Backlog", html)
+            self.assertIn("category-filter", html)
             self.assertIn("Repository Review", html)
             self.assertIn("leapunion-labs/agent-commerce-kit", html)
             self.assertIn("Repositories Reviewed", html)
@@ -80,7 +88,10 @@ class GenerateReportSmokeTest(unittest.TestCase):
             self.assertEqual(data[0]["owner"], "leapunion-labs")
             self.assertEqual(data[0]["stars"], 1280)
             self.assertEqual(data[0]["category"], "AI Commerce")
+            self.assertEqual(data[0]["subcategory"], "Commerce Agent")
             self.assertIn("Product intelligence", data[0]["modules"])
+            self.assertIn("risk_flags", data[0])
+            self.assertIn("follow_up_next_action", data[0])
             self.assertEqual(data[0]["age_days"], 27)
             self.assertGreater(data[0]["stars_per_day"], 0)
             self.assertGreaterEqual(data[0]["momentum_score"], 0)
@@ -91,6 +102,11 @@ class GenerateReportSmokeTest(unittest.TestCase):
             self.assertIn(data[1]["category"], {"Agentic Enterprise", "AI Infrastructure"})
             self.assertEqual(history[0]["report_date"], REPORT_DATE)
             self.assertEqual(history[0]["repo_count"], 2)
+            self.assertGreaterEqual(len(backlog), 1)
+            self.assertIn("next_action", backlog[0])
+            self.assertEqual(trends["report_date"], REPORT_DATE)
+            self.assertIn("subcategory_distribution", trends)
+            self.assertIn("watchlist_flags", trends)
 
 
 if __name__ == "__main__":

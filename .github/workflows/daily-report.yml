@@ -20,6 +20,7 @@ jobs:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      GHSTAR_PUBLIC_URL: ${{ secrets.GHSTAR_PUBLIC_URL }}
 
     steps:
       - name: Check out repository
@@ -36,12 +37,15 @@ jobs:
       - name: Generate daily report
         run: python scripts/generate_report.py --days 90 --limit 50
 
+      - name: Verify generated public outputs
+        run: python scripts/check_public_outputs.py
+
       - name: Commit generated report files
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports public/index.html public/latest.md public/data/latest.json public/data/history.json data/ghstar.sqlite
+          git add reports public/index.html public/latest.md public/data/latest.json public/data/history.json public/data/backlog.json public/data/trends.json data/ghstar.sqlite
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No generated report changes to commit."
@@ -54,3 +58,7 @@ jobs:
       - name: Deploy to Vercel
         if: env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != ''
         run: npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
+
+      - name: Verify deployed public outputs
+        if: env.GHSTAR_PUBLIC_URL != ''
+        run: python scripts/check_public_outputs.py

@@ -238,6 +238,10 @@ main {
   background: rgba(120, 210, 139, 0.2);
 }
 
+.score-row.risk i {
+  background: rgba(230, 109, 90, 0.22);
+}
+
 .trend-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
@@ -253,6 +257,65 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 14px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.filters label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.filters select {
+  min-width: 220px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #0d120f;
+  color: var(--text);
+}
+
+.backlog-table {
+  display: grid;
+  gap: 8px;
+}
+
+.backlog-head,
+.backlog-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.2fr) 150px 80px minmax(260px, 1.5fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #0d120f;
+}
+
+.backlog-head {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.backlog-row b,
+.backlog-row strong {
+  color: var(--accent-2);
+}
+
+.backlog-row em {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-style: normal;
 }
 
 .repo-card {
@@ -280,6 +343,10 @@ main {
 
 .category {
   color: var(--accent);
+}
+
+.risks span {
+  color: var(--danger);
 }
 
 .repo-card h3 {
@@ -329,7 +396,9 @@ pre {
 
   .architecture,
   .flow,
-  .trend-grid {
+  .trend-grid,
+  .backlog-head,
+  .backlog-row {
     grid-template-columns: 1fr;
   }
 
