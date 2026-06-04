@@ -26,7 +26,10 @@ Worked the P0 block from the roadmap (items 1–3). The architectural half of P0
   `history` series ascending, day-snapshots omit `history`).
   `tests/test_empty_result_guard.py` unit-tests the guard. `run_smoke_test.py` now
   **discovers** the whole `tests/` suite (added `tests/__init__.py`), so new test
-  modules auto-guard in CI.
+  modules auto-guard in CI. Also added `.github/workflows/tests.yml` — runs the
+  suite on every PR + push to `main` (no path filter), closing a gap where the
+  smoke suite previously ran *only* inside the schedule-only daily job and so never
+  gated PRs.
 - **P0-1 (carve only) — split the monolith.** The ~1500-line `generate_report.py` is
   now a 67-line CLI facade over a new `scripts/ghstar/` package, carved in dependency
   order `model ← enrich ← {collect, store, render}`. The facade re-exports the full
