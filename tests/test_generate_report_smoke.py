@@ -27,6 +27,10 @@ class GenerateReportSmokeTest(unittest.TestCase):
             tmp_script_dir.mkdir()
             tmp_script = tmp_script_dir / "generate_report.py"
             shutil.copy2(SCRIPT, tmp_script)
+            # The facade imports the carved ghstar package — copy it alongside so
+            # the script runs self-contained in the isolated tempdir.
+            shutil.copytree(SCRIPT.parent / "ghstar", tmp_script_dir / "ghstar",
+                            ignore=shutil.ignore_patterns("__pycache__"))
 
             result = subprocess.run(
                 [
