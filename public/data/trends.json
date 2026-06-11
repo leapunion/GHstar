@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-06-10",
+  "report_date": "2026-06-11",
   "repo_count": 50,
   "active_7_days": 47,
   "active_30_days": 48,
@@ -11,41 +11,41 @@
   },
   "subcategory_distribution": {
     "Enterprise Workflow": 26,
-    "Knowledge / RAG": 12,
+    "Knowledge / RAG": 13,
     "Commerce Agent": 4,
     "Agent Runtime": 3,
     "Evaluation / Observability": 2,
     "AI Agent Framework": 1,
-    "Infrastructure": 1,
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 26,
-    "TypeScript": 15,
+    "Python": 27,
+    "TypeScript": 12,
     "Java": 3,
+    "Go": 2,
     "JavaScript": 2,
     "MDX": 2,
-    "Go": 1,
+    "PHP": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 26,
-    "established": 12,
-    "emerging": 7,
-    "scaling": 5
+    "ecosystem leader": 25,
+    "established": 15,
+    "emerging": 6,
+    "scaling": 4
   },
   "action_distribution": {
-    "prototype pattern": 24,
-    "clone and test": 14,
-    "strategic watch": 8,
-    "read docs": 3,
+    "prototype pattern": 25,
+    "clone and test": 13,
+    "strategic watch": 9,
+    "read docs": 2,
     "monitor": 1
   },
   "watchlist_flags": {
-    "enterprise control gap": 45,
     "docs need review": 44,
-    "quality gate unclear": 40,
-    "license unknown": 5,
+    "enterprise control gap": 44,
+    "quality gate unclear": 38,
+    "license unknown": 4,
     "maintenance freshness risk": 2
   },
   "top_momentum": [
@@ -59,68 +59,76 @@
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.51,
+      "stars_per_day": 27.53,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
+      "full_name": "openai/openai-agents-python",
+      "momentum_score": 97,
+      "stars_per_day": 59.26,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.22,
+      "stars_per_day": 12.24,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 177.67,
+      "stars_per_day": 177.44,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.3,
+      "stars_per_day": 125.31,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 46.11,
+      "stars_per_day": 46.03,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "langchain4j/langchain4j",
       "momentum_score": 96,
-      "stars_per_day": 11.3,
+      "stars_per_day": 11.31,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "openai/openai-agents-python",
-      "momentum_score": 96,
-      "stars_per_day": 59.34,
-      "days_since_push": 1,
+      "full_name": "MervinPraison/PraisonAI",
+      "momentum_score": 95,
+      "stars_per_day": 9.97,
+      "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "builderz-labs/mission-control",
+      "full_name": "iflytek/skillhub",
       "momentum_score": 95,
-      "stars_per_day": 44.92,
-      "days_since_push": 2,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "WenyuChiou/awesome-agentic-ai-zh",
-      "momentum_score": 95,
-      "stars_per_day": 65.38,
+      "stars_per_day": 37.3,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-06-11",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-06-11.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-06-11T17:01:42.162010+00:00"
+    },
     {
       "report_date": "2026-06-10",
       "repo_count": 50,
