@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-06-11",
+  "report_date": "2026-06-12",
   "repo_count": 50,
   "active_7_days": 47,
   "active_30_days": 48,
@@ -10,41 +10,42 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 26,
-    "Knowledge / RAG": 13,
+    "Enterprise Workflow": 23,
+    "Knowledge / RAG": 15,
     "Commerce Agent": 4,
     "Agent Runtime": 3,
     "Evaluation / Observability": 2,
-    "AI Agent Framework": 1,
+    "Infrastructure": 2,
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 27,
-    "TypeScript": 12,
-    "Java": 3,
-    "Go": 2,
-    "JavaScript": 2,
+    "Python": 25,
+    "TypeScript": 16,
+    "Java": 2,
     "MDX": 2,
+    "Go": 1,
+    "JavaScript": 1,
+    "Jupyter Notebook": 1,
     "PHP": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 25,
-    "established": 15,
+    "ecosystem leader": 29,
+    "established": 12,
     "emerging": 6,
-    "scaling": 4
+    "scaling": 3
   },
   "action_distribution": {
-    "prototype pattern": 25,
-    "clone and test": 13,
+    "prototype pattern": 23,
+    "clone and test": 15,
     "strategic watch": 9,
     "read docs": 2,
     "monitor": 1
   },
   "watchlist_flags": {
+    "enterprise control gap": 46,
     "docs need review": 44,
-    "enterprise control gap": 44,
-    "quality gate unclear": 38,
+    "quality gate unclear": 40,
     "license unknown": 4,
     "maintenance freshness risk": 2
   },
@@ -52,7 +53,7 @@
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.25,
+      "stars_per_day": 11.24,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -64,37 +65,30 @@
       "action_level": "strategic watch"
     },
     {
-      "full_name": "openai/openai-agents-python",
-      "momentum_score": 97,
-      "stars_per_day": 59.26,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.24,
+      "stars_per_day": 12.25,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 177.44,
+      "stars_per_day": 177.17,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.31,
+      "stars_per_day": 125.3,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 46.03,
+      "stars_per_day": 45.96,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -103,6 +97,13 @@
       "momentum_score": 96,
       "stars_per_day": 11.31,
       "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "openai/openai-agents-python",
+      "momentum_score": 96,
+      "stars_per_day": 59.19,
+      "days_since_push": 1,
       "action_level": "prototype pattern"
     },
     {
@@ -115,12 +116,20 @@
     {
       "full_name": "iflytek/skillhub",
       "momentum_score": 95,
-      "stars_per_day": 37.3,
+      "stars_per_day": 37.09,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-06-12",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-06-12.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-06-12T16:28:19.689463+00:00"
+    },
     {
       "report_date": "2026-06-11",
       "repo_count": 50,
