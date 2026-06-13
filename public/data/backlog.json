@@ -7,7 +7,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 91,
-    "momentum_score": 96,
+    "momentum_score": 95,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -91,7 +91,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 85,
-    "momentum_score": 94,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -107,7 +107,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 84,
-    "momentum_score": 62,
+    "momentum_score": 61,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -147,23 +147,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "builderz-labs/mission-control",
-    "url": "https://github.com/builderz-labs/mission-control",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 79,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "WenyuChiou/awesome-agentic-ai-zh",
     "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
     "category": "AI Agent Framework",
@@ -171,7 +154,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 79,
-    "momentum_score": 93,
+    "momentum_score": 95,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -254,7 +237,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "quality gate unclear"
     ],
@@ -264,6 +247,23 @@
   {
     "full_name": "openai/openai-agents-python",
     "url": "https://github.com/openai/openai-agents-python",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 73,
+    "momentum_score": 97,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "jnMetaCode/agency-agents-zh",
+    "url": "https://github.com/jnMetaCode/agency-agents-zh",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
@@ -286,7 +286,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 72,
-    "momentum_score": 64,
+    "momentum_score": 63,
     "risk_flags": [
       "docs need review",
       "quality gate unclear"
@@ -413,40 +413,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "open-multi-agent/open-multi-agent",
-    "url": "https://github.com/open-multi-agent/open-multi-agent",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 69,
-    "momentum_score": 94,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "FlowiseAI/Flowise",
-    "url": "https://github.com/FlowiseAI/Flowise",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 69,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "ToolJet/ToolJet",
     "url": "https://github.com/ToolJet/ToolJet",
     "category": "AI Agent Framework",
@@ -480,25 +446,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "1Panel-dev/MaxKB",
-    "url": "https://github.com/1Panel-dev/MaxKB",
-    "category": "Agentic Enterprise",
-    "subcategory": "Knowledge / RAG",
+    "full_name": "vxcontrol/pentagi",
+    "url": "https://github.com/vxcontrol/pentagi",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
     "momentum_score": 93,
     "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
+      "docs need review"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "waooAI/waoowaoo",
-    "url": "https://github.com/waooAI/waoowaoo",
+    "full_name": "open-multi-agent/open-multi-agent",
+    "url": "https://github.com/open-multi-agent/open-multi-agent",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
@@ -520,8 +484,8 @@
     "subcategory": "Commerce Agent",
     "action_level": "prototype pattern",
     "priority": 4,
-    "strategic_score": 65,
-    "momentum_score": 63,
+    "strategic_score": 66,
+    "momentum_score": 62,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -538,25 +502,8 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 95,
-    "risk_flags": [
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "NirDiamant/GenAI_Agents",
-    "url": "https://github.com/NirDiamant/GenAI_Agents",
-    "category": "AI Agent Framework",
-    "subcategory": "Knowledge / RAG",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 63,
     "momentum_score": 94,
     "risk_flags": [
-      "docs need review",
       "enterprise control gap",
       "quality gate unclear"
     ],
@@ -582,6 +529,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "NirDiamant/GenAI_Agents",
+    "url": "https://github.com/NirDiamant/GenAI_Agents",
+    "category": "AI Agent Framework",
+    "subcategory": "Knowledge / RAG",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 63,
+    "momentum_score": 93,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "Tencent/WeKnora",
     "url": "https://github.com/Tencent/WeKnora",
     "category": "AI Infrastructure",
@@ -589,7 +553,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 92,
+    "momentum_score": 91,
     "risk_flags": [
       "enterprise control gap"
     ],
@@ -604,7 +568,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 61,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -655,24 +619,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 82,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "recommenders-team/recommenders",
-    "url": "https://github.com/recommenders-team/recommenders",
-    "category": "AI Commerce",
-    "subcategory": "Product Intelligence",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 59,
-    "momentum_score": 76,
+    "momentum_score": 81,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -689,7 +636,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 57,
-    "momentum_score": 94,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -698,10 +645,43 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "danny-avila/LibreChat",
-    "url": "https://github.com/danny-avila/LibreChat",
+    "full_name": "recommenders-team/recommenders",
+    "url": "https://github.com/recommenders-team/recommenders",
+    "category": "AI Commerce",
+    "subcategory": "Product Intelligence",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 56,
+    "momentum_score": 75,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "future-agi/future-agi",
+    "url": "https://github.com/future-agi/future-agi",
     "category": "AI Agent Framework",
-    "subcategory": "Infrastructure",
+    "subcategory": "Evaluation / Observability",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 55,
+    "momentum_score": 93,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "jeecgboot/JeecgBoot",
+    "url": "https://github.com/jeecgboot/JeecgBoot",
+    "category": "AI Agent Framework",
+    "subcategory": "Knowledge / RAG",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 53,
@@ -715,10 +695,10 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "ComposioHQ/composio",
-    "url": "https://github.com/ComposioHQ/composio",
+    "full_name": "danny-avila/LibreChat",
+    "url": "https://github.com/danny-avila/LibreChat",
     "category": "AI Agent Framework",
-    "subcategory": "Agent Runtime",
+    "subcategory": "Infrastructure",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 53,
@@ -766,6 +746,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "BlazeUp-AI/Observal",
+    "url": "https://github.com/BlazeUp-AI/Observal",
+    "category": "AI Agent Framework",
+    "subcategory": "AI Application Platform",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 53,
+    "momentum_score": 93,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "THU-MAIC/OpenMAIC",
     "url": "https://github.com/THU-MAIC/OpenMAIC",
     "category": "AI Agent Framework",
@@ -783,56 +780,52 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "h9-tec/llm-systems-engineering-roadmap",
-    "url": "https://github.com/h9-tec/llm-systems-engineering-roadmap",
+    "full_name": "ahammadmejbah/Awesome-Datasets-Hub",
+    "url": "https://github.com/ahammadmejbah/Awesome-Datasets-Hub",
     "category": "AI Infrastructure",
-    "subcategory": "Knowledge / RAG",
+    "subcategory": "Evaluation / Observability",
     "action_level": "read docs",
     "priority": 2,
-    "strategic_score": 39,
-    "momentum_score": 32,
+    "strategic_score": 46,
+    "momentum_score": 64,
     "risk_flags": [
       "license unknown",
       "docs need review",
-      "maintenance freshness risk",
       "enterprise control gap"
     ],
     "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "fdhhhdjd/Class-Production-AI-App",
-    "url": "https://github.com/fdhhhdjd/Class-Production-AI-App",
+    "full_name": "walkinglabs/modern-llm-notebook",
+    "url": "https://github.com/walkinglabs/modern-llm-notebook",
     "category": "AI Infrastructure",
-    "subcategory": "Knowledge / RAG",
+    "subcategory": "Evaluation / Observability",
     "action_level": "read docs",
     "priority": 2,
-    "strategic_score": 38,
-    "momentum_score": 21,
+    "strategic_score": 45,
+    "momentum_score": 61,
     "risk_flags": [
-      "license unknown",
       "docs need review",
-      "maintenance freshness risk"
+      "enterprise control gap"
     ],
     "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "X-iT-0/Semantic_Search",
-    "url": "https://github.com/X-iT-0/Semantic_Search",
+    "full_name": "boyuling-123/AI-API-workspace",
+    "url": "https://github.com/boyuling-123/AI-API-workspace",
     "category": "AI Infrastructure",
-    "subcategory": "Knowledge / RAG",
-    "action_level": "monitor",
-    "priority": 1,
-    "strategic_score": 34,
-    "momentum_score": 6,
+    "subcategory": "Evaluation / Observability",
+    "action_level": "read docs",
+    "priority": 2,
+    "strategic_score": 35,
+    "momentum_score": 46,
     "risk_flags": [
-      "license unknown",
       "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
+      "enterprise control gap"
     ],
-    "next_action": "Keep on watchlist until adoption, docs, or implementation fit improves.",
+    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   }
 ]
