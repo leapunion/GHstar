@@ -1,7 +1,7 @@
 {
-  "report_date": "2026-06-13",
+  "report_date": "2026-06-14",
   "repo_count": 50,
-  "active_7_days": 49,
+  "active_7_days": 50,
   "active_30_days": 50,
   "category_distribution": {
     "AI Agent Framework": 35,
@@ -10,118 +10,126 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 22,
-    "Knowledge / RAG": 12,
-    "Evaluation / Observability": 6,
+    "Enterprise Workflow": 23,
+    "Knowledge / RAG": 10,
+    "Evaluation / Observability": 5,
     "Commerce Agent": 4,
-    "Agent Runtime": 2,
+    "Agent Runtime": 3,
+    "AI Application Platform": 2,
     "Infrastructure": 2,
-    "AI Application Platform": 1,
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 24,
+    "Python": 25,
     "TypeScript": 13,
     "Java": 3,
-    "Go": 2,
     "Jupyter Notebook": 2,
-    "MDX": 2,
+    "PHP": 2,
+    "Go": 1,
     "JavaScript": 1,
-    "PHP": 1,
+    "MDX": 1,
     "Shell": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 27,
-    "established": 12,
-    "emerging": 6,
-    "scaling": 5
+    "ecosystem leader": 26,
+    "established": 11,
+    "emerging": 7,
+    "scaling": 6
   },
   "action_distribution": {
     "prototype pattern": 21,
-    "clone and test": 17,
-    "strategic watch": 9,
+    "clone and test": 18,
+    "strategic watch": 8,
     "read docs": 3
   },
   "watchlist_flags": {
     "enterprise control gap": 46,
     "docs need review": 44,
-    "quality gate unclear": 37,
+    "quality gate unclear": 40,
     "license unknown": 2
   },
   "top_momentum": [
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.23,
+      "stars_per_day": 11.22,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.51,
+      "stars_per_day": 27.5,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "openai/openai-agents-python",
+      "full_name": "alibaba/spring-ai-alibaba",
       "momentum_score": 97,
-      "stars_per_day": 59.09,
+      "stars_per_day": 15.56,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 176.87,
+      "stars_per_day": 176.55,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
+      "full_name": "jnMetaCode/agency-orchestrator",
+      "momentum_score": 96,
+      "stars_per_day": 15.76,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.27,
+      "stars_per_day": 125.26,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "openai/openai-agents-python",
+      "momentum_score": 96,
+      "stars_per_day": 59.0,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+      "momentum_score": 95,
+      "stars_per_day": 66.59,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
-      "momentum_score": 96,
-      "stars_per_day": 45.88,
-      "days_since_push": 0,
+      "momentum_score": 95,
+      "stars_per_day": 45.79,
+      "days_since_push": 1,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "langchain4j/langchain4j",
-      "momentum_score": 96,
-      "stars_per_day": 11.3,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "jnMetaCode/agency-agents-zh",
-      "momentum_score": 96,
-      "stars_per_day": 149.33,
-      "days_since_push": 1,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 95,
-      "stars_per_day": 12.27,
+      "stars_per_day": 11.31,
       "days_since_push": 1,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "WenyuChiou/awesome-agentic-ai-zh",
-      "momentum_score": 95,
-      "stars_per_day": 66.5,
-      "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-06-14",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-06-14.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-06-14T15:17:39.241395+00:00"
+    },
     {
       "report_date": "2026-06-13",
       "repo_count": 50,
