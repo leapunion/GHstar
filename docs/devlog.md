@@ -6,7 +6,7 @@ the bottom of the latest entry.
 
 ---
 
-## 2026-06-13 — Tame git growth: SQLite history off `main` (release asset)
+## 2026-06-13 — Tame git growth (SQLite off `main`) + `verify-spa` on the daily pipeline
 
 Roadmap **P1#5**. `data/ghstar.sqlite` (a 1.3 MB binary) was re-committed by the daily
 Action every run — ~31 MB of binary churn already in `main`'s history and climbing.
@@ -41,6 +41,22 @@ persist across runs. A release asset is durable (unlike Actions cache, which evi
 - `public/data/site/**` JSON still commits to `main` — it's *served* via Vercel, so it
   can't simply move off-`main` like the (un-served) DB did.
 
+### `verify-spa` on the daily pipeline (P1#1)
+
+The SPA behavior verifier ran only on frontend PRs (`verify-spa.yml`, path-filtered), so
+a bad daily export that broke the page would ship unseen. Wired it into the daily
+`generate-report` job:
+
+- Added Node 22 setup + a *Verify SPA behavior on today's data* step
+  (`node scripts/verify_spa.mjs --serve public --shot spa-verify.png`) with a screenshot
+  artifact (`if: always()`).
+- **Placed after the commit and before deploy:** the report is committed first (so a
+  verifier flake never loses the day's data), and a broken SPA fails the run and skips
+  deploy (never shipped) — loud + screenshotted.
+- **Verified locally** with the exact workflow command against current `public/`: 78
+  corpus sparklines, category filter narrows, reset restores, keyword + single-date
+  views, no uncaught exceptions — all checks pass, screenshot captured.
+
 ### Project status (2026-06-13)
 
 Done (on `main` unless noted):
@@ -53,7 +69,10 @@ Done (on `main` unless noted):
   `test_empty_result_guard.py`, suite discovery, and `tests.yml` running the suite on
   every PR/push (closed the gap where the smoke suite never gated PRs). PR #4, **merged**.
 - **P1-5 tame git growth (DB half)** — `data/ghstar.sqlite` off `main` via the
-  `data-latest` release asset. PR #5, **open + green**.
+  `data-latest` release asset. PR #5, **merged**.
+- **P1-1 verify-spa on daily** — the SPA behavior verifier now runs on real daily data,
+  after commit + before deploy (catches export-induced regressions, not just frontend
+  PRs). This PR.
 
 Blocked / in flight:
 
@@ -62,16 +81,14 @@ Blocked / in flight:
 
 ### Next steps (prioritized) — supersedes the roadmap at the foot of the 2026-06-03 entry
 
-**P1 — robustness (do next)**
+**P1 — robustness**
 
-1. **`verify-spa` on the daily pipeline.** Add a post-export, non-deploy job running the
-   existing headless-Chrome behavior verifier against *real daily data*, so SPA
-   regressions are caught on the schedule, not only on frontend PRs. Unblocked, ~1 job,
-   low risk. **← recommended immediate next.**
+1. ~~`verify-spa` on the daily pipeline~~ — ✅ **done** (this entry): the verifier runs
+   on real daily data, after commit + before deploy.
 2. **Finish git-growth taming (site-JSON half).** `public/data/site/**` still commits to
    `main` daily. It's *served* by Vercel, so it can't just move to a release asset like
    the DB — needs a different tack (have the Vercel build fetch it from an asset, or
-   accept text-diff growth). Scope/decide before building.
+   accept text-diff growth). Scope/decide before building. **← recommended next.**
 
 **P2 — product & scale**
 
