@@ -18,7 +18,9 @@ Generated outputs:
 - `public/latest.md`
 - `public/data/latest.json`
 - `public/data/history.json`
-- `data/ghstar.sqlite`
+- `data/ghstar.sqlite` — local/runtime SQLite history. **Not committed to `main`**: the
+  daily workflow keeps it in the `data-latest` GitHub Release asset (restore → append →
+  upload) to bound git growth. It's gitignored; Docker/local runs use the on-disk file.
 
 ## Deployment
 

@@ -6,6 +6,43 @@ the bottom of the latest entry.
 
 ---
 
+## 2026-06-13 — Tame git growth: SQLite history off `main` (release asset)
+
+Roadmap **P1#5**. `data/ghstar.sqlite` (a 1.3 MB binary) was re-committed by the daily
+Action every run — ~31 MB of binary churn already in `main`'s history and climbing.
+
+### Shipped (PR — branch `tame-git-growth-sqlite-off-main`)
+
+- **Untracked the DB on `main`.** `git rm --cached data/ghstar.sqlite` + gitignore. The
+  path stays configurable (`GHSTAR_DB` / `--db`), so no Python logic changed; Docker
+  (host volume mount) and local dev (on-disk file) are unaffected; tests already use
+  throwaway temp DBs.
+- **Durable off-`main` store = the `data-latest` Release asset.** Seeded it with the
+  current DB (17 accumulated snapshot dates, 117 repos / 824 snapshots) — byte-identical
+  download round-trip verified — so no history is lost in the cutover.
+- **Daily workflow is now restore → append → upload.** New *Restore SQLite history*
+  step (`gh release download data-latest`) before generate; new *Persist SQLite history*
+  step (`gh release upload --clobber`, create-if-missing) after generate. Dropped the DB
+  from the commit `git add` line. The empty-result guard (P0-2) still gates generate, so
+  an empty scan never clobbers good history.
+
+### Why a release asset (not cache / LFS / orphan branch)
+
+The run is **incremental** (history accumulates inside the DB), so the prior DB must
+persist across runs. A release asset is durable (unlike Actions cache, which evicts after
+~7 idle days), bounded (clobbered, not versioned — unlike LFS), uses in-repo infra (`gh`
++ the existing `contents: write` token), and is the simplest to script reliably.
+
+### Not done (flagged)
+
+- **History rewrite.** The ~31 MB already in `main`'s past commits is *not* reclaimed —
+  that needs `git filter-repo` + force-push to `main` (rewrites shared history, breaks
+  existing clones). Left as an explicit, opt-in destructive follow-up.
+- `public/data/site/**` JSON still commits to `main` — it's *served* via Vercel, so it
+  can't simply move off-`main` like the (un-served) DB did.
+
+---
+
 ## 2026-06-03 (session 2) — P0 safety net: empty-result guard, exporter test, monolith carve
 
 Worked the P0 block from the roadmap (items 1–3). The architectural half of P0-1
