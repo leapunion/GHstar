@@ -7,3 +7,7 @@ __pycache__/
 !.env.example
 *.sqlite-wal
 *.sqlite-shm
+
+# SQLite history is kept off `main` — restored from / saved to the `data-latest`
+# release asset by the daily workflow (see .github/workflows/daily-report.yml).
+data/ghstar.sqlite

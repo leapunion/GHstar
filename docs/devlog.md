@@ -6,6 +6,94 @@ the bottom of the latest entry.
 
 ---
 
+## 2026-06-13 — Tame git growth: SQLite history off `main` (release asset)
+
+Roadmap **P1#5**. `data/ghstar.sqlite` (a 1.3 MB binary) was re-committed by the daily
+Action every run — ~31 MB of binary churn already in `main`'s history and climbing.
+
+### Shipped (PR #5 — branch `tame-git-growth-sqlite-off-main`; CI green, awaiting merge)
+
+- **Untracked the DB on `main`.** `git rm --cached data/ghstar.sqlite` + gitignore. The
+  path stays configurable (`GHSTAR_DB` / `--db`), so no Python logic changed; Docker
+  (host volume mount) and local dev (on-disk file) are unaffected; tests already use
+  throwaway temp DBs.
+- **Durable off-`main` store = the `data-latest` Release asset.** Seeded it with the
+  current DB (17 accumulated snapshot dates, 117 repos / 824 snapshots) — byte-identical
+  download round-trip verified — so no history is lost in the cutover.
+- **Daily workflow is now restore → append → upload.** New *Restore SQLite history*
+  step (`gh release download data-latest`) before generate; new *Persist SQLite history*
+  step (`gh release upload --clobber`, create-if-missing) after generate. Dropped the DB
+  from the commit `git add` line. The empty-result guard (P0-2) still gates generate, so
+  an empty scan never clobbers good history.
+
+### Why a release asset (not cache / LFS / orphan branch)
+
+The run is **incremental** (history accumulates inside the DB), so the prior DB must
+persist across runs. A release asset is durable (unlike Actions cache, which evicts after
+~7 idle days), bounded (clobbered, not versioned — unlike LFS), uses in-repo infra (`gh`
++ the existing `contents: write` token), and is the simplest to script reliably.
+
+### Not done (flagged)
+
+- **History rewrite.** The ~31 MB already in `main`'s past commits is *not* reclaimed —
+  that needs `git filter-repo` + force-push to `main` (rewrites shared history, breaks
+  existing clones). Left as an explicit, opt-in destructive follow-up.
+- `public/data/site/**` JSON still commits to `main` — it's *served* via Vercel, so it
+  can't simply move off-`main` like the (un-served) DB did.
+
+### Project status (2026-06-13)
+
+Done (on `main` unless noted):
+
+- **P0-1 carve** — `generate_report.py` → `ghstar/` package (`model ← enrich ← {collect,
+  store, render}`) + facade. PR #4, **merged**.
+- **P0-2 empty-result guard** — `enforce_min_repos`, wired into the generator and the
+  agent. PR #4, **merged**.
+- **P0-3 exporter smoke test + CI gating** — `test_export_site_data_smoke.py` +
+  `test_empty_result_guard.py`, suite discovery, and `tests.yml` running the suite on
+  every PR/push (closed the gap where the smoke suite never gated PRs). PR #4, **merged**.
+- **P1-5 tame git growth (DB half)** — `data/ghstar.sqlite` off `main` via the
+  `data-latest` release asset. PR #5, **open + green**.
+
+Blocked / in flight:
+
+- **Unify ingest** (the architectural half of the original P0-1) — deferred; the double
+  scan spans two runtimes, so it's blocked on the PG/Timescale role decision (P2 below).
+
+### Next steps (prioritized) — supersedes the roadmap at the foot of the 2026-06-03 entry
+
+**P1 — robustness (do next)**
+
+1. **`verify-spa` on the daily pipeline.** Add a post-export, non-deploy job running the
+   existing headless-Chrome behavior verifier against *real daily data*, so SPA
+   regressions are caught on the schedule, not only on frontend PRs. Unblocked, ~1 job,
+   low risk. **← recommended immediate next.**
+2. **Finish git-growth taming (site-JSON half).** `public/data/site/**` still commits to
+   `main` daily. It's *served* by Vercel, so it can't just move to a release asset like
+   the DB — needs a different tack (have the Vercel build fetch it from an asset, or
+   accept text-diff growth). Scope/decide before building.
+
+**P2 — product & scale**
+
+3. **Decide PG/Timescale's role** (unblocks #4). Either (a) build a small read API over
+   the hypertable for time-series the static export can't do (true momentum, per-repo
+   star-history charts), or (b) declare them analytics-only and drop them from default
+   `--targets` to cut operational surface and the double scan.
+4. **Unify ingest** — once #3 lands: one `collect()` feeds SQLite (+ PG/Timescale if
+   kept), killing the double live scan and the SQLite-vs-PG drift.
+5. **SPA UX** — real virtualization (replace the 200-cap + "show more"), date-range mode,
+   URL-deep-linkable filter state, mobile layout.
+6. **Taxonomy quality** — revisit the coarse keyword-count classifier against the larger
+   corpus (`docs/taxonomy.md`).
+
+**Opt-in / deferred**
+
+- **Reclaim past DB bloat** — `git filter-repo` to strip the ~31 MB of historical
+  `data/ghstar.sqlite` blobs from `main`, then force-push. Destructive (rewrites shared
+  history, breaks clones) — only on explicit approval.
+
+---
+
 ## 2026-06-03 (session 2) — P0 safety net: empty-result guard, exporter test, monolith carve
 
 Worked the P0 block from the roadmap (items 1–3). The architectural half of P0-1
@@ -134,6 +222,10 @@ CI, not just on a dev box.
 ---
 
 ## Next steps (prioritized)
+
+> **Superseded** by the roadmap at the bottom of the 2026-06-13 entry (top of this file).
+> Kept for history. Since this was written: P0-2 ✅, P0-3 ✅, P0-1 carve ✅ (unify deferred),
+> P1-5 ✅ (DB half).
 
 ### P0 — correctness & safety (do next)
 

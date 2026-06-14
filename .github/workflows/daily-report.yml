@@ -34,8 +34,32 @@ jobs:
       - name: Run deterministic smoke test
         run: python scripts/run_smoke_test.py
 
+      - name: Restore SQLite history
+        # The accumulated history lives off `main` in the `data-latest` release
+        # asset, not in git. Restore it so today's run appends to it (incremental).
+        run: |
+          mkdir -p data
+          if gh release download data-latest --pattern 'ghstar.sqlite' --output data/ghstar.sqlite --clobber; then
+            echo "Restored data/ghstar.sqlite from the data-latest release."
+          else
+            echo "No data-latest asset yet — starting from empty history (bootstrap run)."
+          fi
+
       - name: Generate daily report
         run: python scripts/generate_report.py --days 90 --limit 50 --min-repos 10
+
+      - name: Persist SQLite history
+        # Save the appended DB back to the durable off-`main` store. Runs only if
+        # generate succeeded (the empty-result guard already gated an empty scan),
+        # so we never clobber good history with nothing.
+        run: |
+          gh release view data-latest >/dev/null 2>&1 || \
+            gh release create data-latest \
+              --title "GHstar SQLite history (rolling)" \
+              --notes "Durable off-\`main\` store for data/ghstar.sqlite, clobbered daily by the report workflow." \
+              --latest=false --prerelease
+          gh release upload data-latest data/ghstar.sqlite --clobber
+          echo "Uploaded data/ghstar.sqlite to the data-latest release."
 
       - name: Export site data
         run: python scripts/export_site_data.py
@@ -48,7 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports public/report.html public/data/site public/latest.md public/data/latest.json public/data/history.json public/data/backlog.json public/data/trends.json data/ghstar.sqlite
+          git add reports public/report.html public/data/site public/latest.md public/data/latest.json public/data/history.json public/data/backlog.json public/data/trends.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No generated report changes to commit."
