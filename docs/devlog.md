@@ -6,6 +6,56 @@ the bottom of the latest entry.
 
 ---
 
+## 2026-06-03 (session 2) — P0 safety net: empty-result guard, exporter test, monolith carve
+
+Worked the P0 block from the roadmap (items 1–3). The architectural half of P0-1
+(unify ingest) was deferred by decision — see **Deferred**.
+
+### Shipped (in working tree; verified, not yet committed)
+
+- **P0-2 — empty-result guard.** New importable `enforce_min_repos(repos, minimum,
+  source)` in `ghstar/collect.py`, raising `SystemExit` *before* any persist / render
+  / commit / deploy when a **live** scan returns fewer than the floor (a 0-repo result
+  almost always means token expiry or a Search-API change, not a quiet day). Wired into
+  `generate_report.main` (live branch only — `--fixture` / `--from-db` exempt) and
+  `ghstar_agent.run_agent` (before any SQLite/PG/Timescale write). New `--min-repos`
+  flag on both (default 1); the daily workflow now passes `--min-repos 10`.
+- **P0-3 — exporter smoke test + suite wiring.** `tests/test_export_site_data_smoke.py`
+  builds a real two-date SQLite history from the fixture, runs `export_site_data.py`,
+  and asserts the frozen `site-data-contract` (index schema/dates/facets, corpus
+  `history` series ascending, day-snapshots omit `history`).
+  `tests/test_empty_result_guard.py` unit-tests the guard. `run_smoke_test.py` now
+  **discovers** the whole `tests/` suite (added `tests/__init__.py`), so new test
+  modules auto-guard in CI. Also added `.github/workflows/tests.yml` — runs the
+  suite on every PR + push to `main` (no path filter), closing a gap where the
+  smoke suite previously ran *only* inside the schedule-only daily job and so never
+  gated PRs.
+- **P0-1 (carve only) — split the monolith.** The ~1500-line `generate_report.py` is
+  now a 67-line CLI facade over a new `scripts/ghstar/` package, carved in dependency
+  order `model ← enrich ← {collect, store, render}`. The facade re-exports the full
+  surface, so `generate_report.collect`, `.Repo`, `.save_to_db`, … still resolve
+  (back-compat for `ghstar_agent.py` + the tests). The two tempdir tests now copy the
+  package alongside the script.
+
+### Verified
+
+- Full smoke suite: **8/8 OK**, including the byte-stable 2026-05-28 generator test.
+- **Byte-diff old (git HEAD) vs new facade** on the fixture: every deterministic text
+  output (`reports/*.md`, `report.html`, `latest.md`, `latest/history/backlog/trends.json`)
+  **identical** — only the `generated_at` wall-clock field differs (non-deterministic
+  in the original too). Function bodies were sliced verbatim; behavior is unchanged.
+- `ghstar_agent` still imports the facade; `repo_payload` / `asdict(Repo)` work.
+
+### Deferred (by decision)
+
+- **Unify ingest** (the other half of roadmap P0-1) is *not* done. The "double scan"
+  turned out to span two runtimes — CI `generate_report` (SQLite + render) vs the
+  docker-compose `ghstar_agent` (PG/Timescale) — so unifying is entangled with **P2#6
+  "PG/Timescale's role,"** a product decision rather than a refactor. Chose to land the
+  safe carve now and defer the architectural unify until that role is decided.
+
+---
+
 ## 2026-06-03 — Data-service layer + single-page SPA, verification harness, full pipeline run
 
 ### Shipped (merged to `main`)

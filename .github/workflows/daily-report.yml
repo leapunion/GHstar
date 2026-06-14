@@ -35,7 +35,7 @@ jobs:
         run: python scripts/run_smoke_test.py
 
       - name: Generate daily report
-        run: python scripts/generate_report.py --days 90 --limit 50
+        run: python scripts/generate_report.py --days 90 --limit 50 --min-repos 10
 
       - name: Export site data
         run: python scripts/export_site_data.py

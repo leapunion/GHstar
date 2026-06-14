@@ -356,6 +356,7 @@ def run_agent(args: argparse.Namespace) -> dict[str, Any]:
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or os.environ.get("GHSTAR_GITHUB_TOKEN")
     run_id = f"GHstar-{snapshot_date.isoformat()}-{datetime.now(timezone.utc).strftime('%H%M%S')}"
     repos = generate_report.collect(args.days, args.limit, token, snapshot_date)
+    generate_report.enforce_min_repos(repos, args.min_repos, source="agent live scan")
     targets = {target.strip().lower() for target in args.targets.split(",") if target.strip()}
     result: dict[str, Any] = {
         "agent": "GHstar_Agent",
@@ -390,6 +391,7 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=50, help="Maximum repositories to ingest.")
     parser.add_argument("--date", default=date.today().isoformat(), help="Snapshot date YYYY-MM-DD.")
     parser.add_argument("--targets", default="sqlite,postgres,timescale", help="Comma-separated targets: sqlite,postgres,timescale.")
+    parser.add_argument("--min-repos", type=int, default=1, help="Fail the run if the live scan yields fewer than this many repos, before writing to any target.")
     parser.add_argument("--sqlite-db", default=os.environ.get("GHSTAR_DB", str(DEFAULT_SQLITE_DB)))
     parser.add_argument("--pg-dsn", default=os.environ.get("GHSTAR_PG_DSN"))
     parser.add_argument("--timescale-dsn", default=os.environ.get("GHSTAR_TIMESCALE_DSN"))

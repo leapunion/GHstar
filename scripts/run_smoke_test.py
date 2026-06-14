@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Run deterministic local smoke tests for GHstar report generation."""
+"""Run the deterministic local smoke suite for GHstar.
+
+Discovers every ``tests/test_*.py`` (report generation, the empty-result guard,
+and the site-data exporter contract) so newly added test modules are guarded by
+CI without touching this runner.
+"""
 
 from __future__ import annotations
 
@@ -9,11 +14,13 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEST = ROOT / "tests" / "test_generate_report_smoke.py"
 
 
 def main() -> int:
-    completed = subprocess.run([sys.executable, str(TEST)], cwd=ROOT)
+    completed = subprocess.run(
+        [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-t", str(ROOT), "-v"],
+        cwd=ROOT,
+    )
     return completed.returncode
 
 
