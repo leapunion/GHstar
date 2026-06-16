@@ -1,8 +1,8 @@
 {
-  "report_date": "2026-06-15",
+  "report_date": "2026-06-16",
   "repo_count": 50,
   "active_7_days": 48,
-  "active_30_days": 50,
+  "active_30_days": 48,
   "category_distribution": {
     "AI Agent Framework": 34,
     "Agentic Enterprise": 6,
@@ -10,119 +10,124 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 24,
-    "Knowledge / RAG": 9,
-    "Evaluation / Observability": 5,
-    "Agent Runtime": 4,
+    "Enterprise Workflow": 29,
+    "Knowledge / RAG": 12,
     "Commerce Agent": 4,
-    "Infrastructure": 2,
-    "AI Agent Framework": 1,
+    "Agent Runtime": 2,
+    "Evaluation / Observability": 2,
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 21,
-    "TypeScript": 17,
+    "Python": 26,
+    "TypeScript": 12,
     "Java": 3,
+    "Go": 2,
     "JavaScript": 2,
     "MDX": 2,
-    "Go": 1,
-    "Jupyter Notebook": 1,
     "PHP": 1,
     "Shell": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 26,
-    "established": 13,
+    "ecosystem leader": 21,
+    "established": 16,
     "emerging": 7,
-    "scaling": 4
+    "scaling": 6
   },
   "action_distribution": {
-    "prototype pattern": 23,
-    "clone and test": 15,
+    "prototype pattern": 29,
+    "clone and test": 10,
     "strategic watch": 9,
-    "read docs": 2,
-    "monitor": 1
+    "read docs": 2
   },
   "watchlist_flags": {
-    "docs need review": 45,
-    "enterprise control gap": 45,
-    "quality gate unclear": 39,
-    "license unknown": 1
+    "enterprise control gap": 44,
+    "docs need review": 43,
+    "quality gate unclear": 37,
+    "license unknown": 3,
+    "maintenance freshness risk": 2
   },
   "top_momentum": [
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.21,
+      "stars_per_day": 11.2,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.5,
+      "stars_per_day": 27.52,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "builderz-labs/mission-control",
+      "full_name": "jnMetaCode/agency-agents-zh",
       "momentum_score": 97,
-      "stars_per_day": 43.54,
+      "stars_per_day": 147.59,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "alibaba/spring-ai-alibaba",
+      "momentum_score": 97,
+      "stars_per_day": 15.56,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.33,
+      "stars_per_day": 12.34,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 176.32,
+      "stars_per_day": 176.1,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
+      "full_name": "builderz-labs/mission-control",
+      "momentum_score": 96,
+      "stars_per_day": 43.34,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
       "full_name": "jnMetaCode/agency-orchestrator",
       "momentum_score": 96,
-      "stars_per_day": 15.67,
+      "stars_per_day": 15.66,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.29,
+      "stars_per_day": 125.31,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 45.74,
+      "stars_per_day": 45.66,
       "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "langchain4j/langchain4j",
-      "momentum_score": 96,
-      "stars_per_day": 11.31,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "alibaba/spring-ai-alibaba",
-      "momentum_score": 96,
-      "stars_per_day": 15.56,
-      "days_since_push": 1,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-06-16",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-06-16.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-06-16T18:09:17.404420+00:00"
+    },
     {
       "report_date": "2026-06-15",
       "repo_count": 50,
