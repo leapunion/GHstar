@@ -107,7 +107,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 84,
-    "momentum_score": 60,
+    "momentum_score": 59,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -154,7 +154,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 79,
-    "momentum_score": 94,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -171,7 +171,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 79,
-    "momentum_score": 94,
+    "momentum_score": 93,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -187,7 +187,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
-    "momentum_score": 97,
+    "momentum_score": 96,
     "risk_flags": [
       "license unknown",
       "docs need review",
@@ -272,7 +272,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
-    "momentum_score": 94,
+    "momentum_score": 95,
     "risk_flags": [
       "quality gate unclear"
     ],
@@ -280,17 +280,16 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "alibaba/spring-ai-alibaba",
-    "url": "https://github.com/alibaba/spring-ai-alibaba",
+    "full_name": "omnigent-ai/omnigent",
+    "url": "https://github.com/omnigent-ai/omnigent",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
-    "strategic_score": 73,
-    "momentum_score": 97,
+    "strategic_score": 75,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
-      "enterprise control gap",
       "quality gate unclear"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
@@ -314,10 +313,27 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "FlowiseAI/Flowise",
-    "url": "https://github.com/FlowiseAI/Flowise",
+    "full_name": "alibaba/spring-ai-alibaba",
+    "url": "https://github.com/alibaba/spring-ai-alibaba",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 73,
+    "momentum_score": 96,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "category": "Agentic Enterprise",
+    "subcategory": "Knowledge / RAG",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -331,10 +347,10 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "zhayujie/CowAgent",
-    "url": "https://github.com/zhayujie/CowAgent",
+    "full_name": "FlowiseAI/Flowise",
+    "url": "https://github.com/FlowiseAI/Flowise",
     "category": "AI Agent Framework",
-    "subcategory": "Knowledge / RAG",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -382,23 +398,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "langchain-ai/langgraph",
-    "url": "https://github.com/langchain-ai/langgraph",
-    "category": "Agentic Enterprise",
-    "subcategory": "Knowledge / RAG",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 69,
-    "momentum_score": 95,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "labring/FastGPT",
     "url": "https://github.com/labring/FastGPT",
     "category": "AI Agent Framework",
@@ -432,9 +431,26 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "langchain-ai/langchain",
-    "url": "https://github.com/langchain-ai/langchain",
-    "category": "Agentic Enterprise",
+    "full_name": "waooAI/waoowaoo",
+    "url": "https://github.com/waooAI/waoowaoo",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 69,
+    "momentum_score": 95,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "zhayujie/CowAgent",
+    "url": "https://github.com/zhayujie/CowAgent",
+    "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "action_level": "prototype pattern",
     "priority": 4,
@@ -449,10 +465,10 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "waooAI/waoowaoo",
-    "url": "https://github.com/waooAI/waoowaoo",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
+    "full_name": "langchain-ai/langgraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "category": "Agentic Enterprise",
+    "subcategory": "Knowledge / RAG",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -482,10 +498,10 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "1Panel-dev/MaxKB",
-    "url": "https://github.com/1Panel-dev/MaxKB",
-    "category": "Agentic Enterprise",
-    "subcategory": "Knowledge / RAG",
+    "full_name": "assafelovic/gpt-researcher",
+    "url": "https://github.com/assafelovic/gpt-researcher",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -499,16 +515,18 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "vxcontrol/pentagi",
-    "url": "https://github.com/vxcontrol/pentagi",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
+    "full_name": "1Panel-dev/MaxKB",
+    "url": "https://github.com/1Panel-dev/MaxKB",
+    "category": "Agentic Enterprise",
+    "subcategory": "Knowledge / RAG",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
     "momentum_score": 93,
     "risk_flags": [
-      "docs need review"
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
     "suggested_owner": "product+engineering review"
@@ -539,7 +557,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 94,
+    "momentum_score": 95,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -555,7 +573,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 94,
+    "momentum_score": 95,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -605,7 +623,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 63,
+    "momentum_score": 66,
     "risk_flags": [
       "license unknown",
       "docs need review",
@@ -623,7 +641,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 61,
-    "momentum_score": 93,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "quality gate unclear"
@@ -649,23 +667,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "apache/airflow",
-    "url": "https://github.com/apache/airflow",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 59,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "yournextstore/yournextstore",
     "url": "https://github.com/yournextstore/yournextstore",
     "category": "AI Commerce",
@@ -673,7 +674,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 79,
+    "momentum_score": 78,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -699,14 +700,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "recommenders-team/recommenders",
-    "url": "https://github.com/recommenders-team/recommenders",
-    "category": "AI Commerce",
-    "subcategory": "Product Intelligence",
+    "full_name": "TeamWiseFlow/wiseflow",
+    "url": "https://github.com/TeamWiseFlow/wiseflow",
+    "category": "AI Agent Framework",
+    "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 56,
-    "momentum_score": 72,
+    "strategic_score": 57,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -722,8 +723,8 @@
     "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 55,
-    "momentum_score": 94,
+    "strategic_score": 57,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -733,14 +734,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "danny-avila/LibreChat",
-    "url": "https://github.com/danny-avila/LibreChat",
-    "category": "AI Agent Framework",
-    "subcategory": "Infrastructure",
+    "full_name": "recommenders-team/recommenders",
+    "url": "https://github.com/recommenders-team/recommenders",
+    "category": "AI Commerce",
+    "subcategory": "Product Intelligence",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 53,
-    "momentum_score": 93,
+    "strategic_score": 56,
+    "momentum_score": 71,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -774,7 +775,7 @@
     "action_level": "read docs",
     "priority": 2,
     "strategic_score": 48,
-    "momentum_score": 26,
+    "momentum_score": 25,
     "risk_flags": [
       "enterprise control gap"
     ],
@@ -789,7 +790,7 @@
     "action_level": "read docs",
     "priority": 2,
     "strategic_score": 46,
-    "momentum_score": 78,
+    "momentum_score": 77,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",

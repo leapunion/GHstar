@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-06-25",
+  "report_date": "2026-06-26",
   "repo_count": 50,
   "active_7_days": 46,
   "active_30_days": 48,
@@ -12,38 +12,37 @@
   "subcategory_distribution": {
     "Enterprise Workflow": 28,
     "Knowledge / RAG": 11,
+    "Agent Runtime": 4,
     "Commerce Agent": 4,
-    "Agent Runtime": 3,
     "Evaluation / Observability": 2,
-    "Infrastructure": 1,
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 26,
-    "TypeScript": 13,
-    "Go": 3,
+    "Python": 28,
+    "TypeScript": 12,
     "Java": 3,
+    "Go": 2,
     "MDX": 2,
     "JavaScript": 1,
     "PHP": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 24,
+    "ecosystem leader": 23,
     "established": 15,
-    "scaling": 6,
-    "emerging": 5
+    "emerging": 6,
+    "scaling": 6
   },
   "action_distribution": {
-    "prototype pattern": 23,
-    "clone and test": 14,
+    "prototype pattern": 24,
+    "clone and test": 13,
     "strategic watch": 9,
     "read docs": 4
   },
   "watchlist_flags": {
     "enterprise control gap": 45,
     "docs need review": 43,
-    "quality gate unclear": 38,
+    "quality gate unclear": 39,
     "license unknown": 6,
     "maintenance freshness risk": 2
   },
@@ -58,49 +57,42 @@
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.12,
+      "stars_per_day": 11.11,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "OpenNSWM-Lab/FAROS",
-      "momentum_score": 97,
-      "stars_per_day": 27.19,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "alibaba/spring-ai-alibaba",
-      "momentum_score": 97,
-      "stars_per_day": 15.49,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.53,
+      "stars_per_day": 12.54,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 180.26,
+      "stars_per_day": 180.41,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
+      "full_name": "OpenNSWM-Lab/FAROS",
+      "momentum_score": 96,
+      "stars_per_day": 27.34,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.26,
+      "stars_per_day": 125.24,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 45.08,
+      "stars_per_day": 45.01,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -114,12 +106,27 @@
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 96,
-      "stars_per_day": 58.21,
+      "stars_per_day": 58.15,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "alibaba/spring-ai-alibaba",
+      "momentum_score": 96,
+      "stars_per_day": 15.48,
       "days_since_push": 1,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-06-26",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-06-26.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-06-26T15:34:28.854100+00:00"
+    },
     {
       "report_date": "2026-06-25",
       "repo_count": 50,
