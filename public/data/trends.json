@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-07-02",
+  "report_date": "2026-07-03",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
@@ -13,113 +13,122 @@
     "Enterprise Workflow": 28,
     "Knowledge / RAG": 8,
     "Evaluation / Observability": 5,
-    "Agent Runtime": 4,
-    "Commerce Agent": 4,
-    "Product Intelligence": 1
+    "Agent Runtime": 3,
+    "Commerce Agent": 3,
+    "Product Intelligence": 2,
+    "AI Agent Framework": 1
   },
   "language_distribution": {
     "Python": 25,
-    "TypeScript": 13,
+    "TypeScript": 12,
     "Java": 3,
     "Go": 2,
+    "JavaScript": 2,
     "MDX": 2,
     "HTML": 1,
-    "JavaScript": 1,
     "Jupyter Notebook": 1,
-    "PHP": 1,
-    "Shell": 1
+    "Shell": 1,
+    "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 23,
+    "ecosystem leader": 24,
     "established": 16,
     "emerging": 6,
-    "scaling": 5
+    "scaling": 4
   },
   "action_distribution": {
     "prototype pattern": 25,
     "clone and test": 13,
-    "strategic watch": 8,
-    "read docs": 4
+    "strategic watch": 7,
+    "read docs": 5
   },
   "watchlist_flags": {
     "docs need review": 45,
-    "enterprise control gap": 45,
+    "enterprise control gap": 44,
     "quality gate unclear": 39,
     "license unknown": 2
   },
   "top_momentum": [
     {
-      "full_name": "microsoft/agent-framework",
-      "momentum_score": 98,
-      "stars_per_day": 27.5,
-      "days_since_push": 0,
-      "action_level": "strategic watch"
-    },
-    {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.06,
+      "stars_per_day": 11.05,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "OpenNSWM-Lab/FAROS",
+      "full_name": "microsoft/agent-framework",
       "momentum_score": 97,
-      "stars_per_day": 27.84,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
+      "stars_per_day": 27.49,
+      "days_since_push": 1,
+      "action_level": "strategic watch"
     },
     {
-      "full_name": "openai/openai-agents-python",
+      "full_name": "alibaba/spring-ai-alibaba",
       "momentum_score": 97,
-      "stars_per_day": 57.72,
+      "stars_per_day": 15.42,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.62,
+      "stars_per_day": 12.63,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 180.27,
+      "stars_per_day": 180.1,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
+      "full_name": "OpenNSWM-Lab/FAROS",
+      "momentum_score": 96,
+      "stars_per_day": 27.9,
+      "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.23,
+      "stars_per_day": 125.24,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 44.66,
+      "stars_per_day": 44.61,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "langchain4j/langchain4j",
+      "full_name": "openai/openai-agents-python",
       "momentum_score": 96,
-      "stars_per_day": 11.28,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "jnMetaCode/agency-agents-zh",
-      "momentum_score": 96,
-      "stars_per_day": 139.06,
+      "stars_per_day": 57.67,
       "days_since_push": 1,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+      "momentum_score": 95,
+      "stars_per_day": 66.27,
+      "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-07-03",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-07-03.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-07-03T15:24:17.139141+00:00"
+    },
     {
       "report_date": "2026-07-02",
       "repo_count": 50,
@@ -351,14 +360,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-06-04T16:29:21.240801+00:00"
-    },
-    {
-      "report_date": "2026-06-03",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-06-03.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-06-03T18:05:13.435495+00:00"
     }
   ]
 }
