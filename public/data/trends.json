@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-07-07",
+  "report_date": "2026-07-08",
   "repo_count": 50,
   "active_7_days": 47,
   "active_30_days": 48,
@@ -18,10 +18,10 @@
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 22,
+    "Python": 23,
     "TypeScript": 14,
-    "Java": 4,
     "Unknown": 4,
+    "Java": 3,
     "Go": 2,
     "MDX": 2,
     "JavaScript": 1,
@@ -29,15 +29,15 @@
   },
   "maturity_distribution": {
     "ecosystem leader": 24,
-    "established": 14,
-    "emerging": 8,
+    "established": 15,
+    "emerging": 7,
     "scaling": 4
   },
   "action_distribution": {
     "prototype pattern": 25,
-    "clone and test": 13,
+    "clone and test": 14,
     "strategic watch": 7,
-    "read docs": 5
+    "read docs": 4
   },
   "watchlist_flags": {
     "docs need review": 44,
@@ -50,56 +50,49 @@
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.41,
+      "stars_per_day": 27.42,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 11.02,
+      "stars_per_day": 11.0,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 57.37,
+      "stars_per_day": 57.3,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "jnMetaCode/agency-agents-zh",
+      "full_name": "alibaba/spring-ai-alibaba",
       "momentum_score": 97,
-      "stars_per_day": 136.62,
+      "stars_per_day": 15.38,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.69,
+      "stars_per_day": 12.7,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 179.24,
+      "stars_per_day": 179.13,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "builderz-labs/mission-control",
-      "momentum_score": 96,
-      "stars_per_day": 39.13,
-      "days_since_push": 1,
-      "action_level": "prototype pattern"
-    },
-    {
       "full_name": "OpenNSWM-Lab/FAROS",
       "momentum_score": 96,
-      "stars_per_day": 28.55,
+      "stars_per_day": 28.5,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -113,12 +106,27 @@
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 44.39,
+      "stars_per_day": 44.32,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "langchain4j/langchain4j",
+      "momentum_score": 96,
+      "stars_per_day": 11.26,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-07-08",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-07-08.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-07-08T15:33:01.776296+00:00"
+    },
     {
       "report_date": "2026-07-07",
       "repo_count": 50,
@@ -350,14 +358,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-06-09T16:13:22.466690+00:00"
-    },
-    {
-      "report_date": "2026-06-08",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-06-08.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-06-08T16:53:46.244863+00:00"
     }
   ]
 }
