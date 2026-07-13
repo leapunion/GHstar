@@ -1,7 +1,7 @@
 {
-  "report_date": "2026-07-12",
+  "report_date": "2026-07-13",
   "repo_count": 50,
-  "active_7_days": 49,
+  "active_7_days": 50,
   "active_30_days": 50,
   "category_distribution": {
     "AI Agent Framework": 35,
@@ -10,48 +10,48 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 27,
-    "Knowledge / RAG": 8,
+    "Enterprise Workflow": 26,
+    "Knowledge / RAG": 10,
     "Evaluation / Observability": 5,
     "Agent Runtime": 4,
     "Commerce Agent": 4,
-    "Infrastructure": 1,
     "Product Intelligence": 1
   },
   "language_distribution": {
-    "Python": 23,
-    "TypeScript": 14,
-    "Go": 4,
-    "Java": 4,
+    "Python": 26,
+    "TypeScript": 11,
+    "Unknown": 3,
+    "Go": 2,
+    "Java": 2,
+    "Jupyter Notebook": 2,
     "MDX": 2,
-    "PHP": 1,
-    "Shell": 1,
-    "Unknown": 1
+    "JavaScript": 1,
+    "Shell": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 24,
+    "ecosystem leader": 23,
     "established": 17,
-    "scaling": 6,
-    "emerging": 3
+    "emerging": 6,
+    "scaling": 4
   },
   "action_distribution": {
-    "prototype pattern": 25,
-    "clone and test": 14,
-    "strategic watch": 9,
-    "monitor": 1,
-    "read docs": 1
+    "prototype pattern": 27,
+    "clone and test": 10,
+    "strategic watch": 8,
+    "read docs": 4,
+    "monitor": 1
   },
   "watchlist_flags": {
     "enterprise control gap": 46,
-    "docs need review": 44,
-    "quality gate unclear": 39,
-    "license unknown": 3
+    "docs need review": 43,
+    "quality gate unclear": 38,
+    "license unknown": 2
   },
   "top_momentum": [
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.4,
+      "stars_per_day": 27.42,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -65,61 +65,69 @@
     {
       "full_name": "builderz-labs/mission-control",
       "momentum_score": 97,
-      "stars_per_day": 38.38,
+      "stars_per_day": 38.21,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 57.04,
+      "stars_per_day": 57.01,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "jnMetaCode/agency-agents-zh",
+      "full_name": "alibaba/spring-ai-alibaba",
       "momentum_score": 97,
-      "stars_per_day": 134.03,
+      "stars_per_day": 15.33,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "bytedance/deer-flow",
+      "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 178.26,
+      "stars_per_day": 12.74,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "OpenNSWM-Lab/FAROS",
+      "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 31.45,
+      "stars_per_day": 178.06,
       "days_since_push": 0,
-      "action_level": "prototype pattern"
+      "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 96,
-      "stars_per_day": 125.17,
+      "stars_per_day": 125.16,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "enescingoz/awesome-n8n-templates",
+      "momentum_score": 96,
+      "stars_per_day": 55.35,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 44.05,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "langchain4j/langchain4j",
-      "momentum_score": 96,
-      "stars_per_day": 11.25,
+      "stars_per_day": 43.99,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-07-13",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-07-13.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-07-13T15:51:17.816026+00:00"
+    },
     {
       "report_date": "2026-07-12",
       "repo_count": 50,
@@ -351,14 +359,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-06-14T15:17:39.241395+00:00"
-    },
-    {
-      "report_date": "2026-06-13",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-06-13.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-06-13T15:08:13.745943+00:00"
     }
   ]
 }
