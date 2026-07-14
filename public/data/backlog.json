@@ -100,6 +100,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "beikeshop/beikeshop",
+    "url": "https://github.com/beikeshop/beikeshop",
+    "category": "AI Commerce",
+    "subcategory": "Commerce Agent",
+    "action_level": "strategic watch",
+    "priority": 5,
+    "strategic_score": 84,
+    "momentum_score": 63,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "mlflow/mlflow",
     "url": "https://github.com/mlflow/mlflow",
     "category": "AI Infrastructure",
@@ -122,7 +139,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 81,
-    "momentum_score": 93,
+    "momentum_score": 92,
     "risk_flags": [
       "enterprise control gap"
     ],
@@ -137,8 +154,26 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 79,
-    "momentum_score": 97,
+    "momentum_score": 96,
     "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "OpenNSWM-Lab/FAROS",
+    "url": "https://github.com/OpenNSWM-Lab/FAROS",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 79,
+    "momentum_score": 95,
+    "risk_flags": [
+      "license unknown",
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
@@ -154,26 +189,8 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 79,
-    "momentum_score": 94,
+    "momentum_score": 93,
     "risk_flags": [
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "OpenNSWM-Lab/FAROS",
-    "url": "https://github.com/OpenNSWM-Lab/FAROS",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 78,
-    "momentum_score": 95,
-    "risk_flags": [
-      "license unknown",
-      "docs need review",
       "enterprise control gap",
       "quality gate unclear"
     ],
@@ -191,22 +208,6 @@
     "momentum_score": 96,
     "risk_flags": [
       "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "enescingoz/awesome-n8n-templates",
-    "url": "https://github.com/enescingoz/awesome-n8n-templates",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 75,
-    "momentum_score": 96,
-    "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
     ],
@@ -240,6 +241,22 @@
     "momentum_score": 96,
     "risk_flags": [
       "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "enescingoz/awesome-n8n-templates",
+    "url": "https://github.com/enescingoz/awesome-n8n-templates",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 75,
+    "momentum_score": 95,
+    "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
     ],
@@ -304,7 +321,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 73,
-    "momentum_score": 97,
+    "momentum_score": 96,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -321,7 +338,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 73,
-    "momentum_score": 96,
+    "momentum_score": 95,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -338,7 +355,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 73,
-    "momentum_score": 96,
+    "momentum_score": 95,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -352,6 +369,23 @@
     "url": "https://github.com/langchain-ai/langchain",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 69,
+    "momentum_score": 95,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "FlowiseAI/Flowise",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -582,6 +616,22 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "run-llama/llama_index",
+    "url": "https://github.com/run-llama/llama_index",
+    "category": "AI Agent Framework",
+    "subcategory": "Knowledge / RAG",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 63,
+    "momentum_score": 94,
+    "risk_flags": [
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "brokermr810/QuantDinger",
     "url": "https://github.com/brokermr810/QuantDinger",
     "category": "AI Agent Framework",
@@ -589,7 +639,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -598,32 +648,17 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "NirDiamant/GenAI_Agents",
-    "url": "https://github.com/NirDiamant/GenAI_Agents",
+    "full_name": "anthropics/claude-code",
+    "url": "https://github.com/anthropics/claude-code",
     "category": "AI Agent Framework",
-    "subcategory": "Knowledge / RAG",
+    "subcategory": "Enterprise Workflow",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
     "momentum_score": 94,
     "risk_flags": [
+      "license unknown",
       "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "run-llama/llama_index",
-    "url": "https://github.com/run-llama/llama_index",
-    "category": "AI Agent Framework",
-    "subcategory": "Knowledge / RAG",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 63,
-    "momentum_score": 93,
-    "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
     ],
@@ -653,7 +688,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 83,
+    "momentum_score": 82,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -670,7 +705,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 75,
+    "momentum_score": 74,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -696,31 +731,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "xbtlin/ai-berkshire",
-    "url": "https://github.com/xbtlin/ai-berkshire",
+    "full_name": "TeamWiseFlow/xiaobei",
+    "url": "https://github.com/TeamWiseFlow/xiaobei",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 57,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "THU-MAIC/OpenMAIC",
-    "url": "https://github.com/THU-MAIC/OpenMAIC",
-    "category": "AI Agent Framework",
-    "subcategory": "Agent Runtime",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 51,
-    "momentum_score": 93,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -736,30 +754,14 @@
     "subcategory": "Commerce Agent",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 51,
-    "momentum_score": 81,
+    "strategic_score": 52,
+    "momentum_score": 92,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
     ],
     "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "walkinglabs/modern-llm-notebook",
-    "url": "https://github.com/walkinglabs/modern-llm-notebook",
-    "category": "AI Infrastructure",
-    "subcategory": "Evaluation / Observability",
-    "action_level": "read docs",
-    "priority": 2,
-    "strategic_score": 46,
-    "momentum_score": 56,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap"
-    ],
-    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   },
   {
@@ -780,52 +782,55 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "SantanderAI/autoguardrails",
-    "url": "https://github.com/SantanderAI/autoguardrails",
+    "full_name": "h9-tec/llm-systems-engineering-roadmap",
+    "url": "https://github.com/h9-tec/llm-systems-engineering-roadmap",
     "category": "AI Infrastructure",
-    "subcategory": "Evaluation / Observability",
+    "subcategory": "Knowledge / RAG",
     "action_level": "read docs",
     "priority": 2,
-    "strategic_score": 42,
-    "momentum_score": 65,
+    "strategic_score": 39,
+    "momentum_score": 28,
     "risk_flags": [
-      "docs need review"
-    ],
-    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "Shpaldik/OpenIELTS-AI",
-    "url": "https://github.com/Shpaldik/OpenIELTS-AI",
-    "category": "AI Infrastructure",
-    "subcategory": "Evaluation / Observability",
-    "action_level": "read docs",
-    "priority": 2,
-    "strategic_score": 35,
-    "momentum_score": 86,
-    "risk_flags": [
+      "license unknown",
       "docs need review",
+      "maintenance freshness risk",
       "enterprise control gap"
     ],
     "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "WatchaAI/e-commerce",
-    "url": "https://github.com/WatchaAI/e-commerce",
-    "category": "AI Commerce",
-    "subcategory": "Commerce Agent",
-    "action_level": "monitor",
-    "priority": 1,
-    "strategic_score": 29,
-    "momentum_score": 60,
+    "full_name": "Abdullah-Masood-05/multimodal-product-intelligence-api",
+    "url": "https://github.com/Abdullah-Masood-05/multimodal-product-intelligence-api",
+    "category": "AI Infrastructure",
+    "subcategory": "Knowledge / RAG",
+    "action_level": "read docs",
+    "priority": 2,
+    "strategic_score": 38,
+    "momentum_score": 24,
     "risk_flags": [
-      "license unknown",
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
     ],
-    "next_action": "Keep on watchlist until adoption, docs, or implementation fit improves.",
+    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "fdhhhdjd/Class-Production-AI-App",
+    "url": "https://github.com/fdhhhdjd/Class-Production-AI-App",
+    "category": "AI Infrastructure",
+    "subcategory": "Knowledge / RAG",
+    "action_level": "read docs",
+    "priority": 2,
+    "strategic_score": 38,
+    "momentum_score": 20,
+    "risk_flags": [
+      "license unknown",
+      "docs need review",
+      "maintenance freshness risk"
+    ],
+    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   }
 ]
