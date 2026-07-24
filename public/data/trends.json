@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-07-23",
+  "report_date": "2026-07-24",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
@@ -10,17 +10,17 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 27,
+    "Enterprise Workflow": 26,
     "Knowledge / RAG": 9,
     "Evaluation / Observability": 5,
+    "Agent Runtime": 4,
     "Commerce Agent": 4,
-    "Agent Runtime": 3,
     "Product Intelligence": 2
   },
   "language_distribution": {
     "Python": 28,
-    "TypeScript": 8,
-    "Go": 4,
+    "TypeScript": 9,
+    "Go": 3,
     "Java": 3,
     "Unknown": 3,
     "JavaScript": 2,
@@ -28,26 +28,26 @@
     "Shell": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 26,
+    "ecosystem leader": 25,
     "established": 17,
-    "emerging": 5,
-    "scaling": 2
+    "emerging": 4,
+    "scaling": 4
   },
   "action_distribution": {
-    "prototype pattern": 33,
-    "strategic watch": 9,
-    "clone and test": 8
+    "prototype pattern": 32,
+    "clone and test": 9,
+    "strategic watch": 9
   },
   "watchlist_flags": {
     "enterprise control gap": 44,
     "docs need review": 41,
-    "quality gate unclear": 36
+    "quality gate unclear": 37
   },
   "top_momentum": [
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 27.36,
+      "stars_per_day": 27.35,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -61,21 +61,14 @@
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 125.17,
+      "stars_per_day": 125.19,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 56.35,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "jnMetaCode/agency-agents-zh",
-      "momentum_score": 97,
-      "stars_per_day": 131.04,
+      "stars_per_day": 56.29,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -89,33 +82,48 @@
     {
       "full_name": "open-multi-agent/open-multi-agent",
       "momentum_score": 97,
-      "stars_per_day": 58.3,
+      "stars_per_day": 57.82,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.83,
+      "stars_per_day": 12.8,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 175.73,
+      "stars_per_day": 175.58,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 43.62,
+      "stars_per_day": 43.57,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "langchain4j/langchain4j",
+      "momentum_score": 96,
+      "stars_per_day": 11.22,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-07-24",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-07-24.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-07-24T15:05:12.394168+00:00"
+    },
     {
       "report_date": "2026-07-23",
       "repo_count": 50,
@@ -347,14 +355,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-06-25T15:45:26.334637+00:00"
-    },
-    {
-      "report_date": "2026-06-24",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-06-24.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-06-24T15:39:03.342695+00:00"
     }
   ]
 }
