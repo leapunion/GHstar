@@ -6,8 +6,8 @@
     "url": "https://github.com/ascending-llc/jarvis-registry",
     "description": "Connect any AI copilot or autonomous agent to your enterprise tools — through a single, secure MCP/Agent gateway with built-in identity, access control, and full observability.",
     "language": "Python",
-    "stars": 2514,
-    "forks": 383,
+    "stars": 2546,
+    "forks": 389,
     "topics": [
       "agent",
       "agent-gateway",
@@ -17,7 +17,7 @@
       "orchestration"
     ],
     "created_at": "2025-10-04T01:52:24Z",
-    "pushed_at": "2026-07-26T13:37:50Z",
+    "pushed_at": "2026-07-27T15:31:25Z",
     "category": "Agentic Enterprise",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -40,12 +40,12 @@
     "enterprise_score": 12,
     "strategic_score": 97,
     "action_level": "strategic watch",
-    "stars_per_day": 8.52,
+    "stars_per_day": 8.6,
     "momentum_score": 93,
     "maturity_level": "scaling",
-    "repository_review": "Scaling project with 8.5 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Scaling project with 8.6 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-07-25",
@@ -55,6 +55,11 @@
       {
         "date": "2026-07-26",
         "stars": 2514,
+        "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 2546,
         "momentum_score": 93
       }
     ]
@@ -66,8 +71,8 @@
     "url": "https://github.com/ModelEngine-Group/nexent",
     "description": "Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.",
     "language": "Python",
-    "stars": 5789,
-    "forks": 707,
+    "stars": 5794,
+    "forks": 709,
     "topics": [
       "agent",
       "agentic-ai",
@@ -83,7 +88,7 @@
       "rag"
     ],
     "created_at": "2025-04-28T10:44:33Z",
-    "pushed_at": "2026-07-26T13:40:16Z",
+    "pushed_at": "2026-07-27T14:41:59Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -109,12 +114,12 @@
     "enterprise_score": 9,
     "strategic_score": 91,
     "action_level": "strategic watch",
-    "stars_per_day": 12.75,
+    "stars_per_day": 12.73,
     "momentum_score": 96,
     "maturity_level": "established",
-    "repository_review": "Established project with 12.8 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Established project with 12.7 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -410,6 +415,11 @@
         "date": "2026-07-26",
         "stars": 5789,
         "momentum_score": 96
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 5794,
+        "momentum_score": 96
       }
     ]
   },
@@ -420,8 +430,8 @@
     "url": "https://github.com/langgenius/dify",
     "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
     "language": "TypeScript",
-    "stars": 150302,
-    "forks": 23682,
+    "stars": 150430,
+    "forks": 23700,
     "topics": [
       "agent",
       "agentic-ai",
@@ -445,7 +455,7 @@
       "workflow"
     ],
     "created_at": "2023-04-12T07:40:24Z",
-    "pushed_at": "2026-07-26T14:23:40Z",
+    "pushed_at": "2026-07-27T15:42:42Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -476,7 +486,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 125.1 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -777,6 +787,11 @@
         "date": "2026-07-26",
         "stars": 150302,
         "momentum_score": 97
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 150430,
+        "momentum_score": 97
       }
     ]
   },
@@ -787,8 +802,8 @@
     "url": "https://github.com/bytedance/deer-flow",
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
     "language": "Python",
-    "stars": 77885,
-    "forks": 10621,
+    "stars": 77963,
+    "forks": 10634,
     "topics": [
       "agent",
       "agentic",
@@ -810,7 +825,7 @@
       "typescript"
     ],
     "created_at": "2025-05-07T02:50:19Z",
-    "pushed_at": "2026-07-26T13:59:19Z",
+    "pushed_at": "2026-07-27T15:17:18Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -835,12 +850,12 @@
     "enterprise_score": 9,
     "strategic_score": 85,
     "action_level": "strategic watch",
-    "stars_per_day": 175.02,
+    "stars_per_day": 174.8,
     "momentum_score": 96,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 175.0 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Ecosystem Leader project with 174.8 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -1141,6 +1156,11 @@
         "date": "2026-07-26",
         "stars": 77885,
         "momentum_score": 96
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 77963,
+        "momentum_score": 96
       }
     ]
   },
@@ -1151,8 +1171,8 @@
     "url": "https://github.com/ruvnet/ruflo",
     "description": "🌊 The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
     "language": "TypeScript",
-    "stars": 66065,
-    "forks": 7856,
+    "stars": 66234,
+    "forks": 7886,
     "topics": [
       "agentic-ai",
       "agentic-framework",
@@ -1176,7 +1196,7 @@
       "typescript"
     ],
     "created_at": "2025-06-02T21:24:20Z",
-    "pushed_at": "2026-07-26T06:10:20Z",
+    "pushed_at": "2026-07-27T14:12:58Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -1201,12 +1221,12 @@
     "enterprise_score": 9,
     "strategic_score": 85,
     "action_level": "strategic watch",
-    "stars_per_day": 157.67,
+    "stars_per_day": 157.7,
     "momentum_score": 94,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 157.7 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -1507,6 +1527,11 @@
         "date": "2026-07-26",
         "stars": 66065,
         "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 66234,
+        "momentum_score": 94
       }
     ]
   },
@@ -1517,8 +1542,8 @@
     "url": "https://github.com/deepset-ai/haystack",
     "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
     "language": "Python",
-    "stars": 26016,
-    "forks": 2952,
+    "stars": 26032,
+    "forks": 2956,
     "topics": [
       "agent",
       "agents",
@@ -1542,7 +1567,7 @@
       "transformers"
     ],
     "created_at": "2019-11-14T09:05:28Z",
-    "pushed_at": "2026-07-25T03:05:22Z",
+    "pushed_at": "2026-07-27T15:42:37Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -1568,11 +1593,11 @@
     "strategic_score": 85,
     "action_level": "strategic watch",
     "stars_per_day": 10.64,
-    "momentum_score": 93,
+    "momentum_score": 94,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 10.6 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Ecosystem Leader project with 10.6 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -1858,6 +1883,11 @@
         "date": "2026-07-26",
         "stars": 26016,
         "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 26032,
+        "momentum_score": 94
       }
     ]
   },
@@ -1868,8 +1898,8 @@
     "url": "https://github.com/microsoft/agent-framework",
     "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
     "language": "Python",
-    "stars": 12404,
-    "forks": 2085,
+    "stars": 12441,
+    "forks": 2087,
     "topics": [
       "agent-framework",
       "agentic-ai",
@@ -1883,7 +1913,7 @@
       "workflows"
     ],
     "created_at": "2025-04-28T19:40:42Z",
-    "pushed_at": "2026-07-26T14:34:17Z",
+    "pushed_at": "2026-07-27T14:36:50Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -1905,12 +1935,12 @@
     "enterprise_score": 6,
     "strategic_score": 85,
     "action_level": "strategic watch",
-    "stars_per_day": 27.32,
+    "stars_per_day": 27.34,
     "momentum_score": 98,
     "maturity_level": "established",
     "repository_review": "Established project with 27.3 stars/day, actively maintained, and 98/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -2211,6 +2241,11 @@
         "date": "2026-07-26",
         "stars": 12404,
         "momentum_score": 98
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 12441,
+        "momentum_score": 98
       }
     ]
   },
@@ -2221,7 +2256,7 @@
     "url": "https://github.com/dataelement/bisheng",
     "description": "BISHENG is an open LLM devops platform for next generation Enterprise AI applications. Powerful and comprehensive features include: GenAI workflow, RAG, Agent, Unified model management, Evaluation, SFT, Dataset Management, Enterprise-level System Management, Observability and more.",
     "language": "Python",
-    "stars": 11769,
+    "stars": 11775,
     "forks": 1917,
     "topics": [
       "agent",
@@ -2246,7 +2281,7 @@
       "workflow"
     ],
     "created_at": "2023-08-28T10:00:24Z",
-    "pushed_at": "2026-07-24T13:31:28Z",
+    "pushed_at": "2026-07-27T13:50:18Z",
     "category": "Agentic Enterprise",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -2271,11 +2306,11 @@
     "strategic_score": 85,
     "action_level": "strategic watch",
     "stars_per_day": 11.07,
-    "momentum_score": 96,
+    "momentum_score": 98,
     "maturity_level": "established",
-    "repository_review": "Established project with 11.1 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Established project with 11.1 stars/day, actively maintained, and 98/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -2576,6 +2611,11 @@
         "date": "2026-07-26",
         "stars": 11769,
         "momentum_score": 96
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 11775,
+        "momentum_score": 98
       }
     ]
   },
@@ -2586,8 +2626,8 @@
     "url": "https://github.com/53AI/53AIHub",
     "description": "53AI Hub is an open-source AI portal and knowledge base for managing enterprise knowledge, AI agents, prompts, and AI tools, seamlessly integrating with Coze, Dify, FastGPT, RAGFlow. 一个AI知识库与Agent门户",
     "language": "TypeScript",
-    "stars": 4945,
-    "forks": 534,
+    "stars": 4949,
+    "forks": 536,
     "topics": [
       "coze",
       "dify",
@@ -2602,7 +2642,7 @@
       "ragflow"
     ],
     "created_at": "2025-04-24T11:24:11Z",
-    "pushed_at": "2026-07-17T10:28:31Z",
+    "pushed_at": "2026-07-27T11:53:38Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 49,
@@ -2627,12 +2667,12 @@
     "enterprise_score": 9,
     "strategic_score": 85,
     "action_level": "strategic watch",
-    "stars_per_day": 10.96,
-    "momentum_score": 91,
+    "stars_per_day": 10.78,
+    "momentum_score": 93,
     "maturity_level": "scaling",
-    "repository_review": "Scaling project with 11.0 stars/day, actively maintained, and 91/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Scaling project with 10.8 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-07-10",
-    "last_seen_date": "2026-07-19",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-07-10",
@@ -2663,6 +2703,11 @@
         "date": "2026-07-19",
         "stars": 4945,
         "momentum_score": 91
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 4949,
+        "momentum_score": 93
       }
     ]
   },
@@ -2934,8 +2979,8 @@
     "url": "https://github.com/mlflow/mlflow",
     "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
     "language": "Python",
-    "stars": 27216,
-    "forks": 6057,
+    "stars": 27235,
+    "forks": 6060,
     "topics": [
       "agentops",
       "agents",
@@ -2957,7 +3002,7 @@
       "prompt-engineering"
     ],
     "created_at": "2018-06-05T16:05:58Z",
-    "pushed_at": "2026-07-26T09:09:52Z",
+    "pushed_at": "2026-07-27T14:14:07Z",
     "category": "AI Infrastructure",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -2979,12 +3024,12 @@
     "enterprise_score": 6,
     "strategic_score": 81,
     "action_level": "strategic watch",
-    "stars_per_day": 9.15,
+    "stars_per_day": 9.16,
     "momentum_score": 93,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 9.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -3280,6 +3325,11 @@
         "date": "2026-07-26",
         "stars": 27216,
         "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 27235,
+        "momentum_score": 93
       }
     ]
   },
@@ -3290,8 +3340,8 @@
     "url": "https://github.com/arc53/DocsGPT",
     "description": "Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents.",
     "language": "Python",
-    "stars": 18066,
-    "forks": 2089,
+    "stars": 18117,
+    "forks": 2092,
     "topics": [
       "agent-builder",
       "agents",
@@ -3314,7 +3364,7 @@
       "transformers"
     ],
     "created_at": "2023-02-02T11:03:23Z",
-    "pushed_at": "2026-07-25T16:15:59Z",
+    "pushed_at": "2026-07-27T11:27:37Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -3337,12 +3387,12 @@
     "enterprise_score": 9,
     "strategic_score": 81,
     "action_level": "strategic watch",
-    "stars_per_day": 14.23,
-    "momentum_score": 92,
+    "stars_per_day": 14.25,
+    "momentum_score": 93,
     "maturity_level": "established",
-    "repository_review": "Established project with 14.2 stars/day, actively maintained, and 92/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
+    "repository_review": "Established project with 14.3 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -3558,6 +3608,11 @@
         "date": "2026-07-26",
         "stars": 18066,
         "momentum_score": 92
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 18117,
+        "momentum_score": 93
       }
     ]
   },
@@ -3653,6 +3708,374 @@
         "date": "2026-06-24",
         "stars": 644,
         "momentum_score": 59
+      }
+    ]
+  },
+  {
+    "full_name": "HKUDS/nanobot",
+    "name": "nanobot",
+    "owner": "HKUDS",
+    "url": "https://github.com/HKUDS/nanobot",
+    "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "language": "Python",
+    "stars": 46302,
+    "forks": 8201,
+    "topics": [
+      "agent-framework",
+      "ai-agent",
+      "ai-agents",
+      "chatbot",
+      "chatops",
+      "discord-bot",
+      "llm-agents",
+      "llms",
+      "local-llm",
+      "mcp",
+      "model-context-protocol",
+      "multi-agent",
+      "openai-compatible",
+      "openclaw",
+      "personal-ai-assistant",
+      "python",
+      "self-hosted",
+      "telegram-bot-ai-assistant",
+      "webui",
+      "workflow-automation"
+    ],
+    "created_at": "2026-02-01T07:16:15Z",
+    "pushed_at": "2026-07-27T15:13:15Z",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "relevance": 49,
+    "modules": [
+      "Agent runtime",
+      "Workflow orchestration",
+      "Tool integration"
+    ],
+    "scenarios": [
+      "Build task-oriented AI agents with tool use and planning.",
+      "Automate enterprise workflows and internal knowledge operations."
+    ],
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "commerce_score": 3,
+    "enterprise_score": 6,
+    "strategic_score": 79,
+    "action_level": "prototype pattern",
+    "stars_per_day": 263.08,
+    "momentum_score": 97,
+    "maturity_level": "ecosystem leader",
+    "repository_review": "Ecosystem Leader project with 263.1 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "first_seen_date": "2026-05-28",
+    "last_seen_date": "2026-07-27",
+    "history": [
+      {
+        "date": "2026-05-28",
+        "stars": 43322,
+        "momentum_score": 0
+      },
+      {
+        "date": "2026-05-29",
+        "stars": 43365,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-05-30",
+        "stars": 43393,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-05-31",
+        "stars": 43426,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-01",
+        "stars": 43479,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-02",
+        "stars": 43536,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-03",
+        "stars": 43588,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-04",
+        "stars": 43654,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-05",
+        "stars": 43726,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-06",
+        "stars": 43780,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-07",
+        "stars": 43823,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-08",
+        "stars": 43872,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-09",
+        "stars": 43951,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-10",
+        "stars": 44000,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-11",
+        "stars": 44059,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-12",
+        "stars": 44116,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-13",
+        "stars": 44155,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-14",
+        "stars": 44189,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-15",
+        "stars": 44228,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-16",
+        "stars": 44292,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-17",
+        "stars": 44391,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-18",
+        "stars": 44432,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-19",
+        "stars": 44462,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-20",
+        "stars": 44480,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-21",
+        "stars": 44500,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-22",
+        "stars": 44574,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-23",
+        "stars": 44637,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-24",
+        "stars": 44689,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-25",
+        "stars": 44732,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-26",
+        "stars": 44771,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-27",
+        "stars": 44791,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-28",
+        "stars": 44818,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-29",
+        "stars": 44858,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-06-30",
+        "stars": 44891,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-01",
+        "stars": 44926,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-02",
+        "stars": 44959,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-03",
+        "stars": 44986,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-04",
+        "stars": 45002,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-05",
+        "stars": 45032,
+        "momentum_score": 94
+      },
+      {
+        "date": "2026-07-06",
+        "stars": 45069,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-07",
+        "stars": 45102,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-08",
+        "stars": 45132,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-09",
+        "stars": 45178,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-10",
+        "stars": 45218,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-11",
+        "stars": 45248,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-12",
+        "stars": 45289,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-13",
+        "stars": 45383,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-14",
+        "stars": 45550,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-15",
+        "stars": 45653,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-16",
+        "stars": 45735,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-17",
+        "stars": 45809,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-18",
+        "stars": 45851,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-19",
+        "stars": 45882,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-20",
+        "stars": 45929,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-21",
+        "stars": 45983,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-22",
+        "stars": 46079,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-23",
+        "stars": 46126,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-24",
+        "stars": 46185,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-25",
+        "stars": 46222,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-26",
+        "stars": 46256,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 46302,
+        "momentum_score": 97
       }
     ]
   },
@@ -4043,8 +4466,8 @@
     "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
     "description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
     "language": "Python",
-    "stars": 4821,
-    "forks": 634,
+    "stars": 4889,
+    "forks": 646,
     "topics": [
       "agentic-ai",
       "agentic-workflows",
@@ -4067,7 +4490,7 @@
       "tutorial"
     ],
     "created_at": "2026-05-04T22:18:51Z",
-    "pushed_at": "2026-07-22T02:46:42Z",
+    "pushed_at": "2026-07-27T07:30:36Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -4091,12 +4514,12 @@
     "enterprise_score": 6,
     "strategic_score": 79,
     "action_level": "prototype pattern",
-    "stars_per_day": 59.52,
-    "momentum_score": 93,
+    "stars_per_day": 58.2,
+    "momentum_score": 95,
     "maturity_level": "scaling",
-    "repository_review": "Scaling project with 59.5 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Scaling project with 58.2 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-08",
-    "last_seen_date": "2026-07-24",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-08",
@@ -4297,6 +4720,11 @@
         "date": "2026-07-24",
         "stars": 4821,
         "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 4889,
+        "momentum_score": 95
       }
     ]
   },
@@ -4748,8 +5176,8 @@
     "url": "https://github.com/sickn33/agentic-awesome-skills",
     "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 1,987+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
     "language": "Python",
-    "stars": 43936,
-    "forks": 6486,
+    "stars": 44010,
+    "forks": 6491,
     "topics": [
       "agent-skills",
       "agentic-skills",
@@ -4773,7 +5201,7 @@
       "skill-library"
     ],
     "created_at": "2026-01-14T17:48:09Z",
-    "pushed_at": "2026-07-26T13:08:12Z",
+    "pushed_at": "2026-07-27T05:13:52Z",
     "category": "AI Agent Framework",
     "subcategory": "Product Intelligence",
     "relevance": 39,
@@ -4795,12 +5223,12 @@
     "enterprise_score": 6,
     "strategic_score": 75,
     "action_level": "prototype pattern",
-    "stars_per_day": 227.65,
+    "stars_per_day": 226.86,
     "momentum_score": 95,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 227.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Ecosystem Leader project with 226.9 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-07-09",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-07-09",
@@ -4890,6 +5318,11 @@
       {
         "date": "2026-07-26",
         "stars": 43936,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 44010,
         "momentum_score": 95
       }
     ]
@@ -5102,8 +5535,8 @@
     "url": "https://github.com/google/adk-python",
     "description": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
     "language": "Python",
-    "stars": 20891,
-    "forks": 3759,
+    "stars": 20909,
+    "forks": 3766,
     "topics": [
       "agent",
       "agentic",
@@ -5123,7 +5556,7 @@
       "multi-agents-collaboration"
     ],
     "created_at": "2025-04-01T20:44:40Z",
-    "pushed_at": "2026-07-25T23:27:49Z",
+    "pushed_at": "2026-07-27T14:23:36Z",
     "category": "AI Agent Framework",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -5145,12 +5578,12 @@
     "enterprise_score": 6,
     "strategic_score": 75,
     "action_level": "prototype pattern",
-    "stars_per_day": 43.43,
-    "momentum_score": 95,
+    "stars_per_day": 43.38,
+    "momentum_score": 96,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 43.4 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Ecosystem Leader project with 43.4 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -5446,6 +5879,11 @@
         "date": "2026-07-26",
         "stars": 20891,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 20909,
+        "momentum_score": 96
       }
     ]
   },
@@ -5456,8 +5894,8 @@
     "url": "https://github.com/langchain4j/langchain4j",
     "description": "LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Java frameworks like Quarkus and Spring Boot.",
     "language": "Java",
-    "stars": 12693,
-    "forks": 2393,
+    "stars": 12704,
+    "forks": 2400,
     "topics": [
       "anthropic",
       "chatgpt",
@@ -5481,7 +5919,7 @@
       "vector-database"
     ],
     "created_at": "2023-06-20T15:30:29Z",
-    "pushed_at": "2026-07-24T07:44:16Z",
+    "pushed_at": "2026-07-27T15:33:32Z",
     "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -5507,11 +5945,11 @@
     "strategic_score": 75,
     "action_level": "prototype pattern",
     "stars_per_day": 11.21,
-    "momentum_score": 94,
+    "momentum_score": 96,
     "maturity_level": "established",
-    "repository_review": "Established project with 11.2 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Established project with 11.2 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -5807,6 +6245,11 @@
         "date": "2026-07-26",
         "stars": 12693,
         "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 12704,
+        "momentum_score": 96
       }
     ]
   },
@@ -5817,8 +6260,8 @@
     "url": "https://github.com/MervinPraison/PraisonAI",
     "description": "PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous self-improving agents that research, plan, code, and execute tasks. Deployed in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs.",
     "language": "Python",
-    "stars": 8518,
-    "forks": 1333,
+    "stars": 8517,
+    "forks": 1335,
     "topics": [
       "agents",
       "ai",
@@ -5842,7 +6285,7 @@
       "openclaw"
     ],
     "created_at": "2024-03-19T16:45:25Z",
-    "pushed_at": "2026-07-26T11:36:50Z",
+    "pushed_at": "2026-07-27T13:43:10Z",
     "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -5866,12 +6309,12 @@
     "enterprise_score": 6,
     "strategic_score": 75,
     "action_level": "prototype pattern",
-    "stars_per_day": 9.92,
+    "stars_per_day": 9.9,
     "momentum_score": 95,
     "maturity_level": "established",
     "repository_review": "Established project with 9.9 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -6167,6 +6610,11 @@
         "date": "2026-07-26",
         "stars": 8518,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 8517,
+        "momentum_score": 95
       }
     ]
   },
@@ -6177,8 +6625,8 @@
     "url": "https://github.com/omnigent-ai/omnigent",
     "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
     "language": "Python",
-    "stars": 7770,
-    "forks": 1125,
+    "stars": 7803,
+    "forks": 1141,
     "topics": [
       "agent-framework",
       "agent-governance",
@@ -6198,7 +6646,7 @@
       "sandbox"
     ],
     "created_at": "2026-06-11T12:18:13Z",
-    "pushed_at": "2026-07-26T13:14:41Z",
+    "pushed_at": "2026-07-27T14:27:49Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -6218,12 +6666,12 @@
     "enterprise_score": 9,
     "strategic_score": 75,
     "action_level": "prototype pattern",
-    "stars_per_day": 172.67,
+    "stars_per_day": 169.63,
     "momentum_score": 95,
     "maturity_level": "established",
-    "repository_review": "Established project with 172.7 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Established project with 169.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-26",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-26",
@@ -6379,6 +6827,11 @@
         "date": "2026-07-26",
         "stars": 7770,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 7803,
+        "momentum_score": 95
       }
     ]
   },
@@ -6389,8 +6842,8 @@
     "url": "https://github.com/GoogleCloudPlatform/agent-starter-pack",
     "description": "Ship AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability.",
     "language": "Python",
-    "stars": 6528,
-    "forks": 1497,
+    "stars": 6530,
+    "forks": 1498,
     "topics": [
       "agents",
       "gcp",
@@ -6424,12 +6877,12 @@
     "enterprise_score": 3,
     "strategic_score": 75,
     "action_level": "prototype pattern",
-    "stars_per_day": 12.07,
-    "momentum_score": 91,
+    "stars_per_day": 12.05,
+    "momentum_score": 90,
     "maturity_level": "established",
-    "repository_review": "Established project with 12.1 stars/day, actively maintained, and 91/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Established project with 12.0 stars/day, actively maintained, and 90/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-05",
@@ -6500,6 +6953,11 @@
         "date": "2026-07-26",
         "stars": 6528,
         "momentum_score": 91
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 6530,
+        "momentum_score": 90
       }
     ]
   },
@@ -6580,8 +7038,8 @@
     "url": "https://github.com/iflytek/skillhub",
     "description": "Self-hosted, open-source agent skill registry for enterprises. Publish & version skill packages, govern with RBAC and audit logs, deploy   on-premise with Docker or Kubernetes.",
     "language": "Java",
-    "stars": 4858,
-    "forks": 653,
+    "stars": 4919,
+    "forks": 680,
     "topics": [
       "agent-framework",
       "ai-agent",
@@ -6603,7 +7061,7 @@
       "version-control"
     ],
     "created_at": "2026-03-11T12:17:05Z",
-    "pushed_at": "2026-07-23T09:13:59Z",
+    "pushed_at": "2026-07-27T10:02:44Z",
     "category": "Agentic Enterprise",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -6623,12 +7081,12 @@
     "enterprise_score": 9,
     "strategic_score": 75,
     "action_level": "prototype pattern",
-    "stars_per_day": 35.99,
-    "momentum_score": 93,
+    "stars_per_day": 35.64,
+    "momentum_score": 94,
     "maturity_level": "scaling",
-    "repository_review": "Scaling project with 36.0 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Scaling project with 35.6 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-10",
-    "last_seen_date": "2026-07-24",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-10",
@@ -6844,6 +7302,11 @@
         "date": "2026-07-24",
         "stars": 4858,
         "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 4919,
+        "momentum_score": 94
       }
     ]
   },
@@ -6931,8 +7394,8 @@
     "url": "https://github.com/nexscope-ai/Amazon-Skills",
     "description": "Free AI agent skills for Amazon sellers—  keyword research, competitor analysis, listing audit & more. Works with OpenClaw, Claude Code, Cursor, Windsurf, Codex and any agent that supports the Skills format.",
     "language": "Python",
-    "stars": 442,
-    "forks": 73,
+    "stars": 450,
+    "forks": 75,
     "topics": [
       "ai-agents",
       "amazon",
@@ -6969,12 +7432,12 @@
     "enterprise_score": 9,
     "strategic_score": 74,
     "action_level": "prototype pattern",
-    "stars_per_day": 3.2,
-    "momentum_score": 64,
+    "stars_per_day": 3.24,
+    "momentum_score": 63,
     "maturity_level": "emerging",
-    "repository_review": "Emerging project with 3.2 stars/day, actively maintained, and 64/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Emerging project with 3.2 stars/day, actively maintained, and 63/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -7090,6 +7553,11 @@
         "date": "2026-07-26",
         "stars": 442,
         "momentum_score": 64
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 450,
+        "momentum_score": 63
       }
     ]
   },
@@ -7100,8 +7568,8 @@
     "url": "https://github.com/openai/openai-agents-python",
     "description": "A lightweight, powerful framework for multi-agent workflows",
     "language": "Python",
-    "stars": 28177,
-    "forks": 4377,
+    "stars": 28210,
+    "forks": 4382,
     "topics": [
       "agents",
       "ai",
@@ -7112,7 +7580,7 @@
       "python"
     ],
     "created_at": "2025-03-11T03:42:36Z",
-    "pushed_at": "2026-07-26T10:02:33Z",
+    "pushed_at": "2026-07-27T04:10:57Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -7134,12 +7602,12 @@
     "enterprise_score": 3,
     "strategic_score": 73,
     "action_level": "prototype pattern",
-    "stars_per_day": 56.13,
+    "stars_per_day": 56.08,
     "momentum_score": 97,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 56.1 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -7440,6 +7908,11 @@
         "date": "2026-07-26",
         "stars": 28177,
         "momentum_score": 97
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 28210,
+        "momentum_score": 97
       }
     ]
   },
@@ -7450,8 +7923,8 @@
     "url": "https://github.com/jnMetaCode/agency-agents-zh",
     "description": "🎭 267 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 18 种工具，覆盖工程/设计/营销/金融等 20 个部门。含 52 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）。搭配编排器 agency-orchestrator，一句话即可让多位专家按 DAG 自动协作。",
     "language": "Shell",
-    "stars": 18347,
-    "forks": 3059,
+    "stars": 18408,
+    "forks": 3065,
     "topics": [
       "agency-orchestrator",
       "agent-definitions",
@@ -7474,7 +7947,7 @@
       "workflow"
     ],
     "created_at": "2026-03-06T11:11:51Z",
-    "pushed_at": "2026-07-23T11:40:36Z",
+    "pushed_at": "2026-07-27T06:18:21Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -7496,12 +7969,12 @@
     "enterprise_score": 3,
     "strategic_score": 73,
     "action_level": "prototype pattern",
-    "stars_per_day": 129.2,
-    "momentum_score": 94,
+    "stars_per_day": 128.73,
+    "momentum_score": 97,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 129.2 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Ecosystem Leader project with 128.7 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-01",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-01",
@@ -7727,6 +8200,11 @@
         "date": "2026-07-26",
         "stars": 18347,
         "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 18408,
+        "momentum_score": 97
       }
     ]
   },
@@ -7737,8 +8215,8 @@
     "url": "https://github.com/alibaba/spring-ai-alibaba",
     "description": "Agentic AI Framework for Java Developers",
     "language": "Java",
-    "stars": 10440,
-    "forks": 2323,
+    "stars": 10451,
+    "forks": 2327,
     "topics": [
       "agentic",
       "artificial-intelligence",
@@ -7751,7 +8229,7 @@
       "workflow"
     ],
     "created_at": "2024-09-09T01:35:50Z",
-    "pushed_at": "2026-07-26T14:33:11Z",
+    "pushed_at": "2026-07-27T13:16:50Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -7773,12 +8251,12 @@
     "enterprise_score": 3,
     "strategic_score": 73,
     "action_level": "prototype pattern",
-    "stars_per_day": 15.24,
+    "stars_per_day": 15.23,
     "momentum_score": 97,
     "maturity_level": "established",
     "repository_review": "Established project with 15.2 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -8069,6 +8547,11 @@
         "date": "2026-07-26",
         "stars": 10440,
         "momentum_score": 97
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 10451,
+        "momentum_score": 97
       }
     ]
   },
@@ -8079,8 +8562,8 @@
     "url": "https://github.com/open-multi-agent/open-multi-agent",
     "description": "TypeScript AI agent orchestration framework with dynamic workflows. Describe the goal, not the graph: a coordinator plans the task DAG at runtime and runs it on any LLM (Claude, ChatGPT, Gemini, DeepSeek, or local models).",
     "language": "TypeScript",
-    "stars": 6660,
-    "forks": 2416,
+    "stars": 6666,
+    "forks": 2414,
     "topics": [
       "agent-framework",
       "agent-orchestration",
@@ -8104,7 +8587,7 @@
       "typescript"
     ],
     "created_at": "2026-03-31T19:07:34Z",
-    "pushed_at": "2026-07-26T12:33:47Z",
+    "pushed_at": "2026-07-27T03:50:56Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -8126,12 +8609,12 @@
     "enterprise_score": 3,
     "strategic_score": 73,
     "action_level": "prototype pattern",
-    "stars_per_day": 56.92,
+    "stars_per_day": 56.49,
     "momentum_score": 97,
     "maturity_level": "established",
-    "repository_review": "Established project with 56.9 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Established project with 56.5 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -8422,6 +8905,11 @@
         "date": "2026-07-26",
         "stars": 6660,
         "momentum_score": 97
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 6666,
+        "momentum_score": 97
       }
     ]
   },
@@ -8546,8 +9034,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "description": "The agent engineering platform.",
     "language": "Python",
-    "stars": 142618,
-    "forks": 23740,
+    "stars": 142698,
+    "forks": 23755,
     "topics": [
       "agents",
       "ai",
@@ -8571,7 +9059,7 @@
       "typescript"
     ],
     "created_at": "2022-10-17T02:58:36Z",
-    "pushed_at": "2026-07-26T08:48:10Z",
+    "pushed_at": "2026-07-27T13:58:47Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -8596,12 +9084,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 103.5,
+    "stars_per_day": 103.48,
     "momentum_score": 95,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 103.5 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -8902,6 +9390,11 @@
         "date": "2026-07-26",
         "stars": 142618,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 142698,
+        "momentum_score": 95
       }
     ]
   },
@@ -9036,8 +9529,8 @@
     "url": "https://github.com/FlowiseAI/Flowise",
     "description": "Build AI Agents, Visually",
     "language": "TypeScript",
-    "stars": 54936,
-    "forks": 24760,
+    "stars": 54964,
+    "forks": 24765,
     "topics": [
       "agentic-ai",
       "agentic-workflow",
@@ -9058,7 +9551,7 @@
       "workflow-automation"
     ],
     "created_at": "2023-03-31T12:23:09Z",
-    "pushed_at": "2026-07-25T08:43:20Z",
+    "pushed_at": "2026-07-27T13:56:21Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -9083,12 +9576,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 45.29,
-    "momentum_score": 94,
+    "stars_per_day": 45.28,
+    "momentum_score": 95,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 45.3 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Ecosystem Leader project with 45.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -9314,361 +9807,10 @@
         "date": "2026-07-26",
         "stars": 54936,
         "momentum_score": 94
-      }
-    ]
-  },
-  {
-    "full_name": "HKUDS/nanobot",
-    "name": "nanobot",
-    "owner": "HKUDS",
-    "url": "https://github.com/HKUDS/nanobot",
-    "description": "Lightweight, open-source AI agent for your tools, chats, and workflows.",
-    "language": "Python",
-    "stars": 46256,
-    "forks": 8189,
-    "topics": [
-      "ai",
-      "ai-agent",
-      "ai-agents",
-      "anthropic",
-      "chatgpt",
-      "claude",
-      "claude-code",
-      "codex",
-      "codex-cli",
-      "llm",
-      "nanobot",
-      "openai",
-      "openclaw"
-    ],
-    "created_at": "2026-02-01T07:16:15Z",
-    "pushed_at": "2026-07-26T14:26:25Z",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "relevance": 39,
-    "modules": [
-      "Agent runtime",
-      "Workflow orchestration",
-      "Tool integration"
-    ],
-    "scenarios": [
-      "Build task-oriented AI agents with tool use and planning.",
-      "Automate enterprise workflows and internal knowledge operations."
-    ],
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "commerce_score": 3,
-    "enterprise_score": 6,
-    "strategic_score": 69,
-    "action_level": "prototype pattern",
-    "stars_per_day": 264.32,
-    "momentum_score": 95,
-    "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 264.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
-    "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
-    "history": [
-      {
-        "date": "2026-05-28",
-        "stars": 43322,
-        "momentum_score": 0
       },
       {
-        "date": "2026-05-29",
-        "stars": 43365,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-05-30",
-        "stars": 43393,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-05-31",
-        "stars": 43426,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-01",
-        "stars": 43479,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-02",
-        "stars": 43536,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-03",
-        "stars": 43588,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-04",
-        "stars": 43654,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-05",
-        "stars": 43726,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-06",
-        "stars": 43780,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-07",
-        "stars": 43823,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-08",
-        "stars": 43872,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-09",
-        "stars": 43951,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-10",
-        "stars": 44000,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-11",
-        "stars": 44059,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-12",
-        "stars": 44116,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-13",
-        "stars": 44155,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-14",
-        "stars": 44189,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-15",
-        "stars": 44228,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-16",
-        "stars": 44292,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-17",
-        "stars": 44391,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-18",
-        "stars": 44432,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-19",
-        "stars": 44462,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-20",
-        "stars": 44480,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-21",
-        "stars": 44500,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-22",
-        "stars": 44574,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-23",
-        "stars": 44637,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-24",
-        "stars": 44689,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-25",
-        "stars": 44732,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-26",
-        "stars": 44771,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-27",
-        "stars": 44791,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-28",
-        "stars": 44818,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-29",
-        "stars": 44858,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-06-30",
-        "stars": 44891,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-01",
-        "stars": 44926,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-02",
-        "stars": 44959,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-03",
-        "stars": 44986,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-04",
-        "stars": 45002,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-05",
-        "stars": 45032,
-        "momentum_score": 94
-      },
-      {
-        "date": "2026-07-06",
-        "stars": 45069,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-07",
-        "stars": 45102,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-08",
-        "stars": 45132,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-09",
-        "stars": 45178,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-10",
-        "stars": 45218,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-11",
-        "stars": 45248,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-12",
-        "stars": 45289,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-13",
-        "stars": 45383,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-14",
-        "stars": 45550,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-15",
-        "stars": 45653,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-16",
-        "stars": 45735,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-17",
-        "stars": 45809,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-18",
-        "stars": 45851,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-19",
-        "stars": 45882,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-20",
-        "stars": 45929,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-21",
-        "stars": 45983,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-22",
-        "stars": 46079,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-23",
-        "stars": 46126,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-24",
-        "stars": 46185,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-25",
-        "stars": 46222,
-        "momentum_score": 95
-      },
-      {
-        "date": "2026-07-26",
-        "stars": 46256,
+        "date": "2026-07-27",
+        "stars": 54964,
         "momentum_score": 95
       }
     ]
@@ -9680,8 +9822,8 @@
     "url": "https://github.com/zhayujie/CowAgent",
     "description": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)",
     "language": "Python",
-    "stars": 46139,
-    "forks": 10278,
+    "stars": 46154,
+    "forks": 10283,
     "topics": [
       "ai",
       "ai-agent",
@@ -9701,7 +9843,7 @@
       "skills"
     ],
     "created_at": "2022-08-07T08:33:41Z",
-    "pushed_at": "2026-07-26T13:29:07Z",
+    "pushed_at": "2026-07-27T12:12:22Z",
     "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -9725,12 +9867,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 31.84,
+    "stars_per_day": 31.83,
     "momentum_score": 95,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 31.8 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -10026,6 +10168,11 @@
         "date": "2026-07-26",
         "stars": 46139,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 46154,
+        "momentum_score": 95
       }
     ]
   },
@@ -10304,8 +10451,8 @@
     "url": "https://github.com/ToolJet/ToolJet",
     "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
     "language": "JavaScript",
-    "stars": 38253,
-    "forks": 5189,
+    "stars": 38266,
+    "forks": 5190,
     "topics": [
       "ai-app-builder",
       "docker",
@@ -10328,7 +10475,7 @@
       "workflow-automation"
     ],
     "created_at": "2021-03-30T08:51:34Z",
-    "pushed_at": "2026-07-24T13:38:10Z",
+    "pushed_at": "2026-07-27T15:19:37Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -10349,12 +10496,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 19.7,
+    "stars_per_day": 19.67,
     "momentum_score": 93,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 19.7 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-24",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -10620,6 +10767,11 @@
         "date": "2026-07-24",
         "stars": 38253,
         "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 38266,
+        "momentum_score": 93
       }
     ]
   },
@@ -10630,8 +10782,8 @@
     "url": "https://github.com/langchain-ai/langgraph",
     "description": "Build resilient agents.",
     "language": "Python",
-    "stars": 38175,
-    "forks": 6418,
+    "stars": 38257,
+    "forks": 6433,
     "topics": [
       "agents",
       "ai",
@@ -10653,7 +10805,7 @@
       "rag"
     ],
     "created_at": "2023-08-09T18:33:12Z",
-    "pushed_at": "2026-07-26T00:52:48Z",
+    "pushed_at": "2026-07-27T09:08:11Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -10678,12 +10830,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 35.28,
+    "stars_per_day": 35.33,
     "momentum_score": 95,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 35.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -10979,6 +11131,11 @@
         "date": "2026-07-26",
         "stars": 38175,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 38257,
+        "momentum_score": 95
       }
     ]
   },
@@ -10989,8 +11146,8 @@
     "url": "https://github.com/langfuse/langfuse",
     "description": "🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. Integrates with OpenTelemetry, LangChain, OpenAI SDK, LiteLLM, and more. 🍊YC W23",
     "language": "TypeScript",
-    "stars": 31880,
-    "forks": 3396,
+    "stars": 31952,
+    "forks": 3413,
     "topics": [
       "analytics",
       "autogen",
@@ -11013,7 +11170,7 @@
       "ycombinator"
     ],
     "created_at": "2023-05-18T17:47:09Z",
-    "pushed_at": "2026-07-26T14:18:50Z",
+    "pushed_at": "2026-07-27T15:49:52Z",
     "category": "AI Infrastructure",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -11033,12 +11190,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 27.36,
+    "stars_per_day": 27.4,
     "momentum_score": 90,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 27.4 stars/day, actively maintained, and 90/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-23",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-23",
@@ -11104,6 +11261,11 @@
         "date": "2026-07-26",
         "stars": 31880,
         "momentum_score": 90
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 31952,
+        "momentum_score": 90
       }
     ]
   },
@@ -11114,8 +11276,8 @@
     "url": "https://github.com/labring/FastGPT",
     "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
     "language": "TypeScript",
-    "stars": 29133,
-    "forks": 7240,
+    "stars": 29154,
+    "forks": 7241,
     "topics": [
       "agent",
       "claude",
@@ -11129,7 +11291,7 @@
       "workflow"
     ],
     "created_at": "2023-02-23T16:53:25Z",
-    "pushed_at": "2026-07-26T13:58:26Z",
+    "pushed_at": "2026-07-27T09:42:28Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -11153,12 +11315,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 23.33,
+    "stars_per_day": 23.32,
     "momentum_score": 95,
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 23.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -11458,6 +11620,11 @@
       {
         "date": "2026-07-26",
         "stars": 29133,
+        "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 29154,
         "momentum_score": 95
       }
     ]
@@ -11761,8 +11928,8 @@
     "url": "https://github.com/activepieces/activepieces",
     "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
     "language": "TypeScript",
-    "stars": 23432,
-    "forks": 3961,
+    "stars": 23443,
+    "forks": 3963,
     "topics": [
       "ai-agent",
       "ai-agent-tools",
@@ -11779,7 +11946,7 @@
       "workflows"
     ],
     "created_at": "2022-12-03T02:52:46Z",
-    "pushed_at": "2026-07-26T14:43:22Z",
+    "pushed_at": "2026-07-27T15:42:07Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -11806,7 +11973,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 17.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -12102,6 +12269,11 @@
         "date": "2026-07-26",
         "stars": 23432,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 23443,
+        "momentum_score": 95
       }
     ]
   },
@@ -12112,8 +12284,8 @@
     "url": "https://github.com/1Panel-dev/MaxKB",
     "description": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。",
     "language": "Python",
-    "stars": 22233,
-    "forks": 3030,
+    "stars": 22254,
+    "forks": 3036,
     "topics": [
       "agent",
       "agentic-ai",
@@ -12131,7 +12303,7 @@
       "rag"
     ],
     "created_at": "2023-09-14T02:05:12Z",
-    "pushed_at": "2026-07-24T12:45:14Z",
+    "pushed_at": "2026-07-27T10:36:56Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -12156,12 +12328,12 @@
     "enterprise_score": 6,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 21.28,
-    "momentum_score": 92,
+    "stars_per_day": 21.26,
+    "momentum_score": 93,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 21.3 stars/day, actively maintained, and 92/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Ecosystem Leader project with 21.3 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-25",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -12402,6 +12574,11 @@
         "date": "2026-07-25",
         "stars": 22233,
         "momentum_score": 92
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 22254,
+        "momentum_score": 93
       }
     ]
   },
@@ -12645,8 +12822,8 @@
     "url": "https://github.com/waooAI/waoowaoo",
     "description": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.",
     "language": "TypeScript",
-    "stars": 13372,
-    "forks": 2982,
+    "stars": 13386,
+    "forks": 2984,
     "topics": [
       "ai-agent",
       "ai-agents",
@@ -12658,7 +12835,7 @@
       "video-generation"
     ],
     "created_at": "2026-01-22T12:09:36Z",
-    "pushed_at": "2026-07-26T14:25:34Z",
+    "pushed_at": "2026-07-27T13:04:52Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -12683,12 +12860,12 @@
     "enterprise_score": 3,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 72.28,
+    "stars_per_day": 71.97,
     "momentum_score": 95,
     "maturity_level": "established",
-    "repository_review": "Established project with 72.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Established project with 72.0 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-01",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-01",
@@ -12914,6 +13091,11 @@
         "date": "2026-07-26",
         "stars": 13372,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 13386,
+        "momentum_score": 95
       }
     ]
   },
@@ -13056,8 +13238,8 @@
     "url": "https://github.com/AgentWrapper/agent-orchestrator",
     "description": "Agent IDE that enables you to manage fleets of coding agents. It comes with an agentic orchestrator that plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews.",
     "language": "Go",
-    "stars": 8588,
-    "forks": 1245,
+    "stars": 8605,
+    "forks": 1251,
     "topics": [
       "agent-fleet",
       "agent-swarm",
@@ -13073,7 +13255,7 @@
       "tmux"
     ],
     "created_at": "2026-02-13T09:52:36Z",
-    "pushed_at": "2026-07-26T14:36:25Z",
+    "pushed_at": "2026-07-27T15:48:32Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -13094,12 +13276,12 @@
     "enterprise_score": 3,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 52.69,
+    "stars_per_day": 52.47,
     "momentum_score": 94,
     "maturity_level": "established",
-    "repository_review": "Established project with 52.7 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Established project with 52.5 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-08",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-08",
@@ -13280,6 +13462,11 @@
         "date": "2026-07-26",
         "stars": 8588,
         "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 8605,
+        "momentum_score": 94
       }
     ]
   },
@@ -13290,8 +13477,8 @@
     "url": "https://github.com/coze-dev/coze-loop",
     "description": "Next-generation AI Agent Optimization Platform: Cozeloop addresses challenges in AI agent development by providing full-lifecycle management capabilities from development, debugging, and evaluation to monitoring.",
     "language": "Go",
-    "stars": 5647,
-    "forks": 780,
+    "stars": 5652,
+    "forks": 781,
     "topics": [
       "agent",
       "agent-evaluation",
@@ -13312,7 +13499,7 @@
       "prompt-management"
     ],
     "created_at": "2025-06-24T00:26:28Z",
-    "pushed_at": "2026-07-26T14:43:01Z",
+    "pushed_at": "2026-07-27T14:15:03Z",
     "category": "AI Infrastructure",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -13334,12 +13521,12 @@
     "enterprise_score": 3,
     "strategic_score": 69,
     "action_level": "prototype pattern",
-    "stars_per_day": 14.22,
+    "stars_per_day": 14.2,
     "momentum_score": 93,
     "maturity_level": "established",
     "repository_review": "Established project with 14.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-05",
@@ -13409,6 +13596,11 @@
       {
         "date": "2026-07-26",
         "stars": 5647,
+        "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 5652,
         "momentum_score": 93
       }
     ]
@@ -13788,6 +13980,81 @@
     ]
   },
   {
+    "full_name": "LING71671/open-reverselab",
+    "name": "open-reverselab",
+    "owner": "LING71671",
+    "url": "https://github.com/LING71671/open-reverselab",
+    "description": "Agent-native reverse-engineering lab with a 197-article knowledge base, MCP tools, and CTF/APK/PE automation workflows.[有通用AI越狱bug😂😉]",
+    "language": "Python",
+    "stars": 915,
+    "forks": 235,
+    "topics": [
+      "ai-agent",
+      "android-reverse-engineering",
+      "binary-analysis",
+      "cryptography",
+      "ctf",
+      "digital-forensics",
+      "frida",
+      "ghidra",
+      "ios-reverse-engineering",
+      "knowledge-base",
+      "malware-analysis",
+      "mcp-server",
+      "model-context-protocol",
+      "pe-analysis",
+      "protocol-analysis",
+      "reverse-engineering",
+      "security-automation",
+      "vulnerability-research",
+      "web-security",
+      "x64dbg"
+    ],
+    "created_at": "2026-06-17T14:31:38Z",
+    "pushed_at": "2026-07-27T13:29:53Z",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "relevance": 38,
+    "modules": [
+      "Agent runtime",
+      "Workflow orchestration",
+      "Tool integration",
+      "Knowledge retrieval",
+      "Vector search"
+    ],
+    "scenarios": [
+      "Build task-oriented AI agents with tool use and planning.",
+      "Automate enterprise workflows and internal knowledge operations.",
+      "Ground agent answers with private knowledge and searchable evidence."
+    ],
+    "risk_flags": [
+      "docs need review",
+      "quality gate unclear"
+    ],
+    "commerce_score": 3,
+    "enterprise_score": 9,
+    "strategic_score": 69,
+    "action_level": "prototype pattern",
+    "stars_per_day": 22.88,
+    "momentum_score": 95,
+    "maturity_level": "scaling",
+    "repository_review": "Scaling project with 22.9 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "first_seen_date": "2026-07-22",
+    "last_seen_date": "2026-07-27",
+    "history": [
+      {
+        "date": "2026-07-22",
+        "stars": 878,
+        "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 915,
+        "momentum_score": 95
+      }
+    ]
+  },
+  {
     "full_name": "n8n-io/self-hosted-ai-starter-kit",
     "name": "self-hosted-ai-starter-kit",
     "owner": "n8n-io",
@@ -13850,84 +14117,14 @@
     ]
   },
   {
-    "full_name": "LING71671/open-reverselab",
-    "name": "open-reverselab",
-    "owner": "LING71671",
-    "url": "https://github.com/LING71671/open-reverselab",
-    "description": "Agent-native reverse-engineering lab with a 197-article knowledge base, MCP tools, and CTF/APK/PE automation workflows.",
-    "language": "Python",
-    "stars": 878,
-    "forks": 232,
-    "topics": [
-      "ai-agent",
-      "android-reverse-engineering",
-      "binary-analysis",
-      "cryptography",
-      "ctf",
-      "digital-forensics",
-      "frida",
-      "ghidra",
-      "ios-reverse-engineering",
-      "knowledge-base",
-      "malware-analysis",
-      "mcp-server",
-      "model-context-protocol",
-      "pe-analysis",
-      "protocol-analysis",
-      "reverse-engineering",
-      "security-automation",
-      "vulnerability-research",
-      "web-security",
-      "x64dbg"
-    ],
-    "created_at": "2026-06-17T14:31:38Z",
-    "pushed_at": "2026-07-21T17:30:57Z",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "relevance": 37,
-    "modules": [
-      "Agent runtime",
-      "Workflow orchestration",
-      "Tool integration",
-      "Knowledge retrieval",
-      "Vector search"
-    ],
-    "scenarios": [
-      "Build task-oriented AI agents with tool use and planning.",
-      "Automate enterprise workflows and internal knowledge operations.",
-      "Ground agent answers with private knowledge and searchable evidence."
-    ],
-    "risk_flags": [
-      "docs need review",
-      "quality gate unclear"
-    ],
-    "commerce_score": 3,
-    "enterprise_score": 9,
-    "strategic_score": 68,
-    "action_level": "prototype pattern",
-    "stars_per_day": 25.09,
-    "momentum_score": 94,
-    "maturity_level": "scaling",
-    "repository_review": "Scaling project with 25.1 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
-    "first_seen_date": "2026-07-22",
-    "last_seen_date": "2026-07-22",
-    "history": [
-      {
-        "date": "2026-07-22",
-        "stars": 878,
-        "momentum_score": 94
-      }
-    ]
-  },
-  {
     "full_name": "zhnt/loushang",
     "name": "loushang",
     "owner": "zhnt",
     "url": "https://github.com/zhnt/loushang",
     "description": "AI-native agent harness for coding workflows by python: multi-model LLM orchestration, stateful sessions, tool governance,   traceable delivery, and provider routing for GPT, Claude, DeepSeek, Qwen, Kimi, GLM, and MiniMax.",
     "language": "Python",
-    "stars": 848,
-    "forks": 148,
+    "stars": 869,
+    "forks": 151,
     "topics": [
       "agent",
       "agent-harness",
@@ -13951,7 +14148,7 @@
       "workflow"
     ],
     "created_at": "2026-05-29T17:25:11Z",
-    "pushed_at": "2026-07-26T14:36:09Z",
+    "pushed_at": "2026-07-27T13:05:04Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 37,
@@ -13972,12 +14169,12 @@
     "enterprise_score": 9,
     "strategic_score": 68,
     "action_level": "prototype pattern",
-    "stars_per_day": 14.62,
+    "stars_per_day": 14.73,
     "momentum_score": 95,
     "maturity_level": "emerging",
-    "repository_review": "Emerging project with 14.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Emerging project with 14.7 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-14",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-14",
@@ -14183,6 +14380,11 @@
         "date": "2026-07-26",
         "stars": 848,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 869,
+        "momentum_score": 95
       }
     ]
   },
@@ -14193,7 +14395,7 @@
     "url": "https://github.com/nexscope-ai/eCommerce-Skills",
     "description": "E-commerce skills for AI agents — product research, marketing automation, supply chain optimization, and business analytics for online sellers across Amazon, Shopify, Etsy, TikTok Shop, and all platforms.",
     "language": "Python",
-    "stars": 487,
+    "stars": 496,
     "forks": 73,
     "topics": [
       "agent-skills",
@@ -14233,12 +14435,12 @@
     "enterprise_score": 6,
     "strategic_score": 68,
     "action_level": "prototype pattern",
-    "stars_per_day": 3.75,
+    "stars_per_day": 3.79,
     "momentum_score": 65,
     "maturity_level": "emerging",
-    "repository_review": "Emerging project with 3.7 stars/day, actively maintained, and 65/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Emerging project with 3.8 stars/day, actively maintained, and 65/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-08",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-08",
@@ -14294,6 +14496,11 @@
         "date": "2026-07-26",
         "stars": 487,
         "momentum_score": 65
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 496,
+        "momentum_score": 65
       }
     ]
   },
@@ -14304,8 +14511,8 @@
     "url": "https://github.com/santifer/career-ops",
     "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
     "language": "JavaScript",
-    "stars": 61629,
-    "forks": 12138,
+    "stars": 61817,
+    "forks": 12170,
     "topics": [
       "ai",
       "ai-agent",
@@ -14329,7 +14536,7 @@
       "resume"
     ],
     "created_at": "2026-04-04T18:21:18Z",
-    "pushed_at": "2026-07-26T02:22:44Z",
+    "pushed_at": "2026-07-27T15:33:41Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 29,
@@ -14351,12 +14558,12 @@
     "enterprise_score": 6,
     "strategic_score": 65,
     "action_level": "prototype pattern",
-    "stars_per_day": 545.39,
+    "stars_per_day": 542.25,
     "momentum_score": 94,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 545.4 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
+    "repository_review": "Ecosystem Leader project with 542.3 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-07-22",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-07-22",
@@ -14381,6 +14588,11 @@
       {
         "date": "2026-07-26",
         "stars": 61629,
+        "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 61817,
         "momentum_score": 94
       }
     ]
@@ -14743,8 +14955,8 @@
     "url": "https://github.com/run-llama/llama_index",
     "description": "LlamaIndex is the leading document agent and OCR platform",
     "language": "Python",
-    "stars": 51112,
-    "forks": 7812,
+    "stars": 51144,
+    "forks": 7811,
     "topics": [
       "agents",
       "application",
@@ -14781,12 +14993,12 @@
     "enterprise_score": 3,
     "strategic_score": 63,
     "action_level": "clone and test",
-    "stars_per_day": 37.53,
-    "momentum_score": 95,
+    "stars_per_day": 37.52,
+    "momentum_score": 94,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 37.5 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Ecosystem Leader project with 37.5 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-28",
@@ -15012,6 +15224,11 @@
         "date": "2026-07-26",
         "stars": 51112,
         "momentum_score": 95
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 51144,
+        "momentum_score": 94
       }
     ]
   },
@@ -15358,8 +15575,8 @@
     "url": "https://github.com/Tencent/WeKnora",
     "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
     "language": "Go",
-    "stars": 18923,
-    "forks": 2654,
+    "stars": 18998,
+    "forks": 2668,
     "topics": [
       "agent",
       "agentic",
@@ -15383,7 +15600,7 @@
       "wiki"
     ],
     "created_at": "2025-07-22T08:01:23Z",
-    "pushed_at": "2026-07-24T08:54:08Z",
+    "pushed_at": "2026-07-27T12:39:13Z",
     "category": "AI Infrastructure",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -15405,12 +15622,12 @@
     "enterprise_score": 3,
     "strategic_score": 63,
     "action_level": "clone and test",
-    "stars_per_day": 51.28,
-    "momentum_score": 92,
+    "stars_per_day": 51.35,
+    "momentum_score": 94,
     "maturity_level": "established",
-    "repository_review": "Established project with 51.3 stars/day, actively maintained, and 92/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Established project with 51.3 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -15706,6 +15923,11 @@
         "date": "2026-07-26",
         "stars": 18923,
         "momentum_score": 92
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 18998,
+        "momentum_score": 94
       }
     ]
   },
@@ -17103,7 +17325,7 @@
     "url": "https://github.com/recommenders-team/recommenders",
     "description": "Best Practices on Recommendation Systems",
     "language": "Python",
-    "stars": 21850,
+    "stars": 21849,
     "forks": 3323,
     "topics": [
       "ai",
@@ -17147,11 +17369,11 @@
     "strategic_score": 59,
     "action_level": "clone and test",
     "stars_per_day": 7.62,
-    "momentum_score": 78,
+    "momentum_score": 77,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 7.6 stars/day, actively maintained, and 78/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Ecosystem Leader project with 7.6 stars/day, actively maintained, and 77/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -17447,6 +17669,11 @@
         "date": "2026-07-26",
         "stars": 21850,
         "momentum_score": 78
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 21849,
+        "momentum_score": 77
       }
     ]
   },
@@ -17527,7 +17754,7 @@
     "url": "https://github.com/yournextstore/yournextstore",
     "description": "AI-Native Open-Source Next.js commerce. Powered by Stripe. Ultra fast with typesafe Commerce SDK. Built for AI development (Claude, Codex,   Cursor).",
     "language": "MDX",
-    "stars": 5464,
+    "stars": 5465,
     "forks": 668,
     "topics": [
       "ai-friendly",
@@ -17541,7 +17768,7 @@
       "typescript"
     ],
     "created_at": "2024-08-05T19:31:52Z",
-    "pushed_at": "2026-07-24T21:01:10Z",
+    "pushed_at": "2026-07-27T15:41:36Z",
     "category": "AI Commerce",
     "subcategory": "Commerce Agent",
     "relevance": 29,
@@ -17562,12 +17789,12 @@
     "enterprise_score": 3,
     "strategic_score": 59,
     "action_level": "clone and test",
-    "stars_per_day": 7.59,
-    "momentum_score": 78,
+    "stars_per_day": 7.58,
+    "momentum_score": 80,
     "maturity_level": "established",
-    "repository_review": "Established project with 7.6 stars/day, actively maintained, and 78/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Established project with 7.6 stars/day, actively maintained, and 80/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -17863,6 +18090,11 @@
         "date": "2026-07-26",
         "stars": 5464,
         "momentum_score": 78
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 5465,
+        "momentum_score": 80
       }
     ]
   },
@@ -18008,8 +18240,8 @@
     "url": "https://github.com/HKUDS/Vibe-Trading",
     "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
     "language": "Python",
-    "stars": 27730,
-    "forks": 4508,
+    "stars": 28021,
+    "forks": 4550,
     "topics": [
       "ai-agent",
       "algorithmic-trading",
@@ -18023,7 +18255,7 @@
       "trading"
     ],
     "created_at": "2026-04-01T09:52:20Z",
-    "pushed_at": "2026-07-26T11:13:55Z",
+    "pushed_at": "2026-07-27T10:20:45Z",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "relevance": 39,
@@ -18043,12 +18275,12 @@
     "enterprise_score": 0,
     "strategic_score": 57,
     "action_level": "clone and test",
-    "stars_per_day": 239.05,
+    "stars_per_day": 239.5,
     "momentum_score": 94,
     "maturity_level": "ecosystem leader",
-    "repository_review": "Ecosystem Leader project with 239.1 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Ecosystem Leader project with 239.5 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-05-29",
@@ -18344,6 +18576,11 @@
         "date": "2026-07-26",
         "stars": 27730,
         "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 28021,
+        "momentum_score": 94
       }
     ]
   },
@@ -18456,8 +18693,8 @@
     "url": "https://github.com/TeamWiseFlow/xiaobei",
     "description": "为OPC/中小微企业量身打造的自媒体获客智能体",
     "language": "Python",
-    "stars": 8344,
-    "forks": 1417,
+    "stars": 8356,
+    "forks": 1421,
     "topics": [
       "crawler",
       "digital-employee",
@@ -18468,7 +18705,7 @@
       "rpa"
     ],
     "created_at": "2024-04-24T06:24:33Z",
-    "pushed_at": "2026-07-22T16:23:52Z",
+    "pushed_at": "2026-07-26T15:40:48Z",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "relevance": 39,
@@ -18489,12 +18726,12 @@
     "enterprise_score": 0,
     "strategic_score": 57,
     "action_level": "clone and test",
-    "stars_per_day": 10.18,
+    "stars_per_day": 10.14,
     "momentum_score": 93,
     "maturity_level": "established",
-    "repository_review": "Established project with 10.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Established project with 10.1 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-07-14",
-    "last_seen_date": "2026-07-23",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-07-14",
@@ -18519,6 +18756,11 @@
       {
         "date": "2026-07-23",
         "stars": 8344,
+        "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 8356,
         "momentum_score": 93
       }
     ]
@@ -18594,8 +18836,8 @@
     "url": "https://github.com/simonlin1212/TradingAgents-astock",
     "description": "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment research framework — 7 AI analysts, bull/bear debate, risk assessment。",
     "language": "Python",
-    "stars": 2621,
-    "forks": 697,
+    "stars": 2643,
+    "forks": 702,
     "topics": [
       "a-share",
       "ai-agent",
@@ -18632,12 +18874,12 @@
     "enterprise_score": 0,
     "strategic_score": 57,
     "action_level": "clone and test",
-    "stars_per_day": 35.42,
-    "momentum_score": 94,
+    "stars_per_day": 35.24,
+    "momentum_score": 93,
     "maturity_level": "scaling",
-    "repository_review": "Scaling project with 35.4 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Scaling project with 35.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-06-20",
-    "last_seen_date": "2026-07-26",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-20",
@@ -18663,6 +18905,11 @@
         "date": "2026-07-26",
         "stars": 2621,
         "momentum_score": 94
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 2643,
+        "momentum_score": 93
       }
     ]
   },
@@ -18775,8 +19022,8 @@
     "url": "https://github.com/elder-plinius/T3MP3ST",
     "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
     "language": "TypeScript",
-    "stars": 5176,
-    "forks": 1074,
+    "stars": 5255,
+    "forks": 1087,
     "topics": [
       "agents",
       "ai",
@@ -18785,7 +19032,7 @@
       "redteam"
     ],
     "created_at": "2026-07-02T17:53:55Z",
-    "pushed_at": "2026-07-24T12:16:15Z",
+    "pushed_at": "2026-07-26T18:53:13Z",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "relevance": 38,
@@ -18805,12 +19052,12 @@
     "enterprise_score": 0,
     "strategic_score": 56,
     "action_level": "clone and test",
-    "stars_per_day": 225.04,
+    "stars_per_day": 210.2,
     "momentum_score": 93,
     "maturity_level": "established",
-    "repository_review": "Established project with 225.0 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.",
+    "repository_review": "Established project with 210.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-07-05",
-    "last_seen_date": "2026-07-25",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-07-05",
@@ -18870,6 +19117,11 @@
       {
         "date": "2026-07-25",
         "stars": 5176,
+        "momentum_score": 93
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 5255,
         "momentum_score": 93
       }
     ]
@@ -20771,8 +21023,8 @@
     "url": "https://github.com/xixihhhh/clipforge",
     "description": "ClipForge（原『带货剪手』/ daihuo-jianshou）：开源 AI 带货短视频神器——上传一张商品图，AI 自动提炼卖点 + 写种草脚本 + 锁定商品原图不变形 + 配画面/配音/字幕，一键产出抖音小店 / 快手 / 小红书 / TikTok Shop 卖货短视频。0 成本批量出片、开源无水印、本地自部署。也支持一句话主题成片。Open-source AI e-commerce/UGC short-video generator.",
     "language": "TypeScript",
-    "stars": 300,
-    "forks": 66,
+    "stars": 408,
+    "forks": 89,
     "topics": [
       "ai-ugc",
       "ai-video-creator",
@@ -20796,10 +21048,10 @@
       "youtube-shorts"
     ],
     "created_at": "2026-03-23T09:55:39Z",
-    "pushed_at": "2026-07-21T05:14:43Z",
+    "pushed_at": "2026-07-27T02:51:55Z",
     "category": "AI Commerce",
     "subcategory": "Commerce Agent",
-    "relevance": 32,
+    "relevance": 33,
     "modules": [
       "Product intelligence",
       "Recommendation engine",
@@ -20815,14 +21067,14 @@
     ],
     "commerce_score": 6,
     "enterprise_score": 0,
-    "strategic_score": 49,
-    "action_level": "read docs",
-    "stars_per_day": 2.5,
-    "momentum_score": 63,
+    "strategic_score": 50,
+    "action_level": "clone and test",
+    "stars_per_day": 3.24,
+    "momentum_score": 65,
     "maturity_level": "emerging",
-    "repository_review": "Emerging project with 2.5 stars/day, actively maintained, and 63/100 momentum. Review first for reusable modules if action is 'read docs'.",
+    "repository_review": "Emerging project with 3.2 stars/day, actively maintained, and 65/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-06-27",
-    "last_seen_date": "2026-07-21",
+    "last_seen_date": "2026-07-27",
     "history": [
       {
         "date": "2026-06-27",
@@ -20843,6 +21095,11 @@
         "date": "2026-07-21",
         "stars": 300,
         "momentum_score": 63
+      },
+      {
+        "date": "2026-07-27",
+        "stars": 408,
+        "momentum_score": 65
       }
     ]
   },
