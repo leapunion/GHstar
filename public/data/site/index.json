@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "build": "2026-08-02T14:43:18Z",
+  "build": "2026-08-03T15:51:22Z",
   "dates": [
     "2026-05-28",
     "2026-05-29",
@@ -68,20 +68,21 @@
     "2026-07-30",
     "2026-07-31",
     "2026-08-01",
-    "2026-08-02"
+    "2026-08-02",
+    "2026-08-03"
   ],
-  "repo_count": 146,
+  "repo_count": 147,
   "facets": {
     "category": {
       "AI Agent Framework": 93,
-      "AI Commerce": 23,
+      "AI Commerce": 24,
       "AI Infrastructure": 21,
       "Agentic Enterprise": 9
     },
     "subcategory": {
       "Enterprise Workflow": 49,
       "Knowledge / RAG": 23,
-      "Commerce Agent": 20,
+      "Commerce Agent": 21,
       "Agent Runtime": 15,
       "Evaluation / Observability": 15,
       "AI Application Platform": 3,
@@ -91,21 +92,21 @@
     },
     "language": {
       "Python": 70,
-      "TypeScript": 36,
+      "TypeScript": 35,
       "Unknown": 9,
+      "Go": 6,
       "Java": 6,
       "Jupyter Notebook": 6,
-      "Go": 5,
+      "HTML": 4,
       "JavaScript": 4,
       "PHP": 4,
-      "HTML": 3,
       "Shell": 2,
       "MDX": 1
     },
     "action_level": {
       "prototype pattern": 62,
       "clone and test": 48,
-      "read docs": 18,
+      "read docs": 19,
       "strategic watch": 13,
       "monitor": 5
     }

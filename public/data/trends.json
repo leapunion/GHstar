@@ -1,120 +1,131 @@
 {
-  "report_date": "2026-08-02",
+  "report_date": "2026-08-03",
   "repo_count": 50,
   "active_7_days": 49,
   "active_30_days": 50,
   "category_distribution": {
-    "AI Agent Framework": 34,
-    "Agentic Enterprise": 6,
+    "AI Agent Framework": 32,
+    "Agentic Enterprise": 8,
     "AI Commerce": 5,
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
     "Enterprise Workflow": 27,
-    "Knowledge / RAG": 9,
-    "Agent Runtime": 4,
+    "Knowledge / RAG": 10,
     "Commerce Agent": 4,
     "Evaluation / Observability": 4,
+    "Agent Runtime": 3,
     "Product Intelligence": 2
   },
   "language_distribution": {
-    "Python": 28,
-    "TypeScript": 12,
-    "Go": 3,
-    "Java": 3,
+    "Python": 27,
+    "TypeScript": 11,
+    "Go": 5,
+    "Java": 2,
     "JavaScript": 2,
+    "HTML": 1,
     "MDX": 1,
     "Shell": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 23,
-    "established": 18,
-    "scaling": 5,
-    "emerging": 4
+    "ecosystem leader": 25,
+    "established": 15,
+    "scaling": 7,
+    "emerging": 3
   },
   "action_distribution": {
-    "prototype pattern": 31,
-    "clone and test": 10,
-    "strategic watch": 9
+    "prototype pattern": 30,
+    "strategic watch": 10,
+    "clone and test": 9,
+    "read docs": 1
   },
   "watchlist_flags": {
-    "docs need review": 44,
-    "enterprise control gap": 44,
-    "quality gate unclear": 37
+    "docs need review": 45,
+    "enterprise control gap": 45,
+    "quality gate unclear": 36,
+    "license unknown": 1
   },
   "top_momentum": [
     {
+      "full_name": "microsoft/agent-framework",
+      "momentum_score": 98,
+      "stars_per_day": 27.21,
+      "days_since_push": 0,
+      "action_level": "strategic watch"
+    },
+    {
+      "full_name": "dataelement/bisheng",
+      "momentum_score": 98,
+      "stars_per_day": 11.03,
+      "days_since_push": 0,
+      "action_level": "strategic watch"
+    },
+    {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 125.05,
+      "stars_per_day": 125.07,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 255.56,
+      "stars_per_day": 254.44,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 55.69,
+      "stars_per_day": 55.6,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "alibaba/spring-ai-alibaba",
+      "momentum_score": 97,
+      "stars_per_day": 15.14,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "open-multi-agent/open-multi-agent",
       "momentum_score": 97,
-      "stars_per_day": 54.05,
+      "stars_per_day": 53.68,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
+      "full_name": "deepset-ai/haystack",
+      "momentum_score": 96,
+      "stars_per_day": 10.64,
+      "days_since_push": 0,
+      "action_level": "strategic watch"
+    },
+    {
       "full_name": "ModelEngine-Group/nexent",
       "momentum_score": 96,
-      "stars_per_day": 12.6,
+      "stars_per_day": 12.58,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 174.62,
+      "stars_per_day": 174.65,
       "days_since_push": 0,
       "action_level": "strategic watch"
-    },
-    {
-      "full_name": "microsoft/agent-framework",
-      "momentum_score": 96,
-      "stars_per_day": 27.2,
-      "days_since_push": 2,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "dataelement/bisheng",
-      "momentum_score": 96,
-      "stars_per_day": 11.04,
-      "days_since_push": 2,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "rocketride-org/rocketride-server",
-      "momentum_score": 96,
-      "stars_per_day": 32.26,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "alibaba/spring-ai-alibaba",
-      "momentum_score": 96,
-      "stars_per_day": 15.16,
-      "days_since_push": 1,
-      "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-08-03",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-08-03.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-08-03T15:51:20.966467+00:00"
+    },
     {
       "report_date": "2026-08-02",
       "repo_count": 50,
@@ -346,14 +357,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-07-05T14:52:29.464158+00:00"
-    },
-    {
-      "report_date": "2026-07-04",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-07-04.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-07-04T14:44:54.301186+00:00"
     }
   ]
 }
