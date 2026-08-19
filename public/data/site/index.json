@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "build": "2026-08-18T13:55:21Z",
+  "build": "2026-08-19T13:55:55Z",
   "dates": [
     "2026-05-28",
     "2026-05-29",
@@ -83,7 +83,8 @@
     "2026-08-15",
     "2026-08-16",
     "2026-08-17",
-    "2026-08-18"
+    "2026-08-18",
+    "2026-08-19"
   ],
   "repo_count": 156,
   "facets": {
@@ -112,11 +113,11 @@
       "Java": 6,
       "Jupyter Notebook": 6,
       "HTML": 5,
-      "JavaScript": 4,
+      "JavaScript": 5,
       "PHP": 4,
-      "Rust": 2,
       "Shell": 2,
-      "MDX": 1
+      "MDX": 1,
+      "Rust": 1
     },
     "action_level": {
       "prototype pattern": 67,
