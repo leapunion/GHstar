@@ -1,11 +1,11 @@
 {
-  "report_date": "2026-08-27",
+  "report_date": "2026-08-28",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
   "category_distribution": {
-    "AI Agent Framework": 34,
-    "Agentic Enterprise": 6,
+    "AI Agent Framework": 35,
+    "Agentic Enterprise": 5,
     "AI Commerce": 5,
     "AI Infrastructure": 5
   },
@@ -18,31 +18,32 @@
     "Product Intelligence": 2
   },
   "language_distribution": {
-    "Python": 29,
-    "TypeScript": 9,
+    "Python": 25,
+    "TypeScript": 12,
     "Go": 3,
     "Java": 3,
     "JavaScript": 2,
+    "Jupyter Notebook": 1,
     "MDX": 1,
     "Rust": 1,
     "Shell": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 26,
-    "established": 16,
+    "ecosystem leader": 27,
+    "established": 15,
     "scaling": 5,
     "emerging": 3
   },
   "action_distribution": {
-    "prototype pattern": 33,
-    "clone and test": 9,
-    "strategic watch": 8
+    "prototype pattern": 32,
+    "clone and test": 11,
+    "strategic watch": 7
   },
   "watchlist_flags": {
-    "enterprise control gap": 45,
-    "docs need review": 40,
-    "quality gate unclear": 37,
+    "enterprise control gap": 47,
+    "docs need review": 41,
+    "quality gate unclear": 38,
     "license unknown": 1
   },
   "top_momentum": [
@@ -56,35 +57,42 @@
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 10.88,
+      "stars_per_day": 10.87,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 124.64,
+      "stars_per_day": 124.61,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 229.32,
+      "stars_per_day": 228.35,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 54.33,
+      "stars_per_day": 54.29,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "jnMetaCode/agency-agents-zh",
+      "momentum_score": 97,
+      "stars_per_day": 114.55,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "open-multi-agent/open-multi-agent",
       "momentum_score": 97,
-      "stars_per_day": 45.87,
+      "stars_per_day": 45.59,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -98,26 +106,27 @@
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 169.85,
+      "stars_per_day": 169.57,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "alikon-art/DeterminFlow",
-      "momentum_score": 96,
-      "stars_per_day": 26.04,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 41.54,
+      "stars_per_day": 41.47,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-08-28",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-08-28.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-08-28T23:01:23.612482+00:00"
+    },
     {
       "report_date": "2026-08-27",
       "repo_count": 50,
@@ -349,14 +358,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-07-29T15:18:43.329350+00:00"
-    },
-    {
-      "report_date": "2026-07-28",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-07-28.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-07-28T15:32:38.470102+00:00"
     }
   ]
 }
