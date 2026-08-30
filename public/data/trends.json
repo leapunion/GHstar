@@ -1,83 +1,75 @@
 {
-  "report_date": "2026-08-29",
+  "report_date": "2026-08-30",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
   "category_distribution": {
-    "AI Agent Framework": 34,
-    "Agentic Enterprise": 6,
+    "AI Agent Framework": 35,
+    "Agentic Enterprise": 5,
     "AI Commerce": 5,
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 25,
-    "Knowledge / RAG": 12,
+    "Enterprise Workflow": 24,
+    "Knowledge / RAG": 11,
+    "Agent Runtime": 5,
     "Commerce Agent": 4,
     "Evaluation / Observability": 4,
-    "Agent Runtime": 3,
     "Product Intelligence": 2
   },
   "language_distribution": {
     "Python": 27,
     "TypeScript": 12,
     "Go": 3,
-    "Java": 3,
-    "JavaScript": 1,
+    "Java": 2,
+    "JavaScript": 2,
     "Jupyter Notebook": 1,
     "MDX": 1,
     "Rust": 1,
     "Shell": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 25,
-    "established": 17,
+    "ecosystem leader": 26,
+    "established": 16,
     "scaling": 5,
     "emerging": 3
   },
   "action_distribution": {
     "prototype pattern": 30,
-    "clone and test": 12,
-    "strategic watch": 8
+    "clone and test": 13,
+    "strategic watch": 7
   },
   "watchlist_flags": {
     "enterprise control gap": 47,
-    "docs need review": 41,
-    "quality gate unclear": 38,
-    "license unknown": 1
+    "docs need review": 42,
+    "quality gate unclear": 38
   },
   "top_momentum": [
     {
-      "full_name": "langgenius/dify",
-      "momentum_score": 97,
-      "stars_per_day": 124.56,
+      "full_name": "microsoft/agent-framework",
+      "momentum_score": 98,
+      "stars_per_day": 27.04,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "microsoft/agent-framework",
-      "momentum_score": 97,
-      "stars_per_day": 27.05,
-      "days_since_push": 1,
+      "full_name": "dataelement/bisheng",
+      "momentum_score": 98,
+      "stars_per_day": 10.85,
+      "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "dataelement/bisheng",
+      "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 10.86,
-      "days_since_push": 1,
+      "stars_per_day": 124.52,
+      "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 227.37,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "open-multi-agent/open-multi-agent",
-      "momentum_score": 97,
-      "stars_per_day": 45.3,
+      "stars_per_day": 226.36,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -91,33 +83,48 @@
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 169.31,
+      "stars_per_day": 169.02,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "alikon-art/DeterminFlow",
-      "momentum_score": 96,
-      "stars_per_day": 24.52,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
       "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 41.41,
+      "stars_per_day": 41.34,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "omnigent-ai/omnigent",
       "momentum_score": 96,
-      "stars_per_day": 119.94,
+      "stars_per_day": 118.91,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "MervinPraison/PraisonAI",
+      "momentum_score": 96,
+      "stars_per_day": 10.06,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "rocketride-org/rocketride-server",
+      "momentum_score": 96,
+      "stars_per_day": 37.6,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-08-30",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-08-30.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-08-30T17:26:38.386438+00:00"
+    },
     {
       "report_date": "2026-08-29",
       "repo_count": 50,
@@ -349,14 +356,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-07-31T15:28:33.437746+00:00"
-    },
-    {
-      "report_date": "2026-07-30",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-07-30.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-07-30T15:22:04.315661+00:00"
     }
   ]
 }
