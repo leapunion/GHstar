@@ -1,121 +1,131 @@
 {
-  "report_date": "2026-09-05",
+  "report_date": "2026-09-06",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
   "category_distribution": {
-    "AI Agent Framework": 33,
-    "Agentic Enterprise": 7,
+    "AI Agent Framework": 35,
+    "Agentic Enterprise": 5,
     "AI Commerce": 5,
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 24,
-    "Knowledge / RAG": 13,
+    "Enterprise Workflow": 27,
+    "Knowledge / RAG": 11,
     "Commerce Agent": 4,
     "Evaluation / Observability": 4,
-    "Agent Runtime": 3,
+    "Agent Runtime": 2,
     "Product Intelligence": 2
   },
   "language_distribution": {
-    "Python": 27,
-    "TypeScript": 13,
-    "Go": 3,
+    "Python": 28,
+    "TypeScript": 12,
+    "Go": 2,
     "Java": 2,
     "JavaScript": 2,
     "Jupyter Notebook": 1,
     "MDX": 1,
-    "Rust": 1
+    "Rust": 1,
+    "Unknown": 1
   },
   "maturity_distribution": {
     "ecosystem leader": 27,
-    "established": 15,
-    "scaling": 5,
+    "established": 13,
+    "scaling": 7,
     "emerging": 3
   },
   "action_distribution": {
-    "prototype pattern": 28,
+    "prototype pattern": 29,
     "clone and test": 11,
-    "strategic watch": 11
+    "strategic watch": 10
   },
   "watchlist_flags": {
-    "enterprise control gap": 45,
+    "enterprise control gap": 44,
     "docs need review": 40,
-    "quality gate unclear": 36
+    "quality gate unclear": 37,
+    "license unknown": 1
   },
   "top_momentum": [
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 26.95,
+      "stars_per_day": 26.92,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 124.4,
+      "stars_per_day": 124.39,
       "days_since_push": 0,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "dataelement/bisheng",
-      "momentum_score": 97,
-      "stars_per_day": 10.8,
-      "days_since_push": 1,
       "action_level": "strategic watch"
     },
     {
       "full_name": "open-multi-agent/open-multi-agent",
       "momentum_score": 97,
-      "stars_per_day": 43.53,
+      "stars_per_day": 43.29,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 220.98,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "openai/openai-agents-python",
-      "momentum_score": 97,
-      "stars_per_day": 53.78,
+      "stars_per_day": 220.05,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 167.49,
+      "stars_per_day": 167.42,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "google/adk-python",
+      "full_name": "dataelement/bisheng",
       "momentum_score": 96,
-      "stars_per_day": 41.03,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
+      "stars_per_day": 10.8,
+      "days_since_push": 2,
+      "action_level": "strategic watch"
     },
     {
-      "full_name": "langchain4j/langchain4j",
+      "full_name": "enescingoz/awesome-n8n-templates",
       "momentum_score": 96,
-      "stars_per_day": 11.1,
+      "stars_per_day": 51.84,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "omnigent-ai/omnigent",
       "momentum_score": 96,
-      "stars_per_day": 112.99,
+      "stars_per_day": 111.92,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "MervinPraison/PraisonAI",
+      "momentum_score": 96,
+      "stars_per_day": 10.02,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "iflytek/skillhub",
+      "momentum_score": 96,
+      "stars_per_day": 28.12,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-09-06",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-09-06.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-09-06T16:14:14.536357+00:00"
+    },
     {
       "report_date": "2026-09-05",
       "repo_count": 50,
@@ -347,14 +357,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-08-07T14:18:25.544996+00:00"
-    },
-    {
-      "report_date": "2026-08-06",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-08-06.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-08-06T15:27:17.299010+00:00"
     }
   ]
 }
