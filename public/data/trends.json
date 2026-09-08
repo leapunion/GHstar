@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-09-07",
+  "report_date": "2026-09-08",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
@@ -10,37 +10,38 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 27,
+    "Enterprise Workflow": 26,
     "Knowledge / RAG": 10,
+    "Agent Runtime": 4,
     "Commerce Agent": 4,
     "Evaluation / Observability": 4,
-    "Agent Runtime": 3,
     "Product Intelligence": 2
   },
   "language_distribution": {
-    "Python": 27,
+    "Python": 26,
     "TypeScript": 12,
     "Go": 3,
     "Java": 2,
-    "Rust": 2,
-    "JavaScript": 1,
+    "JavaScript": 2,
+    "Jupyter Notebook": 1,
     "MDX": 1,
+    "Rust": 1,
     "Shell": 1,
     "Unknown": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 23,
+    "ecosystem leader": 25,
     "established": 15,
-    "scaling": 8,
+    "scaling": 6,
     "emerging": 4
   },
   "action_distribution": {
-    "prototype pattern": 30,
-    "clone and test": 10,
+    "prototype pattern": 29,
+    "clone and test": 11,
     "strategic watch": 10
   },
   "watchlist_flags": {
-    "enterprise control gap": 43,
+    "enterprise control gap": 44,
     "docs need review": 40,
     "quality gate unclear": 37
   },
@@ -55,42 +56,35 @@
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 10.79,
+      "stars_per_day": 10.78,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 124.4,
+      "stars_per_day": 124.52,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "open-multi-agent/open-multi-agent",
       "momentum_score": 97,
-      "stars_per_day": 43.02,
+      "stars_per_day": 42.81,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 219.48,
+      "stars_per_day": 218.72,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 53.67,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "jnMetaCode/agency-agents-zh",
-      "momentum_score": 97,
-      "stars_per_day": 110.14,
+      "stars_per_day": 53.61,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
@@ -104,19 +98,34 @@
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 167.55,
+      "stars_per_day": 167.83,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "alikon-art/DeterminFlow",
+      "full_name": "google/adk-python",
       "momentum_score": 96,
-      "stars_per_day": 19.64,
+      "stars_per_day": 40.86,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "langchain4j/langchain4j",
+      "momentum_score": 96,
+      "stars_per_day": 11.1,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-09-08",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-09-08.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-09-08T17:14:40.462985+00:00"
+    },
     {
       "report_date": "2026-09-07",
       "repo_count": 50,
@@ -348,14 +357,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-08-09T13:57:18.468242+00:00"
-    },
-    {
-      "report_date": "2026-08-08",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-08-08.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-08-08T13:54:51.000970+00:00"
     }
   ]
 }
