@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "build": "2026-09-18T17:04:32Z",
+  "build": "2026-09-19T16:28:02Z",
   "dates": [
     "2026-05-28",
     "2026-05-29",
@@ -114,7 +114,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
   ],
   "repo_count": 176,
   "facets": {
@@ -125,11 +126,11 @@
       "Agentic Enterprise": 9
     },
     "subcategory": {
-      "Enterprise Workflow": 60,
+      "Enterprise Workflow": 59,
       "Commerce Agent": 32,
       "Knowledge / RAG": 26,
+      "Evaluation / Observability": 18,
       "Agent Runtime": 17,
-      "Evaluation / Observability": 17,
       "AI Application Platform": 3,
       "Infrastructure": 3,
       "Product Intelligence": 3,
@@ -150,8 +151,8 @@
       "MDX": 1
     },
     "action_level": {
-      "prototype pattern": 73,
-      "clone and test": 63,
+      "prototype pattern": 72,
+      "clone and test": 64,
       "read docs": 19,
       "strategic watch": 16,
       "monitor": 5
