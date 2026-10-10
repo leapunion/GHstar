@@ -1,5 +1,13 @@
 [
   {
+    "report_date": "2026-10-10",
+    "repo_count": 50,
+    "markdown_path": "reports/2026-10-10.md",
+    "html_path": "public/report.html",
+    "json_path": "public/data/latest.json",
+    "generated_at": "2026-10-10T17:50:31.283323+00:00"
+  },
+  {
     "report_date": "2026-10-09",
     "repo_count": 50,
     "markdown_path": "reports/2026-10-09.md",
@@ -230,13 +238,5 @@
     "html_path": "public/report.html",
     "json_path": "public/data/latest.json",
     "generated_at": "2026-09-10T16:59:27.375537+00:00"
-  },
-  {
-    "report_date": "2026-09-09",
-    "repo_count": 50,
-    "markdown_path": "reports/2026-09-09.md",
-    "html_path": "public/report.html",
-    "json_path": "public/data/latest.json",
-    "generated_at": "2026-09-09T17:09:18.802817+00:00"
   }
 ]
