@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-10-13",
+  "report_date": "2026-10-14",
   "repo_count": 50,
   "active_7_days": 49,
   "active_30_days": 50,
@@ -33,7 +33,8 @@
   "maturity_distribution": {
     "ecosystem leader": 28,
     "established": 13,
-    "scaling": 9
+    "scaling": 8,
+    "emerging": 1
   },
   "action_distribution": {
     "prototype pattern": 23,
@@ -49,28 +50,28 @@
     {
       "full_name": "paperclipai/paperclip",
       "momentum_score": 98,
-      "stars_per_day": 451.04,
+      "stars_per_day": 451.46,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 26.48,
+      "stars_per_day": 26.46,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 98,
-      "stars_per_day": 10.55,
+      "stars_per_day": 10.54,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "ascending-llc/jarvis-registry",
       "momentum_score": 97,
-      "stars_per_day": 9.51,
+      "stars_per_day": 9.53,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -84,40 +85,48 @@
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 123.73,
+      "stars_per_day": 123.7,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "melgarafael/DeskcommCRM",
       "momentum_score": 97,
-      "stars_per_day": 27.14,
+      "stars_per_day": 27.11,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 192.89,
+      "stars_per_day": 192.26,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 51.66,
+      "stars_per_day": 51.6,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 96,
-      "stars_per_day": 159.94,
+      "stars_per_day": 159.74,
       "days_since_push": 0,
       "action_level": "strategic watch"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-10-14",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-10-14.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-10-14T17:59:27.836196+00:00"
+    },
     {
       "report_date": "2026-10-13",
       "repo_count": 50,
@@ -349,14 +358,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-09-14T18:36:15.555920+00:00"
-    },
-    {
-      "report_date": "2026-09-13",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-09-13.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-09-13T16:57:56.583295+00:00"
     }
   ]
 }
