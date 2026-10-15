@@ -220,7 +220,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 76,
-    "momentum_score": 84,
+    "momentum_score": 83,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -309,23 +309,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "sickn33/agentic-awesome-skills",
-    "url": "https://github.com/sickn33/agentic-awesome-skills",
-    "category": "AI Agent Framework",
-    "subcategory": "Product Intelligence",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 75,
-    "momentum_score": 95,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "MervinPraison/PraisonAI",
     "url": "https://github.com/MervinPraison/PraisonAI",
     "category": "AI Agent Framework",
@@ -351,6 +334,23 @@
     "priority": 4,
     "strategic_score": 75,
     "momentum_score": 95,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "sickn33/agentic-awesome-skills",
+    "url": "https://github.com/sickn33/agentic-awesome-skills",
+    "category": "AI Agent Framework",
+    "subcategory": "Product Intelligence",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 75,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -485,7 +485,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -528,6 +528,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "HarnessMD/munder-difflin",
+    "url": "https://github.com/HarnessMD/munder-difflin",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 69,
+    "momentum_score": 93,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "coze-dev/coze-loop",
     "url": "https://github.com/coze-dev/coze-loop",
     "category": "AI Infrastructure",
@@ -539,22 +556,6 @@
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "n8n-io/self-hosted-ai-starter-kit",
-    "url": "https://github.com/n8n-io/self-hosted-ai-starter-kit",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 68,
-    "momentum_score": 93,
-    "risk_flags": [
-      "enterprise control gap",
-      "quality gate unclear"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
     "suggested_owner": "product+engineering review"
@@ -624,17 +625,18 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "sno-ai/sno-station-skills",
-    "url": "https://github.com/sno-ai/sno-station-skills",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
+    "full_name": "jaikydota/BullFlow",
+    "url": "https://github.com/jaikydota/BullFlow",
+    "category": "Agentic Enterprise",
+    "subcategory": "Knowledge / RAG",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 61,
     "momentum_score": 94,
     "risk_flags": [
       "docs need review",
-      "enterprise control gap"
+      "enterprise control gap",
+      "quality gate unclear"
     ],
     "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
     "suggested_owner": "product+engineering review"
@@ -646,12 +648,28 @@
     "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 60,
+    "strategic_score": 61,
     "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "sno-ai/sno-station-skills",
+    "url": "https://github.com/sno-ai/sno-station-skills",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 61,
+    "momentum_score": 93,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap"
     ],
     "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
     "suggested_owner": "product+engineering review"
@@ -681,7 +699,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 82,
+    "momentum_score": 81,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -698,7 +716,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 75,
+    "momentum_score": 77,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -758,23 +776,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "harry0703/MoneyPrinterTurbo",
-    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 53,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "THU-MAIC/OpenMAIC",
     "url": "https://github.com/THU-MAIC/OpenMAIC",
     "category": "AI Agent Framework",
@@ -799,7 +800,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 51,
-    "momentum_score": 93,
+    "momentum_score": 92,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -808,19 +809,20 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "csadigital/ai-writer",
-    "url": "https://github.com/csadigital/ai-writer",
+    "full_name": "andredelgado/continente-mcp",
+    "url": "https://github.com/andredelgado/continente-mcp",
     "category": "AI Commerce",
     "subcategory": "Commerce Agent",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 51,
-    "momentum_score": 75,
+    "action_level": "read docs",
+    "priority": 2,
+    "strategic_score": 47,
+    "momentum_score": 83,
     "risk_flags": [
+      "docs need review",
       "enterprise control gap",
       "quality gate unclear"
     ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
     "suggested_owner": "product+engineering review"
   }
 ]
