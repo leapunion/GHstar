@@ -220,7 +220,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 76,
-    "momentum_score": 83,
+    "momentum_score": 82,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -309,6 +309,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "sickn33/agentic-awesome-skills",
+    "url": "https://github.com/sickn33/agentic-awesome-skills",
+    "category": "AI Agent Framework",
+    "subcategory": "Product Intelligence",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 75,
+    "momentum_score": 95,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "MervinPraison/PraisonAI",
     "url": "https://github.com/MervinPraison/PraisonAI",
     "category": "AI Agent Framework",
@@ -343,14 +360,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "sickn33/agentic-awesome-skills",
-    "url": "https://github.com/sickn33/agentic-awesome-skills",
+    "full_name": "jnMetaCode/agency-agents-zh",
+    "url": "https://github.com/jnMetaCode/agency-agents-zh",
     "category": "AI Agent Framework",
-    "subcategory": "Product Intelligence",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
-    "strategic_score": 75,
-    "momentum_score": 94,
+    "strategic_score": 73,
+    "momentum_score": 97,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -367,7 +384,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 73,
-    "momentum_score": 97,
+    "momentum_score": 96,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -478,10 +495,10 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "aden-hive/hive",
-    "url": "https://github.com/aden-hive/hive",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
+    "full_name": "1Panel-dev/MaxKB",
+    "url": "https://github.com/1Panel-dev/MaxKB",
+    "category": "Agentic Enterprise",
+    "subcategory": "Knowledge / RAG",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -511,10 +528,10 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "1Panel-dev/MaxKB",
-    "url": "https://github.com/1Panel-dev/MaxKB",
-    "category": "Agentic Enterprise",
-    "subcategory": "Knowledge / RAG",
+    "full_name": "aden-hive/hive",
+    "url": "https://github.com/aden-hive/hive",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
@@ -625,23 +642,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "jaikydota/BullFlow",
-    "url": "https://github.com/jaikydota/BullFlow",
-    "category": "Agentic Enterprise",
-    "subcategory": "Knowledge / RAG",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 61,
-    "momentum_score": 94,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "sno-ai/sno-station",
     "url": "https://github.com/sno-ai/sno-station",
     "category": "AI Agent Framework",
@@ -659,29 +659,13 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "sno-ai/sno-station-skills",
-    "url": "https://github.com/sno-ai/sno-station-skills",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
+    "full_name": "jaikydota/BullFlow",
+    "url": "https://github.com/jaikydota/BullFlow",
+    "category": "Agentic Enterprise",
+    "subcategory": "Knowledge / RAG",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 61,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "n8n-io/n8n",
-    "url": "https://github.com/n8n-io/n8n",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 59,
     "momentum_score": 93,
     "risk_flags": [
       "docs need review",
@@ -699,7 +683,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 81,
+    "momentum_score": 82,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -709,14 +693,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "yournextstore/yournextstore",
-    "url": "https://github.com/yournextstore/yournextstore",
-    "category": "AI Commerce",
-    "subcategory": "Commerce Agent",
+    "full_name": "666ghj/BettaFish",
+    "url": "https://github.com/666ghj/BettaFish",
+    "category": "AI Agent Framework",
+    "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 59,
-    "momentum_score": 77,
+    "strategic_score": 57,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -742,6 +726,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "xbtlin/ai-berkshire",
+    "url": "https://github.com/xbtlin/ai-berkshire",
+    "category": "AI Agent Framework",
+    "subcategory": "Agent Runtime",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 57,
+    "momentum_score": 94,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "NanmiCoder/cc-haha",
     "url": "https://github.com/NanmiCoder/cc-haha",
     "category": "AI Agent Framework",
@@ -759,34 +760,16 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
-    "category": "AI Agent Framework",
-    "subcategory": "AI Agent Framework",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 53,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "THU-MAIC/OpenMAIC",
-    "url": "https://github.com/THU-MAIC/OpenMAIC",
+    "full_name": "Nasiko-Labs/nasiko",
+    "url": "https://github.com/Nasiko-Labs/nasiko",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 51,
-    "momentum_score": 93,
+    "strategic_score": 57,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
-      "enterprise control gap",
       "quality gate unclear"
     ],
     "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
@@ -800,7 +783,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 51,
-    "momentum_score": 92,
+    "momentum_score": 91,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -816,7 +799,24 @@
     "action_level": "read docs",
     "priority": 2,
     "strategic_score": 47,
-    "momentum_score": 83,
+    "momentum_score": 91,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "orylite/lindyson-ai",
+    "url": "https://github.com/orylite/lindyson-ai",
+    "category": "AI Commerce",
+    "subcategory": "Commerce Agent",
+    "action_level": "read docs",
+    "priority": 2,
+    "strategic_score": 35,
+    "momentum_score": 89,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
