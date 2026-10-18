@@ -1,44 +1,43 @@
 {
-  "report_date": "2026-10-17",
+  "report_date": "2026-10-18",
   "repo_count": 50,
   "active_7_days": 49,
   "active_30_days": 50,
   "category_distribution": {
-    "AI Agent Framework": 33,
-    "Agentic Enterprise": 7,
+    "AI Agent Framework": 34,
+    "Agentic Enterprise": 6,
     "AI Commerce": 5,
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 23,
-    "Knowledge / RAG": 13,
-    "Agent Runtime": 5,
+    "Enterprise Workflow": 26,
+    "Knowledge / RAG": 10,
+    "Agent Runtime": 4,
     "Commerce Agent": 4,
-    "Evaluation / Observability": 3,
+    "Evaluation / Observability": 4,
     "Product Intelligence": 2
   },
   "language_distribution": {
     "Python": 25,
     "TypeScript": 12,
-    "Go": 3,
+    "Go": 4,
     "HTML": 2,
     "Java": 2,
-    "Jupyter Notebook": 2,
     "Rust": 2,
-    "Markdown": 1,
-    "Shell": 1
+    "Shell": 2,
+    "Jupyter Notebook": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 29,
-    "established": 13,
-    "scaling": 6,
-    "emerging": 2
+    "ecosystem leader": 26,
+    "established": 15,
+    "scaling": 8,
+    "emerging": 1
   },
   "action_distribution": {
     "prototype pattern": 26,
-    "clone and test": 11,
+    "clone and test": 12,
     "strategic watch": 11,
-    "read docs": 2
+    "read docs": 1
   },
   "watchlist_flags": {
     "enterprise control gap": 45,
@@ -49,75 +48,83 @@
     {
       "full_name": "paperclipai/paperclip",
       "momentum_score": 98,
-      "stars_per_day": 451.86,
+      "stars_per_day": 452.09,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
-      "full_name": "deepset-ai/haystack",
-      "momentum_score": 97,
-      "stars_per_day": 10.58,
+      "full_name": "microsoft/agent-framework",
+      "momentum_score": 98,
+      "stars_per_day": 26.37,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 123.61,
+      "stars_per_day": 123.57,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "melgarafael/DeskcommCRM",
       "momentum_score": 97,
-      "stars_per_day": 27.08,
+      "stars_per_day": 27.06,
       "days_since_push": 0,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "microsoft/agent-framework",
-      "momentum_score": 97,
-      "stars_per_day": 26.4,
-      "days_since_push": 1,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "dataelement/bisheng",
-      "momentum_score": 97,
-      "stars_per_day": 10.52,
-      "days_since_push": 1,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 190.41,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
-    },
-    {
-      "full_name": "openai/openai-agents-python",
-      "momentum_score": 97,
-      "stars_per_day": 51.45,
+      "stars_per_day": 189.75,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "jnMetaCode/agency-agents-zh",
       "momentum_score": 97,
-      "stars_per_day": 94.8,
+      "stars_per_day": 94.44,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "ascending-llc/jarvis-registry",
+      "full_name": "deepset-ai/haystack",
       "momentum_score": 96,
-      "stars_per_day": 9.62,
+      "stars_per_day": 10.58,
       "days_since_push": 1,
       "action_level": "strategic watch"
+    },
+    {
+      "full_name": "bytedance/deer-flow",
+      "momentum_score": 96,
+      "stars_per_day": 158.92,
+      "days_since_push": 0,
+      "action_level": "strategic watch"
+    },
+    {
+      "full_name": "dataelement/bisheng",
+      "momentum_score": 96,
+      "stars_per_day": 10.52,
+      "days_since_push": 2,
+      "action_level": "strategic watch"
+    },
+    {
+      "full_name": "google/adk-python",
+      "momentum_score": 96,
+      "stars_per_day": 38.76,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-10-18",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-10-18.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-10-18T16:30:51.046620+00:00"
+    },
     {
       "report_date": "2026-10-17",
       "repo_count": 50,
@@ -349,14 +356,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-09-18T17:04:30.325557+00:00"
-    },
-    {
-      "report_date": "2026-09-17",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-09-17.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-09-17T17:37:32.128350+00:00"
     }
   ]
 }
