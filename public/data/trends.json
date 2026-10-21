@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-10-20",
+  "report_date": "2026-10-21",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
@@ -19,44 +19,44 @@
   },
   "language_distribution": {
     "Python": 25,
-    "TypeScript": 12,
-    "Shell": 3,
-    "Go": 2,
+    "TypeScript": 13,
+    "Go": 3,
     "HTML": 2,
     "Java": 2,
     "Rust": 2,
     "Jupyter Notebook": 1,
-    "Markdown": 1
+    "Markdown": 1,
+    "Shell": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 27,
-    "established": 14,
-    "scaling": 8,
-    "emerging": 1
+    "ecosystem leader": 26,
+    "established": 16,
+    "scaling": 6,
+    "emerging": 2
   },
   "action_distribution": {
-    "prototype pattern": 25,
-    "clone and test": 13,
+    "prototype pattern": 27,
+    "clone and test": 11,
     "strategic watch": 11,
     "read docs": 1
   },
   "watchlist_flags": {
     "enterprise control gap": 46,
     "docs need review": 43,
-    "quality gate unclear": 37
+    "quality gate unclear": 38
   },
   "top_momentum": [
     {
       "full_name": "paperclipai/paperclip",
       "momentum_score": 98,
-      "stars_per_day": 453.11,
+      "stars_per_day": 453.15,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 26.35,
+      "stars_per_day": 26.34,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -70,7 +70,7 @@
     {
       "full_name": "ascending-llc/jarvis-registry",
       "momentum_score": 97,
-      "stars_per_day": 9.7,
+      "stars_per_day": 9.67,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -84,40 +84,48 @@
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 123.57,
+      "stars_per_day": 123.56,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "melgarafael/DeskcommCRM",
       "momentum_score": 97,
-      "stars_per_day": 27.05,
+      "stars_per_day": 27.1,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 188.58,
+      "stars_per_day": 187.98,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "openai/openai-agents-python",
-      "momentum_score": 97,
-      "stars_per_day": 51.33,
+      "full_name": "bytedance/deer-flow",
+      "momentum_score": 96,
+      "stars_per_day": 158.36,
       "days_since_push": 0,
-      "action_level": "prototype pattern"
+      "action_level": "strategic watch"
     },
     {
-      "full_name": "jnMetaCode/agency-agents-zh",
-      "momentum_score": 97,
-      "stars_per_day": 93.98,
+      "full_name": "google/adk-python",
+      "momentum_score": 96,
+      "stars_per_day": 38.63,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-10-21",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-10-21.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-10-21T18:00:53.511791+00:00"
+    },
     {
       "report_date": "2026-10-20",
       "repo_count": 50,
@@ -349,14 +357,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-09-21T18:39:51.468031+00:00"
-    },
-    {
-      "report_date": "2026-09-20",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-09-20.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-09-20T16:47:21.730299+00:00"
     }
   ]
 }
