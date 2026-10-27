@@ -219,8 +219,8 @@
     "subcategory": "Commerce Agent",
     "action_level": "prototype pattern",
     "priority": 4,
-    "strategic_score": 79,
-    "momentum_score": 90,
+    "strategic_score": 76,
+    "momentum_score": 88,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -294,15 +294,17 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "iflytek/skillhub",
-    "url": "https://github.com/iflytek/skillhub",
-    "category": "Agentic Enterprise",
-    "subcategory": "Enterprise Workflow",
+    "full_name": "sickn33/agentic-awesome-skills",
+    "url": "https://github.com/sickn33/agentic-awesome-skills",
+    "category": "AI Agent Framework",
+    "subcategory": "Product Intelligence",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
-    "momentum_score": 96,
+    "momentum_score": 95,
     "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
       "quality gate unclear"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
@@ -326,14 +328,29 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "sickn33/agentic-awesome-skills",
-    "url": "https://github.com/sickn33/agentic-awesome-skills",
-    "category": "AI Agent Framework",
-    "subcategory": "Product Intelligence",
+    "full_name": "iflytek/skillhub",
+    "url": "https://github.com/iflytek/skillhub",
+    "category": "Agentic Enterprise",
+    "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
-    "momentum_score": 93,
+    "momentum_score": 95,
+    "risk_flags": [
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "openai/openai-agents-python",
+    "url": "https://github.com/openai/openai-agents-python",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 73,
+    "momentum_score": 97,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -350,7 +367,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 73,
-    "momentum_score": 94,
+    "momentum_score": 97,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -368,23 +385,6 @@
     "priority": 4,
     "strategic_score": 73,
     "momentum_score": 94,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "openai/openai-agents-python",
-    "url": "https://github.com/openai/openai-agents-python",
-    "category": "AI Agent Framework",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 73,
-    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -502,7 +502,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -682,7 +682,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 82,
+    "momentum_score": 81,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -759,14 +759,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
+    "full_name": "TauricResearch/TradingAgents",
+    "url": "https://github.com/TauricResearch/TradingAgents",
     "category": "AI Agent Framework",
-    "subcategory": "AI Agent Framework",
+    "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 53,
-    "momentum_score": 93,
+    "strategic_score": 56,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -816,7 +816,7 @@
     "action_level": "read docs",
     "priority": 2,
     "strategic_score": 47,
-    "momentum_score": 86,
+    "momentum_score": 85,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
