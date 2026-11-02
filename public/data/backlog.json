@@ -7,7 +7,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 97,
-    "momentum_score": 94,
+    "momentum_score": 96,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -23,7 +23,7 @@
     "action_level": "strategic watch",
     "priority": 5,
     "strategic_score": 95,
-    "momentum_score": 96,
+    "momentum_score": 97,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -99,6 +99,22 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "dataelement/bisheng",
+    "url": "https://github.com/dataelement/bisheng",
+    "category": "Agentic Enterprise",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "strategic watch",
+    "priority": 5,
+    "strategic_score": 85,
+    "momentum_score": 98,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap"
+    ],
+    "next_action": "Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "bytedance/deer-flow",
     "url": "https://github.com/bytedance/deer-flow",
     "category": "AI Agent Framework",
@@ -111,22 +127,6 @@
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
-    ],
-    "next_action": "Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "dataelement/bisheng",
-    "url": "https://github.com/dataelement/bisheng",
-    "category": "Agentic Enterprise",
-    "subcategory": "Enterprise Workflow",
-    "action_level": "strategic watch",
-    "priority": 5,
-    "strategic_score": 85,
-    "momentum_score": 97,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap"
     ],
     "next_action": "Assign owner to track releases, ecosystem adoption, license posture, and architecture fit weekly.",
     "suggested_owner": "product+engineering review"
@@ -220,7 +220,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 76,
-    "momentum_score": 83,
+    "momentum_score": 82,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -261,6 +261,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "langchain4j/langchain4j",
+    "url": "https://github.com/langchain4j/langchain4j",
+    "category": "AI Agent Framework",
+    "subcategory": "Knowledge / RAG",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 75,
+    "momentum_score": 96,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "omnigent-ai/omnigent",
     "url": "https://github.com/omnigent-ai/omnigent",
     "category": "AI Agent Framework",
@@ -284,7 +301,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
-    "momentum_score": 95,
+    "momentum_score": 96,
     "risk_flags": [
       "quality gate unclear"
     ],
@@ -296,23 +313,6 @@
     "url": "https://github.com/OrchestratorInc/agent-orchestrator",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 75,
-    "momentum_score": 94,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "langchain4j/langchain4j",
-    "url": "https://github.com/langchain4j/langchain4j",
-    "category": "AI Agent Framework",
-    "subcategory": "Knowledge / RAG",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 75,
@@ -343,8 +343,8 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "openai/openai-agents-python",
-    "url": "https://github.com/openai/openai-agents-python",
+    "full_name": "HKUDS/nanobot",
+    "url": "https://github.com/HKUDS/nanobot",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
@@ -360,8 +360,8 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "HKUDS/nanobot",
-    "url": "https://github.com/HKUDS/nanobot",
+    "full_name": "openai/openai-agents-python",
+    "url": "https://github.com/openai/openai-agents-python",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
@@ -510,14 +510,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "HarnessMD/munder-difflin",
-    "url": "https://github.com/HarnessMD/munder-difflin",
+    "full_name": "aden-hive/hive",
+    "url": "https://github.com/aden-hive/hive",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
-    "momentum_score": 94,
+    "momentum_score": 95,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -583,7 +583,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 69,
-    "momentum_score": 91,
+    "momentum_score": 93,
     "risk_flags": [
       "docs need review",
       "enterprise control gap"
@@ -680,7 +680,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 81,
+    "momentum_score": 82,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -697,7 +697,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 59,
-    "momentum_score": 76,
+    "momentum_score": 77,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -740,30 +740,13 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "xbtlin/ai-berkshire",
-    "url": "https://github.com/xbtlin/ai-berkshire",
-    "category": "AI Agent Framework",
-    "subcategory": "Agent Runtime",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 57,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "jeecgboot/JeecgBoot",
-    "url": "https://github.com/jeecgboot/JeecgBoot",
-    "category": "AI Agent Framework",
+    "full_name": "mitkox/copilot-superagent",
+    "url": "https://github.com/mitkox/copilot-superagent",
+    "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 53,
+    "strategic_score": 55,
     "momentum_score": 93,
     "risk_flags": [
       "docs need review",
@@ -807,6 +790,22 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "SouravBeraAkaSpeed/xiryn",
+    "url": "https://github.com/SouravBeraAkaSpeed/xiryn",
+    "category": "AI Agent Framework",
+    "subcategory": "Agent Runtime",
+    "action_level": "read docs",
+    "priority": 2,
+    "strategic_score": 49,
+    "momentum_score": 93,
+    "risk_flags": [
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Review docs for API shape, deployment model, license, and reusable design ideas.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "backtrue/thinkwithblack-skill",
     "url": "https://github.com/backtrue/thinkwithblack-skill",
     "category": "AI Commerce",
@@ -814,7 +813,7 @@
     "action_level": "read docs",
     "priority": 2,
     "strategic_score": 48,
-    "momentum_score": 86,
+    "momentum_score": 85,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
