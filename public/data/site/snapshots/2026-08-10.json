@@ -17,7 +17,7 @@
       "orchestration"
     ],
     "created_at": "2025-10-04T01:52:24Z",
-    "pushed_at": "2026-11-06T07:57:54Z",
+    "pushed_at": "2026-11-09T20:30:18Z",
     "category": "Agentic Enterprise",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -45,7 +45,7 @@
     "maturity_level": "scaling",
     "repository_review": "Scaling project with 9.3 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "deepset-ai/haystack",
@@ -79,7 +79,7 @@
       "semantic-search"
     ],
     "created_at": "2019-11-14T09:05:28Z",
-    "pushed_at": "2026-11-07T02:11:09Z",
+    "pushed_at": "2026-11-09T15:49:06Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 59,
@@ -109,7 +109,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 10.6 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "ModelEngine-Group/nexent",
@@ -199,7 +199,7 @@
       "workflow"
     ],
     "created_at": "2023-04-12T07:40:24Z",
-    "pushed_at": "2026-11-08T18:01:01Z",
+    "pushed_at": "2026-11-09T19:10:56Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -230,7 +230,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 125.0 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "bytedance/deer-flow",
@@ -262,7 +262,7 @@
       "typescript"
     ],
     "created_at": "2025-05-07T02:50:19Z",
-    "pushed_at": "2026-11-08T14:10:10Z",
+    "pushed_at": "2026-11-09T22:22:25Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -292,7 +292,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 173.2 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "ruvnet/ruflo",
@@ -304,29 +304,29 @@
     "stars": 67559,
     "forks": 8084,
     "topics": [
+      "agent-memory",
+      "agent-orchestration",
       "agentic-ai",
-      "agentic-framework",
       "agentic-workflow",
-      "agents",
       "ai-agents",
-      "ai-assistant",
-      "ai-skills",
       "autonomous-agents",
       "claude",
+      "claude-code",
       "codex",
-      "dsh-plugin",
-      "harness",
+      "hnsw",
+      "mcp",
       "mcp-server",
       "multi-agent",
       "multi-agent-systems",
-      "npm",
-      "skills",
+      "plugins",
+      "rvf",
       "swarm",
       "swarm-intelligence",
-      "typescript"
+      "typescript",
+      "vector-search"
     ],
     "created_at": "2025-06-02T21:24:20Z",
-    "pushed_at": "2026-11-07T04:46:23Z",
+    "pushed_at": "2026-11-09T22:49:16Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -356,7 +356,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 155.7 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "microsoft/agent-framework",
@@ -380,7 +380,7 @@
       "workflows"
     ],
     "created_at": "2025-04-28T19:40:42Z",
-    "pushed_at": "2026-11-08T14:33:37Z",
+    "pushed_at": "2026-11-09T20:32:30Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -407,7 +407,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 27.1 stars/day, actively maintained, and 98/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "dataelement/bisheng",
@@ -440,7 +440,7 @@
       "workflow"
     ],
     "created_at": "2023-08-28T10:00:24Z",
-    "pushed_at": "2026-11-08T13:49:50Z",
+    "pushed_at": "2026-11-09T14:51:29Z",
     "category": "Agentic Enterprise",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -469,7 +469,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 11.0 stars/day, actively maintained, and 98/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "mlflow/mlflow",
@@ -501,7 +501,7 @@
       "prompt-engineering"
     ],
     "created_at": "2018-06-05T16:05:58Z",
-    "pushed_at": "2026-11-08T16:25:01Z",
+    "pushed_at": "2026-11-09T21:22:57Z",
     "category": "AI Infrastructure",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -528,7 +528,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 9.2 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'strategic watch'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "HKUDS/nanobot",
@@ -562,7 +562,7 @@
       "workflow-automation"
     ],
     "created_at": "2026-02-01T07:16:15Z",
-    "pushed_at": "2026-11-08T16:46:11Z",
+    "pushed_at": "2026-11-09T15:52:44Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -589,14 +589,14 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 246.5 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "sickn33/agentic-awesome-skills",
     "name": "agentic-awesome-skills",
     "owner": "sickn33",
     "url": "https://github.com/sickn33/agentic-awesome-skills",
-    "description": "2,926+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
+    "description": "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
     "language": "Python",
     "stars": 44719,
     "forks": 6555,
@@ -623,7 +623,7 @@
       "skill-library"
     ],
     "created_at": "2026-01-14T17:48:09Z",
-    "pushed_at": "2026-11-08T14:10:48Z",
+    "pushed_at": "2026-11-09T21:18:26Z",
     "category": "AI Agent Framework",
     "subcategory": "Product Intelligence",
     "relevance": 39,
@@ -650,7 +650,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 215.0 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-07-09",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "google/adk-python",
@@ -680,7 +680,7 @@
       "multi-agents-collaboration"
     ],
     "created_at": "2025-04-01T20:44:40Z",
-    "pushed_at": "2026-11-08T05:29:38Z",
+    "pushed_at": "2026-11-09T22:31:55Z",
     "category": "AI Agent Framework",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -707,7 +707,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 42.5 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "langchain4j/langchain4j",
@@ -741,7 +741,7 @@
       "vector-database"
     ],
     "created_at": "2023-06-20T15:30:29Z",
-    "pushed_at": "2026-11-06T18:13:39Z",
+    "pushed_at": "2026-11-09T17:41:14Z",
     "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -771,7 +771,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 11.2 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "MervinPraison/PraisonAI",
@@ -804,7 +804,7 @@
       "self-hosted"
     ],
     "created_at": "2024-03-19T16:45:25Z",
-    "pushed_at": "2026-11-08T10:25:02Z",
+    "pushed_at": "2026-11-09T10:33:08Z",
     "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -833,7 +833,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 10.1 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "omnigent-ai/omnigent",
@@ -863,7 +863,7 @@
       "sandbox"
     ],
     "created_at": "2026-06-11T12:18:13Z",
-    "pushed_at": "2026-11-08T17:35:47Z",
+    "pushed_at": "2026-11-09T22:57:03Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -888,7 +888,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 141.3 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-26",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "rocketride-org/rocketride-server",
@@ -912,7 +912,7 @@
       "vscode-extension"
     ],
     "created_at": "2026-02-11T17:02:53Z",
-    "pushed_at": "2026-11-08T01:49:17Z",
+    "pushed_at": "2026-11-09T22:49:44Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -941,7 +941,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 32.6 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-07-20",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "iflytek/skillhub",
@@ -974,7 +974,7 @@
       "version-control"
     ],
     "created_at": "2026-03-11T12:17:05Z",
-    "pushed_at": "2026-11-06T10:25:31Z",
+    "pushed_at": "2026-11-09T08:25:59Z",
     "category": "Agentic Enterprise",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -999,7 +999,7 @@
     "maturity_level": "scaling",
     "repository_review": "Scaling project with 32.1 stars/day, actively maintained, and 96/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-06-10",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "melgarafael/DeskcommCRM",
@@ -1084,7 +1084,7 @@
       "python"
     ],
     "created_at": "2025-03-11T03:42:36Z",
-    "pushed_at": "2026-11-08T18:17:51Z",
+    "pushed_at": "2026-11-09T22:57:02Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 49,
@@ -1111,7 +1111,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 55.2 stars/day, actively maintained, and 97/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "jnMetaCode/agency-agents-zh",
@@ -1552,7 +1552,7 @@
       "typescript"
     ],
     "created_at": "2022-10-17T02:58:36Z",
-    "pushed_at": "2026-11-08T08:15:55Z",
+    "pushed_at": "2026-11-09T22:06:27Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -1582,7 +1582,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 103.3 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "FlowiseAI/Flowise",
@@ -1674,7 +1674,7 @@
       "skills"
     ],
     "created_at": "2022-08-07T08:33:41Z",
-    "pushed_at": "2026-11-08T10:53:04Z",
+    "pushed_at": "2026-11-09T09:24:53Z",
     "category": "AI Agent Framework",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -1703,7 +1703,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 31.7 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "langchain-ai/langgraph",
@@ -1735,7 +1735,7 @@
       "rag"
     ],
     "created_at": "2023-08-09T18:33:12Z",
-    "pushed_at": "2026-11-08T00:33:40Z",
+    "pushed_at": "2026-11-09T19:03:28Z",
     "category": "Agentic Enterprise",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -1765,7 +1765,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 35.9 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "langfuse/langfuse",
@@ -1847,7 +1847,7 @@
       "workflow"
     ],
     "created_at": "2023-02-23T16:53:25Z",
-    "pushed_at": "2026-11-08T17:10:14Z",
+    "pushed_at": "2026-11-09T15:09:01Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -1876,7 +1876,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 23.2 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-28",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "activepieces/activepieces",
@@ -1903,7 +1903,7 @@
       "workflows"
     ],
     "created_at": "2022-12-03T02:52:46Z",
-    "pushed_at": "2026-11-08T18:06:45Z",
+    "pushed_at": "2026-11-09T22:54:18Z",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "relevance": 39,
@@ -1930,7 +1930,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 17.6 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "waooAI/waoowaoo",
@@ -2039,7 +2039,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 51.9 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-30",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "Untrivial-ai/agent-orchestrator",
@@ -2123,7 +2123,7 @@
       "prompt-management"
     ],
     "created_at": "2025-06-24T00:26:28Z",
-    "pushed_at": "2026-11-08T18:18:27Z",
+    "pushed_at": "2026-11-09T21:17:33Z",
     "category": "AI Infrastructure",
     "subcategory": "Evaluation / Observability",
     "relevance": 39,
@@ -2150,7 +2150,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 13.8 stars/day, actively maintained, and 93/100 momentum. Review first for reusable modules if action is 'prototype pattern'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "santifer/career-ops",
@@ -2297,7 +2297,7 @@
       "wiki"
     ],
     "created_at": "2025-07-22T08:01:23Z",
-    "pushed_at": "2026-11-03T03:33:48Z",
+    "pushed_at": "2026-11-09T15:19:50Z",
     "category": "AI Infrastructure",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -2324,7 +2324,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 51.1 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "xerj-org/xerj",
@@ -2419,7 +2419,7 @@
       "tracing"
     ],
     "created_at": "2026-04-23T14:11:31Z",
-    "pushed_at": "2026-11-08T16:44:38Z",
+    "pushed_at": "2026-11-09T22:57:35Z",
     "category": "AI Infrastructure",
     "subcategory": "Knowledge / RAG",
     "relevance": 39,
@@ -2447,7 +2447,7 @@
     "maturity_level": "scaling",
     "repository_review": "Scaling project with 15.0 stars/day, actively maintained, and 95/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "recommenders-team/recommenders",
@@ -2504,7 +2504,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 7.6 stars/day, actively maintained, and 83/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "yournextstore/yournextstore",
@@ -2527,7 +2527,7 @@
       "typescript"
     ],
     "created_at": "2024-08-05T19:31:52Z",
-    "pushed_at": "2026-11-08T17:18:39Z",
+    "pushed_at": "2026-11-09T21:52:14Z",
     "category": "AI Commerce",
     "subcategory": "Commerce Agent",
     "relevance": 29,
@@ -2553,7 +2553,7 @@
     "maturity_level": "established",
     "repository_review": "Established project with 7.4 stars/day, actively maintained, and 76/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "databufflabs/databuff",
@@ -2688,7 +2688,7 @@
       "trading"
     ],
     "created_at": "2026-04-01T09:52:20Z",
-    "pushed_at": "2026-11-08T05:46:14Z",
+    "pushed_at": "2026-11-09T08:55:21Z",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "relevance": 39,
@@ -2713,7 +2713,7 @@
     "maturity_level": "ecosystem leader",
     "repository_review": "Ecosystem Leader project with 233.0 stars/day, actively maintained, and 94/100 momentum. Review first for reusable modules if action is 'clone and test'.",
     "first_seen_date": "2026-05-29",
-    "last_seen_date": "2026-11-08"
+    "last_seen_date": "2026-11-09"
   },
   {
     "full_name": "TeamWiseFlow/xiaobei",

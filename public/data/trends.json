@@ -1,26 +1,26 @@
 {
-  "report_date": "2026-11-08",
+  "report_date": "2026-11-09",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
   "category_distribution": {
-    "AI Agent Framework": 34,
-    "Agentic Enterprise": 6,
+    "AI Agent Framework": 33,
+    "Agentic Enterprise": 7,
     "AI Commerce": 5,
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
     "Enterprise Workflow": 25,
-    "Knowledge / RAG": 9,
-    "Agent Runtime": 7,
+    "Knowledge / RAG": 10,
+    "Agent Runtime": 6,
     "Commerce Agent": 4,
     "Evaluation / Observability": 3,
     "Product Intelligence": 2
   },
   "language_distribution": {
-    "Python": 27,
-    "TypeScript": 13,
-    "Go": 2,
+    "Python": 29,
+    "TypeScript": 9,
+    "Go": 4,
     "Java": 2,
     "Shell": 2,
     "HTML": 1,
@@ -29,10 +29,10 @@
     "Rust": 1
   },
   "maturity_distribution": {
-    "ecosystem leader": 27,
-    "established": 16,
-    "scaling": 5,
-    "emerging": 2
+    "ecosystem leader": 26,
+    "established": 17,
+    "scaling": 4,
+    "emerging": 3
   },
   "action_distribution": {
     "prototype pattern": 23,
@@ -41,83 +41,91 @@
     "read docs": 1
   },
   "watchlist_flags": {
-    "enterprise control gap": 44,
     "docs need review": 43,
-    "quality gate unclear": 36
+    "enterprise control gap": 43,
+    "quality gate unclear": 35
   },
   "top_momentum": [
     {
       "full_name": "dataelement/bisheng",
       "momentum_score": 99,
-      "stars_per_day": 10.43,
+      "stars_per_day": 10.44,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "paperclipai/paperclip",
       "momentum_score": 98,
-      "stars_per_day": 447.27,
+      "stars_per_day": 446.93,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "microsoft/agent-framework",
       "momentum_score": 98,
-      "stars_per_day": 26.1,
+      "stars_per_day": 26.08,
+      "days_since_push": 0,
+      "action_level": "strategic watch"
+    },
+    {
+      "full_name": "deepset-ai/haystack",
+      "momentum_score": 97,
+      "stars_per_day": 10.57,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 123.03,
+      "stars_per_day": 123.01,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 97,
-      "stars_per_day": 154.79,
+      "stars_per_day": 154.62,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 178.33,
+      "stars_per_day": 177.85,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 50.34,
+      "stars_per_day": 50.3,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
-      "full_name": "deepset-ai/haystack",
+      "full_name": "ascending-llc/jarvis-registry",
       "momentum_score": 96,
-      "stars_per_day": 10.56,
-      "days_since_push": 1,
+      "stars_per_day": 9.67,
+      "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "sickn33/agentic-awesome-skills",
       "momentum_score": 96,
-      "stars_per_day": 165.66,
+      "stars_per_day": 165.27,
       "days_since_push": 0,
       "action_level": "strategic watch"
-    },
-    {
-      "full_name": "google/adk-python",
-      "momentum_score": 96,
-      "stars_per_day": 37.79,
-      "days_since_push": 0,
-      "action_level": "prototype pattern"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-11-09",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-11-09.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-11-09T22:58:51.752678+00:00"
+    },
     {
       "report_date": "2026-11-08",
       "repo_count": 50,
@@ -349,14 +357,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-10-10T17:50:31.283323+00:00"
-    },
-    {
-      "report_date": "2026-10-09",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-10-09.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-10-09T18:48:05.006618+00:00"
     }
   ]
 }
