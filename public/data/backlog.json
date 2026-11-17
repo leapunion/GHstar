@@ -186,7 +186,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 79,
-    "momentum_score": 97,
+    "momentum_score": 96,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
@@ -212,31 +212,14 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "nexscope-ai/eCommerce-Skills",
-    "url": "https://github.com/nexscope-ai/eCommerce-Skills",
-    "category": "AI Commerce",
-    "subcategory": "Commerce Agent",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 78,
-    "momentum_score": 72,
-    "risk_flags": [
-      "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "mdiri-ai/SoduWork",
     "url": "https://github.com/mdiri-ai/SoduWork",
     "category": "AI Agent Framework",
     "subcategory": "Enterprise Workflow",
     "action_level": "prototype pattern",
     "priority": 4,
-    "strategic_score": 75,
-    "momentum_score": 97,
+    "strategic_score": 77,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -326,21 +309,6 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "GoogleCloudPlatform/agent-starter-pack",
-    "url": "https://github.com/GoogleCloudPlatform/agent-starter-pack",
-    "category": "AI Infrastructure",
-    "subcategory": "Evaluation / Observability",
-    "action_level": "prototype pattern",
-    "priority": 4,
-    "strategic_score": 75,
-    "momentum_score": 95,
-    "risk_flags": [
-      "enterprise control gap"
-    ],
-    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
     "full_name": "OrchestratorInc/agent-orchestrator",
     "url": "https://github.com/OrchestratorInc/agent-orchestrator",
     "category": "AI Agent Framework",
@@ -353,6 +321,21 @@
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "GoogleCloudPlatform/agent-starter-pack",
+    "url": "https://github.com/GoogleCloudPlatform/agent-starter-pack",
+    "category": "AI Infrastructure",
+    "subcategory": "Evaluation / Observability",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 75,
+    "momentum_score": 94,
+    "risk_flags": [
+      "enterprise control gap"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
     "suggested_owner": "product+engineering review"
@@ -414,7 +397,7 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 73,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
@@ -436,6 +419,22 @@
       "docs need review",
       "enterprise control gap",
       "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "reacher-z/Awesome-CUA",
+    "url": "https://github.com/reacher-z/Awesome-CUA",
+    "category": "AI Agent Framework",
+    "subcategory": "Product Intelligence",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 73,
+    "momentum_score": 94,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
     "suggested_owner": "product+engineering review"
@@ -542,6 +541,23 @@
     "suggested_owner": "product+engineering review"
   },
   {
+    "full_name": "aden-hive/hive",
+    "url": "https://github.com/aden-hive/hive",
+    "category": "AI Agent Framework",
+    "subcategory": "Enterprise Workflow",
+    "action_level": "prototype pattern",
+    "priority": 4,
+    "strategic_score": 69,
+    "momentum_score": 95,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
+    ],
+    "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
     "full_name": "HarnessMD/munder-difflin",
     "url": "https://github.com/HarnessMD/munder-difflin",
     "category": "AI Agent Framework",
@@ -615,27 +631,12 @@
     "action_level": "prototype pattern",
     "priority": 4,
     "strategic_score": 68,
-    "momentum_score": 95,
+    "momentum_score": 94,
     "risk_flags": [
       "enterprise control gap",
       "quality gate unclear"
     ],
     "next_action": "Extract the reusable architecture pattern and create a small Leap OS prototype brief.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "OpenByteInc/QuantDinger",
-    "url": "https://github.com/OpenByteInc/QuantDinger",
-    "category": "AI Agent Framework",
-    "subcategory": "Agent Runtime",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 63,
-    "momentum_score": 95,
-    "risk_flags": [
-      "docs need review"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
     "suggested_owner": "product+engineering review"
   },
   {
@@ -671,16 +672,33 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "Tencent/WeKnora",
-    "url": "https://github.com/Tencent/WeKnora",
-    "category": "AI Infrastructure",
-    "subcategory": "Knowledge / RAG",
+    "full_name": "OpenByteInc/QuantDinger",
+    "url": "https://github.com/OpenByteInc/QuantDinger",
+    "category": "AI Agent Framework",
+    "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 63,
-    "momentum_score": 93,
+    "momentum_score": 94,
     "risk_flags": [
-      "enterprise control gap"
+      "docs need review"
+    ],
+    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
+    "suggested_owner": "product+engineering review"
+  },
+  {
+    "full_name": "Replyze/shopify-ai-chatbot",
+    "url": "https://github.com/Replyze/shopify-ai-chatbot",
+    "category": "AI Commerce",
+    "subcategory": "Commerce Agent",
+    "action_level": "clone and test",
+    "priority": 3,
+    "strategic_score": 63,
+    "momentum_score": 79,
+    "risk_flags": [
+      "docs need review",
+      "enterprise control gap",
+      "quality gate unclear"
     ],
     "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
     "suggested_owner": "product+engineering review"
@@ -710,7 +728,7 @@
     "action_level": "clone and test",
     "priority": 3,
     "strategic_score": 58,
-    "momentum_score": 91,
+    "momentum_score": 90,
     "risk_flags": [
       "docs need review",
       "quality gate unclear"
@@ -752,32 +770,16 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "Nasiko-Labs/nasiko",
-    "url": "https://github.com/Nasiko-Labs/nasiko",
+    "full_name": "TauricResearch/TradingAgents",
+    "url": "https://github.com/TauricResearch/TradingAgents",
     "category": "AI Agent Framework",
     "subcategory": "Agent Runtime",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 57,
+    "strategic_score": 56,
     "momentum_score": 94,
     "risk_flags": [
       "docs need review",
-      "quality gate unclear"
-    ],
-    "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
-    "suggested_owner": "product+engineering review"
-  },
-  {
-    "full_name": "xbtlin/ai-berkshire",
-    "url": "https://github.com/xbtlin/ai-berkshire",
-    "category": "AI Agent Framework",
-    "subcategory": "Agent Runtime",
-    "action_level": "clone and test",
-    "priority": 3,
-    "strategic_score": 57,
-    "momentum_score": 93,
-    "risk_flags": [
-      "docs need review",
       "enterprise control gap",
       "quality gate unclear"
     ],
@@ -785,18 +787,17 @@
     "suggested_owner": "product+engineering review"
   },
   {
-    "full_name": "TencentCloud/Octop",
-    "url": "https://github.com/TencentCloud/Octop",
-    "category": "AI Agent Framework",
-    "subcategory": "Agent Runtime",
+    "full_name": "amitshekhariitbhu/ai-engineering-course",
+    "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+    "category": "AI Infrastructure",
+    "subcategory": "Knowledge / RAG",
     "action_level": "clone and test",
     "priority": 3,
-    "strategic_score": 57,
+    "strategic_score": 53,
     "momentum_score": 93,
     "risk_flags": [
       "docs need review",
-      "enterprise control gap",
-      "quality gate unclear"
+      "enterprise control gap"
     ],
     "next_action": "Run locally, document setup friction, core modules, integration surface, and operational risks.",
     "suggested_owner": "product+engineering review"
@@ -809,7 +810,7 @@
     "action_level": "read docs",
     "priority": 2,
     "strategic_score": 39,
-    "momentum_score": 89,
+    "momentum_score": 88,
     "risk_flags": [
       "docs need review",
       "enterprise control gap",
