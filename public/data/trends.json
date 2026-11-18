@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-11-17",
+  "report_date": "2026-11-18",
   "repo_count": 50,
   "active_7_days": 50,
   "active_30_days": 50,
@@ -10,24 +10,24 @@
     "AI Infrastructure": 5
   },
   "subcategory_distribution": {
-    "Enterprise Workflow": 26,
-    "Knowledge / RAG": 9,
+    "Enterprise Workflow": 24,
+    "Knowledge / RAG": 10,
+    "Agent Runtime": 6,
     "Commerce Agent": 5,
-    "Agent Runtime": 4,
-    "Evaluation / Observability": 4,
+    "Evaluation / Observability": 3,
     "Product Intelligence": 2
   },
   "language_distribution": {
-    "Python": 25,
+    "Python": 24,
     "TypeScript": 12,
-    "HTML": 2,
+    "HTML": 3,
     "Java": 2,
     "JavaScript": 2,
+    "Rust": 2,
     "Shell": 2,
-    "Unknown": 2,
     "Go": 1,
     "Markdown": 1,
-    "Rust": 1
+    "Unknown": 1
   },
   "maturity_distribution": {
     "ecosystem leader": 25,
@@ -36,13 +36,13 @@
     "emerging": 2
   },
   "action_distribution": {
-    "prototype pattern": 28,
-    "strategic watch": 11,
-    "clone and test": 10,
+    "prototype pattern": 26,
+    "clone and test": 13,
+    "strategic watch": 10,
     "read docs": 1
   },
   "watchlist_flags": {
-    "enterprise control gap": 43,
+    "enterprise control gap": 42,
     "docs need review": 41,
     "quality gate unclear": 36
   },
@@ -57,21 +57,14 @@
     {
       "full_name": "ascending-llc/jarvis-registry",
       "momentum_score": 98,
-      "stars_per_day": 9.86,
+      "stars_per_day": 9.89,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "paperclipai/paperclip",
       "momentum_score": 98,
-      "stars_per_day": 440.58,
-      "days_since_push": 0,
-      "action_level": "strategic watch"
-    },
-    {
-      "full_name": "microsoft/agent-framework",
-      "momentum_score": 98,
-      "stars_per_day": 25.93,
+      "stars_per_day": 439.83,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
@@ -85,40 +78,55 @@
     {
       "full_name": "langgenius/dify",
       "momentum_score": 97,
-      "stars_per_day": 122.72,
+      "stars_per_day": 122.67,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "bytedance/deer-flow",
       "momentum_score": 97,
-      "stars_per_day": 152.86,
+      "stars_per_day": 152.66,
       "days_since_push": 0,
       "action_level": "strategic watch"
     },
     {
       "full_name": "HKUDS/nanobot",
       "momentum_score": 97,
-      "stars_per_day": 173.54,
+      "stars_per_day": 173.06,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "openai/openai-agents-python",
       "momentum_score": 97,
-      "stars_per_day": 49.91,
+      "stars_per_day": 49.84,
+      "days_since_push": 0,
+      "action_level": "prototype pattern"
+    },
+    {
+      "full_name": "jnMetaCode/agency-agents-zh",
+      "momentum_score": 97,
+      "stars_per_day": 86.26,
       "days_since_push": 0,
       "action_level": "prototype pattern"
     },
     {
       "full_name": "sickn33/agentic-awesome-skills",
       "momentum_score": 96,
-      "stars_per_day": 162.53,
+      "stars_per_day": 162.19,
       "days_since_push": 0,
       "action_level": "strategic watch"
     }
   ],
   "history": [
+    {
+      "report_date": "2026-11-18",
+      "repo_count": 50,
+      "markdown_path": "reports/2026-11-18.md",
+      "html_path": "public/report.html",
+      "json_path": "public/data/latest.json",
+      "generated_at": "2026-11-18T21:23:51.738678+00:00"
+    },
     {
       "report_date": "2026-11-17",
       "repo_count": 50,
@@ -350,14 +358,6 @@
       "html_path": "public/report.html",
       "json_path": "public/data/latest.json",
       "generated_at": "2026-10-19T19:18:37.537749+00:00"
-    },
-    {
-      "report_date": "2026-10-18",
-      "repo_count": 50,
-      "markdown_path": "reports/2026-10-18.md",
-      "html_path": "public/report.html",
-      "json_path": "public/data/latest.json",
-      "generated_at": "2026-10-18T16:30:51.046620+00:00"
     }
   ]
 }
